@@ -1,0 +1,59 @@
+---
+layout: archive
+title: "Communication"
+permalink: /talks/
+author_profile: true
+---
+
+I believe that communicating research outcomes is just as important as the research itself. To this end, I regularly participate in organizing workshops and webinars, as well as public talks, to communicate advances in computational pathology to machine learning experts, clinicians and medical staff, and the general public.
+
+**Talks:**
+
+-   Symposium on Digital Pathology in the DACH Region, *Bern* -- Invited by
+        Prof. Inti Zlobek, *Feb 2022*\
+        "Graph Representation Learning in Computational Pathology"
+
+-   Tissue Image Analytics Centre, *Warwick* -- Invited by Prof.
+    Nasir Rajpoot, *Oct 2021*\
+    "HistoCartography: Graph representations and models in
+    Computational Pathology"
+
+-   Charité University Hospital, *Berlin*, *Oct 2021*\
+    "Graph Representations and Models in Digital Pathology"
+
+-   PathAI, *New York*, *July 2021*\
+    "Weakly-Supervised Learning for Whole-Slide-Image Segmentation"
+
+-   Harvard Medical School, *Boston* -- Invited by Prof. Faisal
+    Mahmood, *July 2021*\
+    "A Graph Network Tour of Computational Pathology"
+
+-   Lausanne University Hospital (CHUV), *Lausanne*, *May 2021*\
+    "Computational Pathology: Building Interpretable AI at Scale"
+
+-   Swiss Digital Pathology Consortium (SDiPath), *Bern*, *Jan 2021*\
+    "Graph Representation Learning & Explainability in Computational
+    Pathology"
+
+-   Computer Research Institute of Montreal (CRIM), *Montreal*, *Nov
+    2020*\
+    "Deep Learning on Graphs: An Overview"
+    [\[Code\]](https://github.com/guillaumejaume/tuto-dl-on-graphs)
+
+-   10+ Internal IBM Talks, *Zurich*, *2019-2021*\
+    IBM Research, IBM Watson, IBM Global Business Services
+
+**Workshops:**
+
+-   IEEE International Symposium on Biomedical Imaging (ISBI),
+    *Kolkata* *March 2022*\
+    "BRIGHT: BReast tumor Image classification on Gigapixel
+    HisTopathological images"
+
+-   American Medical Informatics Association (AMIA), *San Diego*
+    *Nov 2021*\
+    "Workshop on Explainable Multimodal AI in Cancer Patient Care"
+
+-   Applied Machine Learning Days (AMLD), *Lausanne* *April 2021*\
+    "Building Interpretable AI for Digital Pathology"
+    [\[Code\]](https://github.com/maragraziani/interpretAI_DigiPath)
