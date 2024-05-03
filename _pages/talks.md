@@ -10,16 +10,16 @@ I believe that communicating research outcomes is just as important as the resea
 **Selected Talks:**
 
 - MIT, *Boston* -- Guest lecturer, MIT-6.S915,*Jan 2024*\
-``Slide Representation Learning in Computational Pathology''
+"Slide Representation Learning in Computational Pathology''
 
 - PariSanté Campus, *Paris* -- Keynote speaker, AI4Health Summer School,*July 2023*\
-``Deep Learning for Pathology Image Analysis''
+"Deep Learning for Pathology Image Analysis''
 
 - University of Bern, *Bern* -- Invited by Prof. Inti Zlobek,*July 2023*\
-``Latest trends in Computational Pathology''
+"Latest trends in Computational Pathology''
 
 - UC Berkeley, *Berkeley* -- Invited by Prof. Iain Carmichael,*Nov 2022*\
-``A Tour of Computational Pathology: Methods and Applications''
+"A Tour of Computational Pathology: Methods and Applications''
 
 - Dana-Farber Cancer Institute, *Boston* -- Invited by Prof. Eliezer Van Allen, *Sep 2022*\
 "Interpretable Deep Learning in Computational Pathology"
