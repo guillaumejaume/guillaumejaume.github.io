@@ -5,17 +5,13 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
-
-{% include base_path %}
-
 <!-- {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %} -->
 
-**Journals:**
+For a comprehensive list of publications, please refer to my CV. 
+
+<!-- **Selected journal publications:**
 
 -   P. Pati*, G. Jaume*,
     A. Foncubierta-Rodriguez et al., "Hierarchical Graph Representations
@@ -23,7 +19,7 @@ author_profile: true
     [\[arXiv\]](https://arxiv.org/pdf/2102.11057.pdf)
     [\[Code\]](https://github.com/histocartography/hact-net)
 
-**Conferences & Workshops:**
+**Conferences:**
 
 -   G. Jaume*, P. Pati*,
     B. Bozorgtabar et al., "Quantifying Explainers of Graph Neural
@@ -91,4 +87,4 @@ author_profile: true
 
 -   N. Brancati,\..., G. Jaume, et al.,
     "BRACS: A Dataset for BReAst Carcinoma Subtyping in H&E Histology
-    Images," 2021
+    Images," 2021 -->
