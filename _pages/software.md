@@ -5,7 +5,7 @@ permalink: /software/
 author_profile: true
 ---
 
-As a researcher, I strive to make access to science and research as easy as possible for everyone. Open science in applied machine learning research involves open-sourcing code to ensure reproducibility and transparency of new methods, as well as publishing datasets for robust comparative analysis. 
+Stay tuned for exciting new open source and open data announcements! 
 
 -   **HistoCartography**: A collection of image-to-graph translation and
     state-of-the-art graph algorithms for facilitating interpretable

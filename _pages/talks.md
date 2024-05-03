@@ -7,7 +7,22 @@ author_profile: true
 
 I believe that communicating research outcomes is just as important as the research itself. To this end, I regularly participate in organizing workshops and webinars, as well as public talks, to communicate advances in computational pathology to machine learning experts, clinicians and medical staff, and the general public.
 
-**Talks:**
+**Selected Talks:**
+
+- MIT, *Boston* -- Guest lecturer, MIT-6.S915,*Jan 2024*\
+``Slide Representation Learning in Computational Pathology''
+
+- PariSanté Campus, *Paris* -- Keynote speaker, AI4Health Summer School,*July 2023*\
+``Deep Learning for Pathology Image Analysis''
+
+- University of Bern, *Bern* -- Invited by Prof. Inti Zlobek,*July 2023*\
+``Latest trends in Computational Pathology''
+
+- UC Berkeley, *Berkeley* -- Invited by Prof. Iain Carmichael,*Nov 2022*\
+``A Tour of Computational Pathology: Methods and Applications''
+
+- Dana-Farber Cancer Institute, *Boston* -- Invited by Prof. Eliezer Van Allen, *Sep 2022*\
+"Interpretable Deep Learning in Computational Pathology"
 
 -   Symposium on Digital Pathology in the DACH Region, *Bern* -- Invited by
         Prof. Inti Zlobek, *Feb 2022*\
