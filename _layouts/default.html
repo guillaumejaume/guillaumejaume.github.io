@@ -16,7 +16,7 @@ layout: compress
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    {{ content }}
+    <!-- {{ content }} -->
 
     <div class="page__footer">
       <footer>
@@ -29,19 +29,76 @@ layout: compress
 
   </body>
 
+  <style>
+    #news-panel {
+      width: 500px; /* Width can be adjusted based on your layout needs */
+      height: 400px; /* Set a fixed height appropriate for your layout */
+      overflow-y: auto; /* Enables vertical scrolling */
+      padding: 20px;
+      border: 1px solid #ccc; /* Optional, just for better visibility */
+    }
+  </style>  
+
   <div style="display: flex;">
     <div style="flex: 1;">
       <!-- Main content goes here -->
       {{ content }}
     </div>
-    <div style="width: 300px; padding: 20px;">
+    <div id="news-panel">
       <h3>News</h3>
-      <ul id="news-panel">
+      <ul>
         <!-- News items will be listed here -->
-        <li>New CVPR'24 paper on  </li>
-        <li>New CVPR'24 paper on</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <li>News Item 1</li>
+        <li>News Item 2</li>
+        <!-- More news items -->
       </ul>
     </div>
-  </div>
+  </div>  
 
 </html>
