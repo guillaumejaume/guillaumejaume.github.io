@@ -28,4 +28,18 @@ layout: compress
     {% include scripts.html %}
 
   </body>
+
+  <div style="display: flex;">
+    <div style="flex: 1;">
+      <!-- Main content goes here -->
+      {{ content }}
+    </div>
+    <div style="width: 300px; padding: 20px;">
+      <h3>Latest News</h3>
+      <ul id="news-panel">
+        <!-- News items will be listed here -->
+      </ul>
+    </div>
+  </div>
+
 </html>
