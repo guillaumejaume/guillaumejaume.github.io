@@ -9,73 +9,43 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <style>
+      #news-panel {
+        width: 500px; /* Width can be adjusted based on your layout needs */
+        height: 400px; /* Set a fixed height appropriate for your layout */
+        overflow-y: auto; /* Enables vertical scrolling */
+        padding: 20px;
+        border: 1px solid #ccc; /* Optional, just for better visibility */
+      }
+    </style>
   </head>
+  <body>
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
 
-  <style>
-    #news-panel {
-      width: 500px; /* Width can be adjusted based on your layout needs */
-      height: 400px; /* Set a fixed height appropriate for your layout */
-      overflow-y: auto; /* Enables vertical scrolling */
-      padding: 20px;
-      border: 1px solid #ccc; /* Optional, just for better visibility */
-    }
-  </style>  
-
-  <div style="display: flex;">
-    <div style="flex: 1;">
-      <!-- Main content goes here -->
-      <body>
-
-        {% include browser-upgrade.html %}
-        {% include masthead.html %}
-    
+    <div style="display: flex;">
+      <div style="flex: 1;">
+        <!-- Main content goes here -->
         {{ content }}
-    
-        <div class="page__footer">
-          <footer>
-            {% include footer/custom.html %}
-            {% include footer.html %}
-          </footer>
-        </div>
-    
-        {% include scripts.html %}
-    
-      </body>
-      <!-- {{ content }} -->
+      </div>
+      <div id="news-panel">
+        <h3>News</h3>
+        <ul>
+          <!-- News items will be listed here -->
+          <li><b>April'24</b> New paper accepted at CVPR'24. Code, pretrained model will be available soon.</li>
+          <li><b>April'24</b> New paper accepted at CVPR'24 led by Andrew H Song and Richard Chen.</li>
+          <!-- More news items -->
+        </ul>
+      </div>
     </div>
-    <div id="news-panel">
-      <h3>News</h3>
-      <ul>
-        <!-- News items will be listed here -->
-        <li>News Item 1</li>
-        <li>News Item 2</li>
-        <li>News Item 1</li>
-        <li>News Item 2</li>
-        <li>News Item 1</li>
-        <li>News Item 2</li>
-        <li>News Item 1</li>
-        <li>News Item 2</li>
-        <li>News Item 1</li>
-        <li>News Item 2</li>
-        <li>News Item 1</li>
-        <li>News Item 2</li>
-        <li>News Item 1</li>
-        <li>News Item 2</li>
-        <li>News Item 1</li>
-        <li>News Item 2</li>
-        <li>News Item 1</li>
-        <li>News Item 2</li>
-        <li>News Item 1</li>
-        <li>News Item 2</li>
-        <li>News Item 1</li>
-        <li>News Item 2</li>
-        <li>News Item 1</li>
-        <li>News Item 2</li>
-        <li>News Item 1</li>
-        <li>News Item 2</li>
-        <!-- More news items -->
-      </ul>
-    </div>
-  </div>  
 
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+  </body>
 </html>
