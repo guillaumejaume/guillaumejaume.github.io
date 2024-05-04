@@ -11,24 +11,6 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    <!-- {{ content }} -->
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
-  </body>
-
   <style>
     #news-panel {
       width: 500px; /* Width can be adjusted based on your layout needs */
@@ -42,6 +24,23 @@ layout: compress
   <div style="display: flex;">
     <div style="flex: 1;">
       <!-- Main content goes here -->
+      <body>
+
+        {% include browser-upgrade.html %}
+        {% include masthead.html %}
+    
+        <!-- {{ content }} -->
+    
+        <div class="page__footer">
+          <footer>
+            {% include footer/custom.html %}
+            {% include footer.html %}
+          </footer>
+        </div>
+    
+        {% include scripts.html %}
+    
+      </body>
       {{ content }}
     </div>
     <div id="news-panel">
