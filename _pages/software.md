@@ -5,7 +5,11 @@ permalink: /software/
 author_profile: true
 ---
 
-Stay tuned for exciting new open source and open data announcements! 
+Stay tuned for new open source and open data announcements! 
+
+-   **HEST**: A collection of 1,229 spatial transcriptomic profile with
+    matching whole-slide images and extensive metadata. 
+    \[[Code](https://github.com/mahmoodlab/HEST)\]
 
 -   **HistoCartography**: A collection of image-to-graph translation and
     state-of-the-art graph algorithms for facilitating interpretable

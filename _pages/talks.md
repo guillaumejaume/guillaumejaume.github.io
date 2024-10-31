@@ -5,9 +5,16 @@ permalink: /talks/
 author_profile: true
 ---
 
-I believe that communicating research outcomes is just as important as the research itself. To this end, I regularly participate in organizing workshops and webinars, as well as public talks, to communicate advances in computational pathology to machine learning experts, clinicians and medical staff, and the general public.
-
 **Selected Talks:**
+
+- Lunit, *Seoul* -- Invited by Dr. Sergio Pereira, *Sep 2024*
+"Multimodal Representation Learning in AI for Pathology''
+
+- UniBe, *Bern* -- Invited by Prof. Inti Zlobek, *May 2024*
+"3D Computational Pathology: Towards Enhanced Patient Prognostication''
+
+- CHUV, *Lausanne* -- Invited by Prof. Raphael Gottardo, *May 2024*
+"Towards General-Purpose AI Models for Histology''
 
 - MIT, *Boston* -- Guest lecturer, MIT-6.S915,*Jan 2024*\
 "Slide Representation Learning in Computational Pathology''
