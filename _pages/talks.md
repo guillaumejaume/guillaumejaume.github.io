@@ -7,13 +7,13 @@ author_profile: true
 
 **Selected Talks:**
 
-- Lunit, *Seoul* -- Invited by Dr. Sergio Pereira, *Sep 2024*
+- Lunit, *Seoul* -- Invited by Dr. Sergio Pereira, *Sep 2024*\
 "Multimodal Representation Learning in AI for Pathology''
 
-- UniBe, *Bern* -- Invited by Prof. Inti Zlobek, *May 2024*
+- UniBe, *Bern* -- Invited by Prof. Inti Zlobek, *May 2024*\
 "3D Computational Pathology: Towards Enhanced Patient Prognostication''
 
-- CHUV, *Lausanne* -- Invited by Prof. Raphael Gottardo, *May 2024*
+- CHUV, *Lausanne* -- Invited by Prof. Raphael Gottardo, *May 2024*\
 "Towards General-Purpose AI Models for Histology''
 
 - MIT, *Boston* -- Guest lecturer, MIT-6.S915,*Jan 2024*\
