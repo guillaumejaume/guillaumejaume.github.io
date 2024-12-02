@@ -99,51 +99,6 @@ layout: compress
         padding-left: 0;
       }
 
-      /* Navigation Bar */
-      .navbar {
-        background-color: var(--primary-color);
-        padding: 10px 0;
-      }
-
-      .navbar ul {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-      }
-
-      .navbar li {
-        margin: 0 15px;
-      }
-
-      .navbar a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      .navbar a:hover {
-        text-decoration: underline;
-      }
-
-      /* Hero Section */
-      .hero-section {
-        position: relative;
-        text-align: center;
-        color: white;
-      }
-
-      .hero-section img {
-        width: 100%;
-        height: auto;
-      }
-
-      .hero-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
       /* Container holding main content and news panel */
       .content-container {
         display: flex;
@@ -151,11 +106,11 @@ layout: compress
         overflow: hidden;
         max-width: 1200px;
         margin: 0 auto;
-        gap: 20px;
+        gap: 10px; /* Reduced gap between columns */
       }
 
       .main-content, #news-panel {
-        padding: 30px;
+        padding: 20px; /* Reduced padding */
       }
 
       /* Main content styling */
@@ -192,18 +147,8 @@ layout: compress
       .page__footer {
         background-color: var(--primary-color);
         color: #fff;
-        padding: 20px;
+        padding: 10px; /* Reduced padding */
         text-align: center;
-      }
-
-      .social-media a {
-        color: #fff;
-        margin: 0 5px;
-        text-decoration: none;
-      }
-
-      .social-media a:hover {
-        text-decoration: underline;
       }
 
       /* Responsive adjustments for smaller screens */
@@ -213,7 +158,7 @@ layout: compress
         }
 
         .main-content, #news-panel {
-          padding: 15px;
+          padding: 10px; /* Reduced padding */
         }
 
         body {
@@ -230,14 +175,6 @@ layout: compress
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    <!-- Navigation Bar -->
-    <nav class="navbar" aria-label="Main Navigation">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <!-- Add more navigation links as needed -->
-      </ul>
-    </nav>
-
     <!-- Content Container -->
     <div class="content-container">
       <!-- Main Content -->
@@ -251,24 +188,20 @@ layout: compress
         <ul>
           <li><b>Oct'24</b> HEST to appear at <a href="https://github.com/mahmoodlab/HEST" target="_blank"><b>NeurIPS</b></a> will be a <b>Spotlight</b> (top 2.0% of submissions).</li>
           <li><b>July'24</b> Announcing TRACE, our new <a href="https://www.biorxiv.org/content/10.1101/2024.07.20.604430v1.abstract" target="_blank"><b>preprint</b></a> on toxicity assessment and drug safety!</li>
-          <li><b>July'24</b> Announcing GEESE, our new <a href="https://www.biorxiv.org/content/10.1101/2024.07.19.604355v1.abstract" target="_blank"><b>preprint</b></a> for multimodal toxicity identification!</li>
-          <li><b>July'24</b> Announcing MADELEINE to appear at <a href="https://github.com/mahmoodlab/MADELEINE/tree/main" target="_blank"><b>ECCV</b></a>, a multimodal pretraining strategy for slide representation learning. Co-authored with Anurag Vaidya.</li>
-          <li><b>May'24</b> Announcing TriPath published in <a href="https://www.cell.com/cell/abstract/S0092-8674(24)00351-9" target="_blank"><b>Cell</b></a>, the first deep learning framework for 3D pathology. Work led by Andrew H. Song.</li>
-          <li><b>May'24</b> TANGLE to appear at <a href="https://github.com/mahmoodlab/TANGLE" target="_blank"><b>CVPR</b></a> will be an <b>Oral</b> (top 0.7% of submissions.) </li>
-          <li><b>May'24</b> Announcing MMP to appear at <a href="https://github.com/mahmoodlab/MMP/tree/main" target="_blank"><b>ICML</b></a>, a multimodal model for survival outcome prediction. Work led by Andrew Song and Richard Chen. </li>
-          <li><b>April'24</b> New <a href="https://www.nature.com/articles/s41591-024-02885-z" target="_blank"><b>Nature Medicine</b></a> study on fairness in computational pathology. Work led by Anurag Vaidya, Richard Chen and Drew F.K. Williamson. </li>
-          <li><b>March'24</b> Announcing UNI published in <a href="https://www.nature.com/articles/s41591-024-02857-3" target="_blank"><b>Nature Medicine</b></a>, a generic-purpose foundation model for histology. Work led by Richard Chen.</li>
-          <li><b>March'24</b> Announcing CONCH published in <a href="https://www.nature.com/articles/s41591-024-02856-4" target="_blank"><b>Nature Medicine</b></a>, a visual-language model for histology. Work led by Ming Y. Lu.</li>
-          <li><b>Feb'24</b> Announcing TANGLE to appear at <a href="https://github.com/mahmoodlab/TANGLE" target="_blank"><b>CVPR</b></a>, a multimodal pretraining strategy for slide representation learning. Co-authored with Lukas Oldenburg.</li>
-          <li><b>Feb'24</b> Announcing SurvPath to appear at <a href="https://github.com/mahmoodlab/SurvPath" target="_blank"><b>CVPR</b></a>, multimodal model for survival outcome prediction. Co-authored with Anurag Vaidya.</li>
-          <li><b>Feb'24</b> Announcing PANTHER to appear at <a href="https://github.com/mahmoodlab/PANTHER" target="_blank"><b>CVPR</b></a>, a model for survival prediction. Work led by Andrew H. Song and Richard Chen.</li>
-          <li><b>June’23</b> New <a href="https://www.nature.com/articles/s44222-023-00096-8" target="_blank"><b>Nature Reviews Bioengineering</b></a> article on AI for digital and computational Pathology. Co-led with Andrew H. Song.</li>
+          <!-- Add more news items as needed -->
         </ul>
       </div>
     </div>
 
     <!-- Back to Top Button -->
     <button id="back-to-top">↑</button>
+
+    <!-- Footer -->
+    <div class="page__footer">
+      <footer>
+        <p>&copy; 2024 Guillaume Jaume</p>
+      </footer>
+    </div>
 
     {% include scripts.html %}
 
