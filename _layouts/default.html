@@ -9,6 +9,22 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Guillaume Jaume's Website">
+    <meta name="keywords" content="AI for Pathology">
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Your Website Title">
+    <meta property="og:description" content="Your page description here">
+    <meta property="og:image" content="https://yourwebsite.com/path-to-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/path-to-your-favicon.ico" type="image/x-icon">
+
     <style>
       /* Reset default margins and paddings */
       * {
@@ -17,42 +33,177 @@ layout: compress
         box-sizing: border-box;
       }
 
-      /* Ensure html and body take full height */
-      html, body {
-        height: 100%;
+      /* Define color variables */
+      :root {
+        --primary-color: #333333;
+        --secondary-color: #555555;
+        --accent-color: #007BFF;
+        --background-color: #ffffff;
+        --background-dark-color: #121212;
+        --primary-dark-color: #e0e0e0;
+        --secondary-dark-color: #bbbbbb;
+        --accent-dark-color: #bb86fc;
       }
 
-      /* Set up the body as a flex container */
+      /* Dark Theme */
+      [data-theme="dark"] {
+        --background-color: var(--background-dark-color);
+        --primary-color: var(--primary-dark-color);
+        --secondary-color: var(--secondary-dark-color);
+        --accent-color: var(--accent-dark-color);
+      }
+
+      html, body {
+        height: 100%;
+        scroll-behavior: smooth;
+      }
+
       body {
         display: flex;
         flex-direction: column;
         height: 100%;
-        font-size: 90%; /* Reduced font size */
-        font-family: Helvetica, sans-serif; /* Set font to Helvetica */
+        font-size: 90%;
+        font-family: 'Roboto', Helvetica, sans-serif;
+        line-height: 1.6;
+        background-color: var(--background-color);
+        color: var(--primary-color);
+      }
+
+      a {
+        color: var(--accent-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: var(--secondary-color);
+        text-decoration: underline;
+      }
+
+      h1, h2, h3 {
+        font-weight: bold;
+      }
+
+      h3 {
+        font-size: 1.8em;
+        margin-bottom: 0.5em;
+      }
+
+      p, li {
+        font-weight: normal;
+        margin-bottom: 15px;
+      }
+
+      ul {
+        list-style-position: inside;
+        padding-left: 0;
+      }
+
+      /* Navigation Bar */
+      .navbar {
+        background-color: var(--primary-color);
+        padding: 10px 0;
+      }
+
+      .navbar ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+      }
+
+      .navbar li {
+        margin: 0 15px;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      /* Hero Section */
+      .hero-section {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .hero-section img {
+        width: 100%;
+        height: auto;
+      }
+
+      .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       /* Container holding main content and news panel */
       .content-container {
         display: flex;
         flex: 1;
-        overflow: hidden; /* Prevents unwanted scrollbars */
-        max-width: 1200px; /* White margins on both sides */
-        margin: 0 auto; /* Centers the container */
+        overflow: hidden;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 20px;
+      }
+
+      .main-content, #news-panel {
+        padding: 30px;
       }
 
       /* Main content styling */
       .main-content {
-        flex: 1;
-        overflow-y: auto; /* Enables vertical scrolling if needed */
-        /* Add any additional styling for your main content */
+        flex: 2;
+        overflow-y: auto;
       }
 
       /* News panel styling */
       #news-panel {
-        width: 30%; /* Adjust the percentage as needed */
+        flex: 1;
         overflow-y: auto;
+      }
+
+      /* Back to Top Button */
+      #back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        background-color: var(--accent-color);
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      #back-to-top:hover {
+        background-color: var(--secondary-color);
+      }
+
+      /* Footer */
+      .page__footer {
+        background-color: var(--primary-color);
+        color: #fff;
         padding: 20px;
-        /* border-left: 1px solid #ccc; /* Optional, for visual separation */
+        text-align: center;
+      }
+
+      .social-media a {
+        color: #fff;
+        margin: 0 5px;
+        text-decoration: none;
+      }
+
+      .social-media a:hover {
+        text-decoration: underline;
       }
 
       /* Responsive adjustments for smaller screens */
@@ -61,10 +212,16 @@ layout: compress
           flex-direction: column;
         }
 
-        #news-panel {
-          width: 100%;
-          border-left: none;
-          border-top: 1px solid #ccc;
+        .main-content, #news-panel {
+          padding: 15px;
+        }
+
+        body {
+          font-size: 100%;
+        }
+
+        h3 {
+          font-size: 1.5em;
         }
       }
     </style>
@@ -72,6 +229,23 @@ layout: compress
   <body>
     {% include browser-upgrade.html %}
     {% include masthead.html %}
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" aria-label="Main Navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <!-- Add more navigation links as needed -->
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <img src="path-to-your-image.jpg" alt="Banner Image">
+      <div class="hero-text">
+        <h1>Welcome to Our Website</h1>
+        <p>Your tagline or mission statement goes here.</p>
+      </div>
+    </div>
 
     <!-- Content Container -->
     <div class="content-container">
@@ -82,7 +256,7 @@ layout: compress
       </div>
       <!-- News Panel -->
       <div id="news-panel">
-        <h3><font size="+3">News</font></h3>
+        <h3>News</h3>
         <ul>
           <li><b>Oct'24</b> HEST to appear at <a href="https://github.com/mahmoodlab/HEST" target="_blank"><b>NeurIPS</b></a> will be a <b>Spotlight</b> (top 2.0% of submissions).</li>
           <li><b>July'24</b> Announcing TRACE, our new <a href="https://www.biorxiv.org/content/10.1101/2024.07.20.604430v1.abstract" target="_blank"><b>preprint</b></a> on toxicity assessment and drug safety!</li>
@@ -102,14 +276,45 @@ layout: compress
       </div>
     </div>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top">↑</button>
+
     <!-- Footer -->
     <div class="page__footer">
       <footer>
         {% include footer/custom.html %}
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+        <div class="social-media">
+          <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> |
+          <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </div>
         {% include footer.html %}
       </footer>
     </div>
 
     {% include scripts.html %}
+
+    <!-- Back to Top Button Script -->
+    <script>
+      window.addEventListener('scroll', function() {
+        const backToTop = document.getElementById('back-to-top');
+        if (window.pageYOffset > 300) {
+          backToTop.style.display = 'block';
+        } else {
+          backToTop.style.display = 'none';
+        }
+      });
+      document.getElementById('back-to-top').addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+      const toggleButton = document.getElementById('dark-mode-toggle');
+      toggleButton.addEventListener('click', () => {
+        document.documentElement.toggleAttribute('data-theme', 'dark');
+      });
+    </script>
   </body>
 </html>
