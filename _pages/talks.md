@@ -7,6 +7,18 @@ author_profile: true
 
 **Selected Talks:**
 
+- - Novartis -- Invited by the Digital Pathology and Image Analysis Interest Group, *March 2024*
+"AI for Computational Toxicologic Pathology''
+
+University of Sydney -- Invited by SPDS Statistical Bioinformatics Seminar, *March 2024*
+"Bringing Spatial Transcriptomics into The World of Deep Learning''
+
+- Owkin, *Paris* -- Invited by Alexandre Filliot, *Dec 2024*
+"Scaling Spatial Transcriptomics and Histology with HEST''
+
+- Roche, *Basel* -- Invited by Dr. Kevin Thandiackal, *Nov 2024*
+"AI for Preclinical Drug Safety Assessment''
+
 - Lunit, *Seoul* -- Invited by Dr. Sergio Pereira, *Sep 2024*\
 "Multimodal Representation Learning in AI for Pathology''
 

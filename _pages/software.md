@@ -7,6 +7,12 @@ author_profile: true
 
 Stay tuned for new open source and open data announcements! 
 
+-   **Trident**: Reference library for histology image processing with integration of 20+ foundation models.
+    \[[Code](https://github.com/mahmoodlab/trident)\]
+
+-   **Patho-Bench**: Largest public benchmark for pathology with 42 curated tasks.
+    \[[Code](https://github.com/mahmoodlab/patho-bench)\]
+
 -   **HEST**: A collection of 1,229 spatial transcriptomic profile with
     matching whole-slide images and extensive metadata. 
     \[[Code](https://github.com/mahmoodlab/HEST)\]
