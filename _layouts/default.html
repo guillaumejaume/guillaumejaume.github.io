@@ -99,32 +99,6 @@ layout: compress
         padding-left: 0;
       }
 
-      /* Container holding main content and news panel */
-      .content-container {
-        display: flex;
-        flex: 1;
-        overflow: hidden;
-        max-width: 1200px;
-        margin: 0 auto;
-        gap: 10px; /* Reduced gap between columns */
-      }
-
-      .main-content, #news-panel {
-        padding: 20px; /* Reduced padding */
-      }
-
-      /* Main content styling */
-      .main-content {
-        flex: 2;
-        overflow-y: auto;
-      }
-
-      /* News panel styling */
-      #news-panel {
-        flex: 1;
-        overflow-y: auto;
-      }
-
       /* Back to Top Button */
       #back-to-top {
         position: fixed;
@@ -153,14 +127,6 @@ layout: compress
 
       /* Responsive adjustments for smaller screens */
       @media (max-width: 768px) {
-        .content-container {
-          flex-direction: column;
-        }
-
-        .main-content, #news-panel {
-          padding: 10px; /* Reduced padding */
-        }
-
         body {
           font-size: 100%;
         }
@@ -173,36 +139,10 @@ layout: compress
   </head>
   <body>
     {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    <!-- Removed masthead include to eliminate duplicate navigation -->
 
-    <!-- Content Container -->
-    <div class="content-container">
-      <!-- Main Content -->
-      <div class="main-content">
-        <!-- Your main content goes here -->
-        {{ content }}
-      </div>
-      <!-- News Panel -->
-      <div id="news-panel">
-        <h3>News</h3>
-        <ul>
-          <li><b>Oct'24</b> HEST to appear at <a href="https://github.com/mahmoodlab/HEST" target="_blank"><b>NeurIPS</b></a> will be a <b>Spotlight</b> (top 2.0% of submissions).</li>
-          <li><b>July'24</b> Announcing TRACE, our new <a href="https://www.biorxiv.org/content/10.1101/2024.07.20.604430v1.abstract" target="_blank"><b>preprint</b></a> on toxicity assessment and drug safety!</li>
-          <li><b>July'24</b> Announcing GEESE, our new <a href="https://www.biorxiv.org/content/10.1101/2024.07.19.604355v1.abstract" target="_blank"><b>preprint</b></a> for multimodal toxicity identification!</li>
-          <li><b>July'24</b> Announcing MADELEINE to appear at <a href="https://github.com/mahmoodlab/MADELEINE/tree/main" target="_blank"><b>ECCV</b></a>, a multimodal pretraining strategy for slide representation learning. Co-authored with Anurag Vaidya.</li>
-          <li><b>May'24</b> Announcing TriPath published in <a href="https://www.cell.com/cell/abstract/S0092-8674(24)00351-9" target="_blank"><b>Cell</b></a>, the first deep learning framework for 3D pathology. Work led by Andrew H. Song.</li>
-          <li><b>May'24</b> TANGLE to appear at <a href="https://github.com/mahmoodlab/TANGLE" target="_blank"><b>CVPR</b></a> will be an <b>Oral</b> (top 0.7% of submissions.) </li>
-          <li><b>May'24</b> Announcing MMP to appear at <a href="https://github.com/mahmoodlab/MMP/tree/main" target="_blank"><b>ICML</b></a>, a multimodal model for survival outcome prediction. Work led by Andrew Song and Richard Chen. </li>
-          <li><b>April'24</b> New <a href="https://www.nature.com/articles/s41591-024-02885-z" target="_blank"><b>Nature Medicine</b></a> study on fairness in computational pathology. Work led by Anurag Vaidya, Richard Chen and Drew F.K. Williamson. </li>
-          <li><b>March'24</b> Announcing UNI published in <a href="https://www.nature.com/articles/s41591-024-02857-3" target="_blank"><b>Nature Medicine</b></a>, a generic-purpose foundation model for histology. Work led by Richard Chen.</li>
-          <li><b>March'24</b> Announcing CONCH published in <a href="https://www.nature.com/articles/s41591-024-02856-4" target="_blank"><b>Nature Medicine</b></a>, a visual-language model for histology. Work led by Ming Y. Lu.</li>
-          <li><b>Feb'24</b> Announcing TANGLE to appear at <a href="https://github.com/mahmoodlab/TANGLE" target="_blank"><b>CVPR</b></a>, a multimodal pretraining strategy for slide representation learning. Co-authored with Lukas Oldenburg.</li>
-          <li><b>Feb'24</b> Announcing SurvPath to appear at <a href="https://github.com/mahmoodlab/SurvPath" target="_blank"><b>CVPR</b></a>, multimodal model for survival outcome prediction. Co-authored with Anurag Vaidya.</li>
-          <li><b>Feb'24</b> Announcing PANTHER to appear at <a href="https://github.com/mahmoodlab/PANTHER" target="_blank"><b>CVPR</b></a>, a model for survival prediction. Work led by Andrew H. Song and Richard Chen.</li>
-          <li><b>June’23</b> New <a href="https://www.nature.com/articles/s44222-023-00096-8" target="_blank"><b>Nature Reviews Bioengineering</b></a> article on AI for digital and computational Pathology. Co-led with Andrew H. Song.</li>
-        </ul>
-      </div>
-    </div>
+    <!-- Main Content -->
+    {{ content }}
 
     <!-- Back to Top Button -->
     <button id="back-to-top">↑</button>
