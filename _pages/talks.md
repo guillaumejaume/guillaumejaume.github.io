@@ -9,12 +9,12 @@ permalink: /talks/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
 /* Hero section styling */
-.hero-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 25px 20px;
-  text-align: center;
-}
+  .hero-section {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+  }
 
 .hero-content {
   max-width: 1200px;
@@ -74,10 +74,10 @@ permalink: /talks/
   border: 2px solid transparent;
 }
 
-.hero-btn.primary {
-  background: white;
-  color: #667eea;
-}
+  .hero-btn.primary {
+    background: white;
+    color: #1e3a8a;
+  }
 
 .hero-btn.primary:hover {
   background: #f8f9fa;
@@ -90,11 +90,11 @@ permalink: /talks/
   border-color: white;
 }
 
-.hero-btn.secondary:hover {
-  background: white;
-  color: #667eea;
-  transform: translateY(-2px);
-}
+  .hero-btn.secondary:hover {
+    background: white;
+    color: #1e3a8a;
+    transform: translateY(-2px);
+  }
 
 .hero-image {
   display: flex;

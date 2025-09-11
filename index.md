@@ -16,12 +16,12 @@ body, html {
   color: #333;
 }
 
-.hero-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 25px 20px;
-  text-align: center;
-}
+  .hero-section {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+  }
 
 .hero-content {
   max-width: 1200px;
@@ -78,10 +78,10 @@ body, html {
   border: 2px solid transparent;
 }
 
-.hero-btn.primary {
-  background: white;
-  color: #667eea;
-}
+  .hero-btn.primary {
+    background: white;
+    color: #1e3a8a;
+  }
 
 .hero-btn.primary:hover {
   background: #f8f9fa;
@@ -94,11 +94,11 @@ body, html {
   border-color: white;
 }
 
-.hero-btn.secondary:hover {
-  background: white;
-  color: #667eea;
-  transform: translateY(-2px);
-}
+  .hero-btn.secondary:hover {
+    background: white;
+    color: #1e3a8a;
+    transform: translateY(-2px);
+  }
 
 .hero-image {
   display: flex;
@@ -196,28 +196,28 @@ body, html {
 }
 
 .main-content {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 8px 20px;
   display: grid;
-  grid-template-columns: 1fr 500px;
+  grid-template-columns: 1fr 400px;
   gap: 50px;
 }
 
 .about-section {
   background: white;
-  padding: 40px;
+  padding: 20px 40px;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   border: 1px solid #f0f0f0;
-  min-height: 300px;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .about-section h2 {
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
   color: #333;
   font-size: 1.8rem;
   border-bottom: 2px solid #007bff;
@@ -228,6 +228,7 @@ body, html {
   margin: 0 0 15px 0;
   line-height: 1.6;
   color: #555;
+  font-size: 0.9rem;
 }
 
 .about-section p:last-child {
@@ -236,19 +237,19 @@ body, html {
 
 .join-us-section {
   background: white;
-  padding: 30px;
+  padding: 15px 30px;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   border: 1px solid #f0f0f0;
-  margin-top: 20px;
+  margin-top: 8px;
   min-height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .join-us-section h2 {
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
   color: #333;
   font-size: 1.8rem;
   border-bottom: 2px solid #007bff;
@@ -256,13 +257,15 @@ body, html {
 }
 
 .join-us-section p {
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
   line-height: 1.6;
   color: #555;
+  font-size: 0.9rem;
 }
 
-.join-us-section p:last-child {
-  margin-bottom: 0;
+.join-us-section ul li {
+  margin-bottom: 6px;
+  line-height: 1.4;
 }
 
 .news-sidebar {
@@ -363,6 +366,7 @@ body, html {
   margin: 0;
   line-height: 1.5;
   color: #555;
+  font-size: 0.85rem;
 }
 
 .news-item a {
@@ -408,7 +412,7 @@ body, html {
   <div class="hero-content">
     <div class="hero-text">
       <h1 class="hero-title">Guillaume Jaume, Ph.D.</h1>
-      <p class="hero-subtitle">Postdoctoral Researcher at Harvard Medical School<br>Incoming Tenure-track Assistant Professor at The University of Lausanne</p>
+      <p class="hero-subtitle">Postdoctoral Researcher at <strong>Harvard Medical School</strong><br>Incoming Tenure-track Assistant Professor at <strong>The University of Lausanne</strong></p>
       <div class="hero-buttons">
         <a href="/" class="hero-btn primary">Home</a>
         <a href="/publications/" class="hero-btn secondary">Publications</a>
@@ -445,19 +449,32 @@ body, html {
   <div class="main-content-left">
     <section class="about-section">
       <h2>About</h2>
-      <p>Welcome to my academic website! I'm currently working at Harvard Medical School and Brigham and Women's Hospital in the group of <a href="https://faisal.ai/" target="_blank">Prof. Faisal Mahmood</a>, where I lead research projects in AI for pathology and oncology.</p>
-      <p>Starting in February 2026, I will join the <a href="https://www.unil.ch/dof/en/home.html" target="_blank">Department of Oncology</a> at the University of Lausanne as a Tenure-track Assistant Professor, with an affiliation to the <a href="https://www.chuv.ch/en/bdsc/" target="_blank">Biomedical Data Science Center</a> at the Lausanne University Hospital (CHUV).</p>
+      <p>The <strong>JaumeLab</strong> is launching in February 2026 at the <a href="https://www.unil.ch/dof/en/home.html" target="_blank">Department of Oncology</a> at the <strong>University of Lausanne (UNIL)</strong> and the <a href="https://www.chuv.ch/en/bdsc/" target="_blank">Biomedical Data Science Center at CHUV</a>.</p>
+      <p>We will work at the intersection of <em>artificial intelligence, pathology, and oncology</em>. Our research focuses on <strong>agentic AI, biomarker discovery, and multimodal learning </strong> for pathology.</p>
+      <p>We will keep <strong>strong ties</strong> to <strong>Harvard Medical School, Mass General Brigham, EPFL, and ETH Zurich</strong>.</p>
     </section>
     
     <section class="join-us-section">
       <h2>Join Us</h2>
-      <p>I will soon be looking for PhD students, postdocs, and interns to start in 2026 in Lausanne. Stay tuned for opportunities!</p>
+      <p>We are looking for <strong>PhD students, postdocs, and interns</strong> to build the next generation of AI for oncology and pathology. You will:</p>
+      <ul>
+        <li>Work on the <strong>latest AI research</strong> with <em>direct applications in cancer and medicine</em>.</li>
+        <li>Contribute to <strong>open science</strong> with <em>tools, software and AI models</em> that will shape the future of computational oncology.</li>
+        <li>Collaborate <strong>internationally</strong> with <em>leading institutions and labs</em>.</li>
+      </ul>
+      <p><em>We'd love to hear from you.</em></p>
+      <p><a href="https://docs.google.com/forms/d/1TQEHI8mXbt4kanYdh-j3UYgLLWpcZR8Cr3voVxDKmTQ/edit" target="_blank" style="background: #1e3a8a; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: 600; display: inline-block; margin-top: 10px;">Apply Now →</a></p>
     </section>
   </div>
 
   <aside class="news-sidebar">
-    <h3>Latest News</h3>
+    <h3>News</h3>
     <div class="news-content">
+        <div class="news-item featured red">
+          <span class="news-date">September'25</span>
+          <p><strong>ERC Starting Grant Awarded!</strong> We are honored to receive a €1.7M ERC Starting Grant to pursue five years of research on agentic AI and structure segmentation in pathology.</p>
+        </div>
+      
       <div class="news-item featured red">
         <span class="news-date">August'25</span>
         <p>Announcing <strong>KRONOS</strong>, a foundation model for spatial proteomics</p>
