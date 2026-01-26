@@ -438,7 +438,7 @@ permalink: /software/
         </a>
       </div>
       <div class="hero-email">
-        <a href="mailto:gjaume@bwh.harvard.edu">gjaume@bwh.harvard.edu</a>
+        <a href="mailto:guillaume.jaume@unil.ch">guillaume.jaume@unil.ch</a>
       </div>
     </div>
   </div>
