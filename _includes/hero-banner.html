@@ -1,0 +1,231 @@
+<!-- FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+.hero-section {
+  background: linear-gradient(to right, #2b3f73 0%, #1e3a8a 30%, #1e40af 50%, #e9eef7 80%, #ffffff 100%);
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  text-align: left;
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin: 0 0 12px 0;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.hero-btn.primary {
+  background: white;
+  color: #1e3a8a;
+}
+
+.hero-btn.primary:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+.hero-btn.secondary {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.hero-btn.secondary:hover {
+  background: white;
+  color: #1e3a8a;
+  transform: translateY(-2px);
+}
+
+.hero-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.hero-logo {
+  width: 240px;
+  height: 240px;
+  border-radius: 0;
+  object-fit: contain;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.hero-social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.hero-social-link:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.hero-social-link i {
+  font-size: 1.2rem;
+}
+
+.hero-social-link .fa-github { color: #333; }
+.hero-social-link .fa-graduation-cap { color: #4285f4; }
+.hero-social-link .fa-linkedin { color: #0077b5; }
+.hero-social-link .fa-x-twitter,
+.hero-social-link .x-logo { color: #000; }
+
+.x-logo {
+  width: 16px;
+  height: 16px;
+}
+
+.hero-email {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.hero-email a {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0.5px;
+}
+
+.hero-email a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+</style>
+
+{% assign is_home = false %}
+{% assign is_people = false %}
+{% assign is_publications = false %}
+{% assign is_software = false %}
+{% assign is_talks = false %}
+{% if page.url == '/' or page.url == '' or page.url == '/index.html' %}
+  {% assign is_home = true %}
+{% elsif page.url contains 'people' %}
+  {% assign is_people = true %}
+{% elsif page.url contains 'publications' %}
+  {% assign is_publications = true %}
+{% elsif page.url contains 'software' %}
+  {% assign is_software = true %}
+{% elsif page.url contains 'talks' %}
+  {% assign is_talks = true %}
+{% endif %}
+
+<div class="hero-section">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title"><a href="/" style="color: white; text-decoration: none;">Jaume Lab</a></h1>
+      <p class="hero-subtitle">AI for Oncologic Pathology. Agentic, multimodal and foundational.</p>
+      <div class="hero-buttons">
+        <a href="/" class="hero-btn {% if is_home %}primary{% else %}secondary{% endif %}">Home</a>
+        <a href="/people/" class="hero-btn {% if is_people %}primary{% else %}secondary{% endif %}">People</a>
+        <a href="/publications/" class="hero-btn {% if is_publications %}primary{% else %}secondary{% endif %}">Publications</a>
+        <a href="/software/" class="hero-btn {% if is_software %}primary{% else %}secondary{% endif %}">Software &amp; Datasets</a>
+        <a href="/talks/" class="hero-btn {% if is_talks %}primary{% else %}secondary{% endif %}">Talks</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="/assets/people/lab_logo.svg" alt="JaumeLab" class="profile-photo hero-logo">
+      <div class="hero-social-links">
+        <a href="https://github.com/guillaumejaume" target="_blank" class="hero-social-link"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/citations?user=am5XqsQAAAAJ&hl=en" target="_blank" class="hero-social-link"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://www.linkedin.com/in/guillaume-jaume-455169104/" target="_blank" class="hero-social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/GuillaumeJaume" target="_blank" class="hero-social-link">
+          <svg class="x-logo" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="hero-email">
+        <a href="mailto:guillaume.jaume@unil.ch">guillaume.jaume@unil.ch</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -4,201 +4,12 @@ title: "Guillaume Jaume, Ph.D."
 ---
 
 <style>
-/* FontAwesome CSS for icons */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
-
-/* Clean, simple landing page */
 body, html {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
   color: #333;
-}
-
-  .hero-section {
-    background: linear-gradient(to right, #1e3a8a 0%, #1e40af 45%, #3b82f6 55%, #ffffff 70%);
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-  }
-
-.hero-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.hero-text {
-  text-align: left;
-  flex: 1;
-}
-
-.hero-title {
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin: 0 0 12px 0;
-  line-height: 1.2;
-}
-
-.hero-subtitle {
-  font-size: 1.2rem;
-  margin: 0 0 12px 0;
-  opacity: 0.9;
-  font-weight: 500;
-}
-
-
-
-.hero-description {
-  font-size: 1.1rem;
-  margin: 0 0 25px 0;
-  opacity: 0.85;
-  line-height: 1.5;
-  max-width: 500px;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
-}
-
-.hero-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-  .hero-btn.primary {
-    background: white;
-    color: #1e3a8a;
-  }
-
-.hero-btn.primary:hover {
-  background: #f8f9fa;
-  transform: translateY(-2px);
-}
-
-.hero-btn.secondary {
-  background: transparent;
-  color: white;
-  border-color: white;
-}
-
-  .hero-btn.secondary:hover {
-    background: white;
-    color: #1e3a8a;
-    transform: translateY(-2px);
-  }
-
-.hero-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-.profile-photo {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid white;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-}
-
-.hero-logo {
-  object-fit: contain;
-  border: none;
-  background: transparent;
-  box-shadow: none;
-}
-
-.hero-social-links {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.hero-social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: white;
-  border-radius: 50%;
-  text-decoration: none;
-  color: #333;
-  border: 1px solid #e9ecef;
-  transition: all 0.3s ease;
-}
-
-.hero-social-link:hover {
-  background: #f8f9fa;
-  transform: translateY(-2px);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-
-.hero-social-link i {
-  font-size: 1.2rem;
-}
-
-/* Specific icon colors */
-.hero-social-link .fa-github {
-  color: #333;
-}
-
-.hero-social-link .fa-graduation-cap {
-  color: #4285f4;
-}
-
-.hero-social-link .fa-linkedin {
-  color: #0077b5;
-}
-
-.hero-social-link .fa-twitter {
-  color: #1da1f2;
-}
-
-.hero-social-link .fa-x-twitter {
-  color: #000000;
-}
-
-.x-logo {
-  width: 16px;
-  height: 16px;
-  color: #000000;
-}
-
-.hero-email {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.hero-email a {
-  color: #1e3a8a;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: opacity 0.3s ease;
-  font-family: 'Courier New', Courier, monospace;
-  letter-spacing: 0.5px;
-}
-
-.hero-email a:hover {
-  opacity: 1;
-  text-decoration: underline;
 }
 
 .main-content {
@@ -384,73 +195,16 @@ body, html {
   text-decoration: underline;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .hero-text {
-    text-align: center;
-  }
-  
   .main-content {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
   .news-sidebar {
     position: static;
   }
-  
-  .hero-title {
-    font-size: 2.2rem;
-  }
-  
-  .hero-buttons {
-    justify-content: center;
-  }
 }
 </style>
-
-<div class="hero-section">
-  <div class="hero-content">
-    <div class="hero-text">
-      <h1 class="hero-title">Jaume Lab</h1>
-      <p class="hero-subtitle">AI for Oncologic Pathology. Agentic, multimodal and foundational.</p>
-      <div class="hero-buttons">
-        <a href="/" class="hero-btn primary">Home</a>
-        <a href="/people/" class="hero-btn secondary">People</a>
-        <a href="/publications/" class="hero-btn secondary">Publications</a>
-        <a href="/software/" class="hero-btn secondary">Software & Datasets</a>
-        <a href="/talks/" class="hero-btn secondary">Talks</a>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="/assets/people/lab_logo.png" alt="JaumeLab" class="profile-photo hero-logo">
-      <div class="hero-social-links">
-        <a href="https://github.com/guillaumejaume" target="_blank" class="hero-social-link">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://scholar.google.com/citations?user=am5XqsQAAAAJ&hl=en" target="_blank" class="hero-social-link">
-          <i class="fas fa-graduation-cap"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/guillaume-jaume-455169104/" target="_blank" class="hero-social-link">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://twitter.com/GuillaumeJaume" target="_blank" class="hero-social-link">
-          <svg class="x-logo" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-          </svg>
-        </a>
-      </div>
-      <div class="hero-email">
-        <a href="mailto:guillaume.jaume@unil.ch">guillaume.jaume@unil.ch</a>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="main-content">
   <div class="main-content-left">
