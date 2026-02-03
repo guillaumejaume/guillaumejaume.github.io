@@ -17,7 +17,7 @@ body, html {
 }
 
   .hero-section {
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
+    background: linear-gradient(to right, #1e3a8a 0%, #1e40af 45%, #3b82f6 55%, #ffffff 70%);
     color: white;
     padding: 15px 20px;
     text-align: center;
@@ -116,6 +116,13 @@ body, html {
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
+.hero-logo {
+  object-fit: contain;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
 .hero-social-links {
   display: flex;
   gap: 15px;
@@ -180,11 +187,10 @@ body, html {
 }
 
 .hero-email a {
-  color: white;
+  color: #1e3a8a;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  opacity: 0.9;
   transition: opacity 0.3s ease;
   font-family: 'Courier New', Courier, monospace;
   letter-spacing: 0.5px;
@@ -411,17 +417,18 @@ body, html {
 <div class="hero-section">
   <div class="hero-content">
     <div class="hero-text">
-      <h1 class="hero-title">Guillaume Jaume, Ph.D.</h1>
-      <p class="hero-subtitle">Postdoctoral Researcher at <strong>Harvard Medical School</strong><br>Incoming Tenure-track Assistant Professor at <strong>The University of Lausanne</strong></p>
+      <h1 class="hero-title">Jaume Lab</h1>
+      <p class="hero-subtitle">AI for Oncologic Pathology. Agentic, multimodal and foundational.</p>
       <div class="hero-buttons">
         <a href="/" class="hero-btn primary">Home</a>
+        <a href="/people/" class="hero-btn secondary">People</a>
         <a href="/publications/" class="hero-btn secondary">Publications</a>
         <a href="/software/" class="hero-btn secondary">Software & Datasets</a>
         <a href="/talks/" class="hero-btn secondary">Talks</a>
       </div>
     </div>
     <div class="hero-image">
-      <img src="/images/dali.jpeg" alt="Guillaume Jaume" class="profile-photo">
+      <img src="/assets/people/lab_logo.png" alt="JaumeLab" class="profile-photo hero-logo">
       <div class="hero-social-links">
         <a href="https://github.com/guillaumejaume" target="_blank" class="hero-social-link">
           <i class="fab fa-github"></i>
@@ -449,9 +456,9 @@ body, html {
   <div class="main-content-left">
     <section class="about-section">
       <h2>About</h2>
-      <p>The <strong>JaumeLab</strong> is launching in February 2026 at the <a href="https://www.unil.ch/dof/en/home.html" target="_blank">Department of Oncology</a> at the <strong>University of Lausanne (UNIL)</strong> and the <a href="https://www.chuv.ch/en/bdsc/" target="_blank">Biomedical Data Science Center at CHUV</a>.</p>
-      <p>We will work at the intersection of <em>artificial intelligence, pathology, and oncology</em>. Our research focuses on <strong>agentic AI, biomarker discovery, and multimodal learning </strong> for pathology.</p>
-      <p>We will keep <strong>strong ties</strong> to <strong>Harvard Medical School, Mass General Brigham, EPFL, and ETH Zurich</strong>.</p>
+      <p>The <strong>JaumeLab</strong> is launching in February 2026 at the <a href="https://www.unil.ch/dof/en/home.html" target="_blank">Department of Oncology</a> at the <strong>University of Lausanne (UNIL)</strong>.</p>
+      <p>We work at the intersection of <em>artificial intelligence, pathology, and oncology</em>. Our research focuses on <strong>agentic AI, biomarker discovery, and multimodal learning </strong> for pathology.</p>
+      <p>We keep <strong>strong ties</strong> to <strong>Harvard Medical School, Mass General Brigham, EPFL, and ETH Zurich</strong>.</p>
     </section>
     
     <section class="join-us-section">
@@ -470,6 +477,17 @@ body, html {
   <aside class="news-sidebar">
     <h3>News</h3>
     <div class="news-content">
+      
+        <div class="news-item featured">
+          <span class="news-date">Feb'26</span>
+          <p><strong>Welcome Alexandre and Hong!</strong> Excited to welcome <strong>Alexandre de Skowronski</strong> and <strong>Hong Liu</strong> as the first members of the lab.</p>
+        </div>
+      
+        <div class="news-item featured red">
+          <span class="news-date">Feb'26</span>
+          <p><strong>The lab officially launches!</strong> Our lab is now officially starting!</p>
+        </div>
+            
         <div class="news-item featured red">
           <span class="news-date">September'25</span>
           <p><strong>ERC Starting Grant Awarded!</strong> We are honored to receive a €1.7M ERC Starting Grant to pursue five years of research on agentic AI and structure segmentation in pathology.</p>

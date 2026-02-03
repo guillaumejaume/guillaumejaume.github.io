@@ -10,7 +10,7 @@ permalink: /publications/
 
 /* Hero section styling */
   .hero-section {
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
+    background: linear-gradient(to right, #1e3a8a 0%, #1e40af 45%, #3b82f6 55%, #ffffff 70%);
     color: white;
     padding: 15px 20px;
     text-align: center;
@@ -112,6 +112,13 @@ permalink: /publications/
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
+.hero-logo {
+  object-fit: contain;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
 .hero-social-links {
   display: flex;
   gap: 15px;
@@ -172,11 +179,10 @@ permalink: /publications/
 }
 
 .hero-email a {
-  color: white;
+  color: #1e3a8a;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  opacity: 0.9;
   transition: opacity 0.3s ease;
   font-family: 'Courier New', Courier, monospace;
   letter-spacing: 0.5px;
@@ -374,17 +380,18 @@ permalink: /publications/
 <div class="hero-section">
   <div class="hero-content">
     <div class="hero-text">
-      <h1 class="hero-title"><a href="/" style="color: white; text-decoration: none;">Guillaume Jaume, Ph.D.</a></h1>
-      <p class="hero-subtitle">Postdoctoral Researcher at Harvard Medical School<br>Incoming Tenure-track Assistant Professor at The University of Lausanne</p>
+      <h1 class="hero-title"><a href="/" style="color: white; text-decoration: none;">Jaume Lab</a></h1>
+      <p class="hero-subtitle">AI for Oncologic Pathology. Agentic, multimodal and foundational.</p>
       <div class="hero-buttons">
         <a href="/" class="hero-btn secondary">Home</a>
+        <a href="/people/" class="hero-btn secondary">People</a>
         <a href="/publications/" class="hero-btn secondary">Publications</a>
         <a href="/software/" class="hero-btn secondary">Software & Datasets</a>
         <a href="/talks/" class="hero-btn secondary">Talks</a>
       </div>
     </div>
     <div class="hero-image">
-      <img src="/images/dali.jpeg" alt="Guillaume Jaume" class="profile-photo">
+      <img src="/assets/people/lab_logo.png" alt="JaumeLab" class="profile-photo hero-logo">
       <div class="hero-social-links">
         <a href="https://github.com/guillaumejaume" target="_blank" class="hero-social-link">
           <i class="fab fa-github"></i>
