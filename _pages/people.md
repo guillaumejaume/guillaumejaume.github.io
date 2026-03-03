@@ -184,6 +184,19 @@ permalink: /people/
         <a href="https://www.linkedin.com/in/hong-liu-708171293/" target="_blank" rel="noopener" class="person-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
+
+    <div class="person-card">
+      <img src="/assets/people/huaying.jpg" alt="Huaying Qiu" class="person-photo">
+      <div class="person-name">Huaying</div>
+      <div class="person-role">PhD Student</div>
+      <div class="person-background">
+        M.S. in Biostatistics from the University of North Carolina, code ninja, and manager of servers.
+      </div>
+      <div class="person-social-links">
+        <a href="https://scholar.google.com/citations?user=c06Hqp8AAAAJ&hl=en" target="_blank" rel="noopener" class="person-social-link" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://www.linkedin.com/in/huayingq/" target="_blank" rel="noopener" class="person-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
   </div>
 </div>
 
