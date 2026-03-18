@@ -81,6 +81,7 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  overflow: visible;
 }
 
 .profile-photo {
@@ -93,8 +94,11 @@
 }
 
 .hero-logo {
-  width: 170px;
+  width: auto;
   height: 170px;
+  max-height: none;
+  display: block;
+  margin-bottom: 4px;
   border-radius: 0;
   object-fit: contain;
   border: none;
@@ -212,7 +216,7 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="/assets/people/jaumelab_logo_dark_bg.png" alt="JaumeLab" class="profile-photo hero-logo">
+      <img src="/assets/people/jaumelab_logo_v2_dark.png" alt="JaumeLab" class="hero-logo">
       <div class="hero-social-links">
         <a href="https://github.com/guillaumejaume" target="_blank" class="hero-social-link"><i class="fab fa-github"></i></a>
         <a href="https://scholar.google.com/citations?user=am5XqsQAAAAJ&hl=en" target="_blank" class="hero-social-link"><i class="fas fa-graduation-cap"></i></a>
