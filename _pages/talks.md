@@ -3,322 +3,182 @@ layout: default
 title: "Communication"
 permalink: /talks/
 ---
-
 <style>
 .page-content {
-  max-width: 1350px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-.page-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 30px;
-  text-align: center;
-  border-bottom: 3px solid #667eea;
-  padding-bottom: 15px;
-}
-
-.talks-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.talk-card {
+.talks-table-wrap {
   background: white;
   border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   border: 1px solid #f0f0f0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
-.talk-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+.talks-table-scroll {
+  overflow-x: auto;
 }
 
-.talk-type {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
+.talks-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 820px;
+}
+
+.talks-table thead th {
+  background: #f6f8fc;
+  color: #374151;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  font-weight: 700;
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-.talk-type.conference {
-  background: #e3f2fd;
-  color: #1976d2;
+.talks-table tbody tr {
+  border-bottom: 1px solid #eef1f5;
 }
 
-.talk-type.workshop {
-  background: #f3e5f5;
-  color: #7b1fa2;
+.talks-table tbody tr:nth-child(even) {
+  background: #fbfcfe;
 }
 
-.talk-type.invited {
-  background: #e3f2fd;
-  color: #1976d2;
+.talks-table tbody tr:hover {
+  background: #f3f7ff;
 }
 
-.talk-type.keynote {
-  background: #fff3e0;
-  color: #f57c00;
-}
-
-.talk-type.internal {
-  background: #f3e5f5;
-  color: #7b1fa2;
-}
-
-.talk-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
-  line-height: 1.4;
-}
-
-.talk-venue {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 8px;
-  font-weight: 500;
+.talks-table td {
+  vertical-align: top;
+  padding: 14px 16px;
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.45;
 }
 
 .talk-date {
-  font-size: 0.9rem;
-  color: #888;
-  margin-bottom: 15px;
+  white-space: nowrap;
+  font-weight: 600;
+  color: #4b5563;
 }
 
-.talk-description {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 20px;
+.talk-title-cell {
+  font-weight: 600;
+  color: #111827;
+  max-width: 460px;
+  line-height: 1.4;
 }
 
-.talk-links {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.talk-link {
-  display: inline-block;
-  padding: 8px 16px;
-  background: #667eea;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 0.9rem;
+.talk-venue-cell {
+  color: #4b5563;
   font-weight: 500;
-  transition: background 0.3s ease;
+  max-width: 320px;
 }
 
-.talk-link:hover {
-  background: #5a6fd8;
+.talk-location-cell {
+  color: #6b7280;
+  max-width: 240px;
 }
 
+/* Dates use: DD Mon YYYY when exact day is known, otherwise Mon YYYY. */
 @media (max-width: 768px) {
-  .talks-grid {
-    grid-template-columns: 1fr;
+  .page-content {
+    padding: 24px 12px;
+  }
+
+  .talks-table {
+    min-width: unset;
+    border-collapse: separate;
+  }
+
+  .talks-table thead {
+    display: none;
+  }
+
+  .talks-table tbody tr {
+    display: block;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+    padding: 8px 0;
+    background: white;
+  }
+
+  .talks-table tbody tr:nth-child(even) {
+    background: white;
+  }
+
+  .talks-table td {
+    display: block;
+    border: none;
+    padding: 6px 12px;
+  }
+
+  .talks-table td::before {
+    display: block;
+    content: attr(data-label);
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6b7280;
+    margin-bottom: 3px;
   }
 }
 </style>
 
 <div class="page-content">
-  
-  <div class="talks-grid">
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Toward Generalist AI Models in Pathology</h3>
-      <p class="talk-venue">AbbVie, Chicago</p>
-      <p class="talk-date">May 2025</p>
-      <p class="talk-description">Invited by Dr. Sara Yarmohammadi</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Toward Generalist AI Models in Pathology</h3>
-      <p class="talk-venue">Microsoft Research, Boston</p>
-      <p class="talk-date">April 2025</p>
-      <p class="talk-description">Invited by Dr. Kristen Severson</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Advancing Translational Research with AI in Oncologic Pathology</h3>
-      <p class="talk-venue">CRUK, University of Cambridge</p>
-      <p class="talk-date">March 2025</p>
-      <p class="talk-description">Invited by Prof. Florian Markowetz</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">AI for Computational Toxicologic Pathology</h3>
-      <p class="talk-venue">Novartis, Boston</p>
-      <p class="talk-date">March 2025</p>
-      <p class="talk-description">Invited by the Digital Pathology and Image Analysis Interest Group</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Bringing Spatial Transcriptomics into The World of Deep Learning</h3>
-      <p class="talk-venue">University of Sydney</p>
-      <p class="talk-date">March 2025</p>
-      <p class="talk-description">Invited by SPDS Statistical Bioinformatics Seminar</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Scaling Spatial Transcriptomics and Histology with HEST</h3>
-      <p class="talk-venue">Owkin, Paris</p>
-      <p class="talk-date">December 2024</p>
-      <p class="talk-description">Invited by Alexandre Filliot</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">AI for Preclinical Drug Safety Assessment</h3>
-      <p class="talk-venue">Roche, Basel</p>
-      <p class="talk-date">November 2024</p>
-      <p class="talk-description">Invited by Dr. Kevin Thandiackal</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Multimodal Representation Learning in AI for Pathology</h3>
-      <p class="talk-venue">Lunit, Seoul</p>
-      <p class="talk-date">September 2024</p>
-      <p class="talk-description">Invited by Dr. Sergio Pereira</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">3D Computational Pathology: Towards Enhanced Patient Prognostication</h3>
-      <p class="talk-venue">UniBe, Bern</p>
-      <p class="talk-date">May 2024</p>
-      <p class="talk-description">Invited by Prof. Inti Zlobek</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Towards General-Purpose AI Models for Histology</h3>
-      <p class="talk-venue">CHUV, Lausanne</p>
-      <p class="talk-date">May 2024</p>
-      <p class="talk-description">Invited by Prof. Raphael Gottardo</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type keynote">Keynote</span>
-      <h3 class="talk-title">Deep Learning for Pathology Image Analysis</h3>
-      <p class="talk-venue">PariSanté Campus, Paris</p>
-      <p class="talk-date">July 2023</p>
-      <p class="talk-description">Keynote speaker, AI4Health Summer School</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Latest trends in Computational Pathology</h3>
-      <p class="talk-venue">University of Bern, Bern</p>
-      <p class="talk-date">July 2023</p>
-      <p class="talk-description">Invited by Prof. Inti Zlobek</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">A Tour of Computational Pathology: Methods and Applications</h3>
-      <p class="talk-venue">UC Berkeley, Berkeley</p>
-      <p class="talk-date">November 2022</p>
-      <p class="talk-description">Invited by Prof. Iain Carmichael</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Interpretable Deep Learning in Computational Pathology</h3>
-      <p class="talk-venue">Dana-Farber Cancer Institute, Boston</p>
-      <p class="talk-date">September 2022</p>
-      <p class="talk-description">Invited by Prof. Eliezer Van Allen</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Graph Representation Learning in Computational Pathology</h3>
-      <p class="talk-venue">Symposium on DigPath in the DACH Region, Bern</p>
-      <p class="talk-date">February 2022</p>
-      <p class="talk-description">Invited by Prof. Inti Zlobek</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">HistoCartography: Graph representations and models in Computational Pathology</h3>
-      <p class="talk-venue">Tissue Image Analytics Centre, Warwick</p>
-      <p class="talk-date">October 2021</p>
-      <p class="talk-description">Invited by Prof. Nasir Rajpoot</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Graph Representations and Models in Digital Pathology</h3>
-      <p class="talk-venue">Charité University Hospital, Berlin</p>
-      <p class="talk-date">October 2021</p>
-      <p class="talk-description"></p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Weakly-Supervised Learning for Whole-Slide-Image Segmentation</h3>
-      <p class="talk-venue">PathAI, New York</p>
-      <p class="talk-date">July 2021</p>
-      <p class="talk-description"></p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">A Graph Network Tour of Computational Pathology</h3>
-      <p class="talk-venue">Harvard Medical School, Boston</p>
-      <p class="talk-date">July 2021</p>
-      <p class="talk-description">Invited by Prof. Faisal Mahmood</p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Computational Pathology: Building Interpretable AI at Scale</h3>
-      <p class="talk-venue">Lausanne University Hospital (CHUV), Lausanne</p>
-      <p class="talk-date">May 2021</p>
-      <p class="talk-description"></p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Graph Representation Learning & Explainability in Computational Pathology</h3>
-      <p class="talk-venue">Swiss Digital Pathology Consortium (SDiPath), Bern</p>
-      <p class="talk-date">January 2021</p>
-      <p class="talk-description"></p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type invited">Invited Talk</span>
-      <h3 class="talk-title">Deep Learning on Graphs: An Overview</h3>
-      <p class="talk-venue">Computer Research Institute of Montreal (CRIM), Montreal</p>
-      <p class="talk-date">November 2020</p>
-      <p class="talk-description"></p>
-    </div>
-
-    <div class="talk-card">
-      <span class="talk-type internal">Internal Talks</span>
-      <h3 class="talk-title">10+ internal talks at IBM</h3>
-      <p class="talk-venue">IBM Research, IBM Watson, IBM Global Business Services</p>
-      <p class="talk-date">2019-2021</p>
-      <p class="talk-description">Various internal presentations across IBM divisions</p>
+  <div class="talks-table-wrap">
+    <div class="talks-table-scroll">
+      <table class="talks-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Title</th>
+            <th>Venue</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td data-label="Date" class="talk-date">19 Nov 2026</td><td data-label="Title" class="talk-title-cell">New Directions in AI for Pathology &amp; Oncology</td><td data-label="Venue" class="talk-venue-cell">CompBio Seminar</td><td data-label="Location" class="talk-location-cell">🇨🇭 Lausanne, Switzerland</td></tr>
+          <tr><td data-label="Date" class="talk-date">18 Nov 2026</td><td data-label="Title" class="talk-title-cell">AI Agents in Pathology</td><td data-label="Venue" class="talk-venue-cell">ESMO AI</td><td data-label="Location" class="talk-location-cell">🇩🇪 Berlin, Germany</td></tr>
+          <tr><td data-label="Date" class="talk-date">19 Jun 2026</td><td data-label="Title" class="talk-title-cell">Agentic AI in Pathology</td><td data-label="Venue" class="talk-venue-cell">European Conference on Digital Pathology</td><td data-label="Location" class="talk-location-cell">🇦🇹 Graz, Austria</td></tr>
+          <tr><td data-label="Date" class="talk-date">08 Jun 2026</td><td data-label="Title" class="talk-title-cell">Multimodal Foundation Modeling in Pathology</td><td data-label="Venue" class="talk-venue-cell">AI x Bio Conference</td><td data-label="Location" class="talk-location-cell">🇬🇧 Cambridge, UK</td></tr>
+          <tr><td data-label="Date" class="talk-date">21 May 2026</td><td data-label="Title" class="talk-title-cell">AI Foundation Modeling for Oncologic Pathology</td><td data-label="Venue" class="talk-venue-cell">LBiBER Seminar Series</td><td data-label="Location" class="talk-location-cell">🇨🇭 Basel, Switzerland</td></tr>
+          <tr><td data-label="Date" class="talk-date">07 May 2026</td><td data-label="Title" class="talk-title-cell">Towards Robust AI Models in Pathology</td><td data-label="Venue" class="talk-venue-cell">ESAC Meeting</td><td data-label="Location" class="talk-location-cell">🇮🇹 Milan, Italy</td></tr>
+          <tr><td data-label="Date" class="talk-date">17 Mar 2026</td><td data-label="Title" class="talk-title-cell">AI Foundational Modeling in Pathology</td><td data-label="Venue" class="talk-venue-cell">CompBio Meeting, EPFL</td><td data-label="Location" class="talk-location-cell">🇨🇭 Lausanne, Switzerland</td></tr>
+          <tr><td data-label="Date" class="talk-date">26 Feb 2026</td><td data-label="Title" class="talk-title-cell">An Introduction to AI in Pathology</td><td data-label="Venue" class="talk-venue-cell">Computational Pathology School, MedUni Vienna</td><td data-label="Location" class="talk-location-cell">🇦🇹 Vienna, Austria</td></tr>
+          <tr><td data-label="Date" class="talk-date">05 Nov 2026</td><td data-label="Title" class="talk-title-cell">Towards Generalist AI Models in Pathology</td><td data-label="Venue" class="talk-venue-cell">SKKU Seminar</td><td data-label="Location" class="talk-location-cell">💻 Virtual</td></tr>
+          <tr><td data-label="Date" class="talk-date">May 2025</td><td data-label="Title" class="talk-title-cell">Toward Generalist AI Models in Pathology</td><td data-label="Venue" class="talk-venue-cell">AbbVie</td><td data-label="Location" class="talk-location-cell">💻 Virtual</td></tr>
+          <tr><td data-label="Date" class="talk-date">Apr 2025</td><td data-label="Title" class="talk-title-cell">Toward Generalist AI Models in Pathology</td><td data-label="Venue" class="talk-venue-cell">Microsoft Research</td><td data-label="Location" class="talk-location-cell">🇺🇸 Boston, USA</td></tr>
+          <tr><td data-label="Date" class="talk-date">Mar 2025</td><td data-label="Title" class="talk-title-cell">Advancing Translational Research with AI in Oncologic Pathology</td><td data-label="Venue" class="talk-venue-cell">CRUK, University of Cambridge</td><td data-label="Location" class="talk-location-cell">🇬🇧 Cambridge, UK</td></tr>
+          <tr><td data-label="Date" class="talk-date">Mar 2025</td><td data-label="Title" class="talk-title-cell">AI for Computational Toxicologic Pathology</td><td data-label="Venue" class="talk-venue-cell">Novartis</td><td data-label="Location" class="talk-location-cell">🇺🇸 Boston, USA</td></tr>
+          <tr><td data-label="Date" class="talk-date">Mar 2025</td><td data-label="Title" class="talk-title-cell">Bringing Spatial Transcriptomics into The World of Deep Learning</td><td data-label="Venue" class="talk-venue-cell">University of Sydney</td><td data-label="Location" class="talk-location-cell">💻 Virtual</td></tr>
+          <tr><td data-label="Date" class="talk-date">Dec 2024</td><td data-label="Title" class="talk-title-cell">Scaling Spatial Transcriptomics and Histology with HEST</td><td data-label="Venue" class="talk-venue-cell">Owkin</td><td data-label="Location" class="talk-location-cell">🇫🇷 Paris, France</td></tr>
+          <tr><td data-label="Date" class="talk-date">Nov 2024</td><td data-label="Title" class="talk-title-cell">AI for Preclinical Drug Safety Assessment</td><td data-label="Venue" class="talk-venue-cell">Roche</td><td data-label="Location" class="talk-location-cell">💻 Virtual</td></tr>
+          <tr><td data-label="Date" class="talk-date">Sep 2024</td><td data-label="Title" class="talk-title-cell">Multimodal Representation Learning in AI for Pathology</td><td data-label="Venue" class="talk-venue-cell">Lunit</td><td data-label="Location" class="talk-location-cell">💻 Virtual</td></tr>
+          <tr><td data-label="Date" class="talk-date">May 2024</td><td data-label="Title" class="talk-title-cell">3D Computational Pathology: Towards Enhanced Patient Prognostication</td><td data-label="Venue" class="talk-venue-cell">UniBe</td><td data-label="Location" class="talk-location-cell">🇨🇭 Bern, Switzerland</td></tr>
+          <tr><td data-label="Date" class="talk-date">May 2024</td><td data-label="Title" class="talk-title-cell">Towards General-Purpose AI Models for Histology</td><td data-label="Venue" class="talk-venue-cell">CHUV</td><td data-label="Location" class="talk-location-cell">🇨🇭 Lausanne, Switzerland</td></tr>
+          <tr><td data-label="Date" class="talk-date">Jul 2023</td><td data-label="Title" class="talk-title-cell">Deep Learning for Pathology Image Analysis</td><td data-label="Venue" class="talk-venue-cell">PariSanté Campus</td><td data-label="Location" class="talk-location-cell">🇫🇷 Paris, France</td></tr>
+          <tr><td data-label="Date" class="talk-date">Jul 2023</td><td data-label="Title" class="talk-title-cell">Latest trends in Computational Pathology</td><td data-label="Venue" class="talk-venue-cell">University of Bern</td><td data-label="Location" class="talk-location-cell">🇨🇭 Bern, Switzerland</td></tr>
+          <tr><td data-label="Date" class="talk-date">Nov 2022</td><td data-label="Title" class="talk-title-cell">A Tour of Computational Pathology: Methods and Applications</td><td data-label="Venue" class="talk-venue-cell">UC Berkeley</td><td data-label="Location" class="talk-location-cell">💻 Virtual</td></tr>
+          <tr><td data-label="Date" class="talk-date">Sep 2022</td><td data-label="Title" class="talk-title-cell">Interpretable Deep Learning in Computational Pathology</td><td data-label="Venue" class="talk-venue-cell">Dana-Farber Cancer Institute</td><td data-label="Location" class="talk-location-cell">🇺🇸 Boston, USA</td></tr>
+          <tr><td data-label="Date" class="talk-date">Feb 2022</td><td data-label="Title" class="talk-title-cell">Graph Representation Learning in Computational Pathology</td><td data-label="Venue" class="talk-venue-cell">Symposium on DigPath in the DACH Region</td><td data-label="Location" class="talk-location-cell">🇨🇭 Bern, Switzerland</td></tr>
+          <tr><td data-label="Date" class="talk-date">Oct 2021</td><td data-label="Title" class="talk-title-cell">HistoCartography: Graph representations and models in Computational Pathology</td><td data-label="Venue" class="talk-venue-cell">Tissue Image Analytics Centre</td><td data-label="Location" class="talk-location-cell">🇬🇧 Warwick, UK</td></tr>
+          <tr><td data-label="Date" class="talk-date">Oct 2021</td><td data-label="Title" class="talk-title-cell">Graph Representations and Models in Digital Pathology</td><td data-label="Venue" class="talk-venue-cell">Charité University Hospital</td><td data-label="Location" class="talk-location-cell">💻 Virtual</td></tr>
+          <tr><td data-label="Date" class="talk-date">Jul 2021</td><td data-label="Title" class="talk-title-cell">Weakly-Supervised Learning for Whole-Slide-Image Segmentation</td><td data-label="Venue" class="talk-venue-cell">PathAI</td><td data-label="Location" class="talk-location-cell">💻 Virtual</td></tr>
+          <tr><td data-label="Date" class="talk-date">Jul 2021</td><td data-label="Title" class="talk-title-cell">A Graph Network Tour of Computational Pathology</td><td data-label="Venue" class="talk-venue-cell">Harvard Medical School</td><td data-label="Location" class="talk-location-cell">💻 Virtual</td></tr>
+          <tr><td data-label="Date" class="talk-date">May 2021</td><td data-label="Title" class="talk-title-cell">Computational Pathology: Building Interpretable AI at Scale</td><td data-label="Venue" class="talk-venue-cell">Lausanne University Hospital (CHUV)</td><td data-label="Location" class="talk-location-cell">🇨🇭 Lausanne, Switzerland</td></tr>
+          <tr><td data-label="Date" class="talk-date">Jan 2021</td><td data-label="Title" class="talk-title-cell">Graph Representation Learning &amp; Explainability in Computational Pathology</td><td data-label="Venue" class="talk-venue-cell">Swiss Digital Pathology Consortium (SDiPath)</td><td data-label="Location" class="talk-location-cell">💻 Virtual</td></tr>
+          <tr><td data-label="Date" class="talk-date">Nov 2020</td><td data-label="Title" class="talk-title-cell">Deep Learning on Graphs: An Overview</td><td data-label="Venue" class="talk-venue-cell">Computer Research Institute of Montreal (CRIM)</td><td data-label="Location" class="talk-location-cell">💻 Virtual</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

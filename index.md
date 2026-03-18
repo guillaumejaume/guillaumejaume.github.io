@@ -233,6 +233,11 @@ body, html {
     <div class="news-content">
       
         <div class="news-item featured">
+          <span class="news-date">March'26</span>
+          <p><strong>Welcome Huaying Qiu!</strong> Excited to welcome <strong>Huaying Qiu</strong> as the first PhD student of the lab.</p>
+        </div>
+
+        <div class="news-item featured">
           <span class="news-date">Feb'26</span>
           <p><strong>Welcome Alexandre and Hong!</strong> Excited to welcome <strong>Alexandre de Skowronski</strong> and <strong>Hong Liu</strong> as the first members of the lab.</p>
         </div>
