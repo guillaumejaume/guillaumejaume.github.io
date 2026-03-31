@@ -23,10 +23,10 @@ body, html {
 
 .about-section {
   background: white;
-  padding: 20px 40px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  border: 1px solid #f0f0f0;
+  padding: 18px 28px;
+  border-radius: 4px;
+  box-shadow: none;
+  border: 1px solid #e5e7eb;
   min-height: 250px;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@ body, html {
   margin: 0 0 15px 0;
   color: #333;
   font-size: 1.8rem;
-  border-bottom: 2px solid #007bff;
+  border-bottom: 1px solid #e5e7eb;
   padding-bottom: 10px;
 }
 
@@ -45,7 +45,7 @@ body, html {
   margin: 0 0 15px 0;
   line-height: 1.6;
   color: #555;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .about-section p:last-child {
@@ -54,10 +54,10 @@ body, html {
 
 .join-us-section {
   background: white;
-  padding: 15px 30px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  border: 1px solid #f0f0f0;
+  padding: 16px 26px;
+  border-radius: 4px;
+  box-shadow: none;
+  border: 1px solid #e5e7eb;
   margin-top: 8px;
   min-height: 200px;
   display: flex;
@@ -69,7 +69,7 @@ body, html {
   margin: 0 0 15px 0;
   color: #333;
   font-size: 1.8rem;
-  border-bottom: 2px solid #007bff;
+  border-bottom: 1px solid #e5e7eb;
   padding-bottom: 10px;
 }
 
@@ -77,7 +77,7 @@ body, html {
   margin: 0 0 10px 0;
   line-height: 1.6;
   color: #555;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
 }
 
 .join-us-section ul li {
@@ -88,10 +88,10 @@ body, html {
 .news-sidebar {
   background: white;
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  border: 1px solid #f0f0f0;
-  height: 600px;
+  border-radius: 4px;
+  box-shadow: none;
+  border: 1px solid #e5e7eb;
+  height: 560px;
   position: sticky;
   top: 20px;
   overflow: hidden;
@@ -127,7 +127,7 @@ body, html {
   margin: 0 0 20px 0;
   color: #333;
   font-size: 1.5rem;
-  border-bottom: 2px solid #007bff;
+  border-bottom: 1px solid #d1d5db;
   padding-bottom: 10px;
 }
 
@@ -143,13 +143,12 @@ body, html {
 .news-item.featured {
   background: white;
   padding: 12px;
-  border-radius: 8px;
+  border-radius: 3px;
   margin-bottom: 12px;
 }
 
-.news-item.featured.red {
-  background: #fff5f5;
-  border-left: 4px solid #e74c3c;
+.news-item.featured.important {
+  background: rgba(248, 113, 113, 0.08);
 }
 
 .badge {
@@ -162,12 +161,12 @@ body, html {
 }
 
 .badge.spotlight {
-  background: #e74c3c;
+  background: #dc2626;
   color: white;
 }
 
 .badge.oral {
-  background: #27ae60;
+  background: #16a34a;
   color: white;
 }
 
@@ -247,23 +246,23 @@ body, html {
           <p><strong>Welcome Alexandre and Hong!</strong> Excited to welcome <strong>Alexandre de Skowronski</strong> and <strong>Hong Liu</strong> as the first members of the lab.</p>
         </div>
       
-        <div class="news-item featured red">
+        <div class="news-item featured important">
           <span class="news-date">Feb'26</span>
           <p><strong>The lab officially launches!</strong> Our lab is now officially starting!</p>
         </div>
             
-        <div class="news-item featured red">
+        <div class="news-item featured important">
           <span class="news-date">September'25</span>
           <p><strong>ERC Starting Grant Awarded!</strong> We are honored to receive a €1.7M ERC Starting Grant to pursue five years of research on agentic AI and structure segmentation in pathology.</p>
         </div>
       
-      <div class="news-item featured red">
+      <div class="news-item featured important">
         <span class="news-date">August'25</span>
         <p>Announcing <strong>KRONOS</strong>, a foundation model for spatial proteomics</p>
         <p><a href="https://arxiv.org/abs/2506.03373" target="_blank">Preprint</a> | <a href="https://github.com/mahmoodlab/KRONOS/" target="_blank">Code</a> | <a href="https://huggingface.co/MahmoodLab/KRONOS" target="_blank">Model</a></p>
       </div>
       
-      <div class="news-item featured red">
+      <div class="news-item featured important">
         <span class="news-date">April'25</span>
         <p><strong>TRIDENT</strong> is out! Checkout our latest library for processing whole-slide images with foundation models!</p>
         <p><a href="https://github.com/mahmoodlab/trident" target="_blank">Code</a></p>
@@ -287,7 +286,7 @@ body, html {
         <p><a href="https://arxiv.org/abs/2506.20964" target="_blank">Preprint</a></p>
       </div>
       
-      <div class="news-item featured red">
+      <div class="news-item featured important">
         <span class="news-date">Oct'24</span>
         <p><strong>HEST</strong> to appear at <a href="https://github.com/mahmoodlab/HEST" target="_blank"><strong>NeurIPS</strong></a> will be a <span class="badge spotlight">Spotlight</span> (top 2.0% of submissions).</p>
       </div>
@@ -312,7 +311,7 @@ body, html {
         <p>Announcing <strong>TriPath</strong> published in <a href="https://www.cell.com/cell/abstract/S0092-8674(24)00351-9" target="_blank"><strong>Cell</strong></a>, the first deep learning framework for 3D pathology.</p>
       </div>
       
-      <div class="news-item featured red">
+      <div class="news-item featured important">
         <span class="news-date">May'24</span>
         <p><strong>TANGLE</strong> to appear at <a href="https://github.com/mahmoodlab/TANGLE" target="_blank"><strong>CVPR</strong></a> will be an <span class="badge oral">Oral</span> (top 0.7% of submissions).</p>
       </div>
