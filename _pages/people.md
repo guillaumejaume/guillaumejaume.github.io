@@ -197,6 +197,16 @@ permalink: /people/
         <a href="https://www.linkedin.com/in/huayingq/" target="_blank" rel="noopener" class="person-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
+
+    <div class="person-card">
+      <img src="/assets/people/augustin.jpeg" alt="Augustin" class="person-photo">
+      <div class="person-name">Augustin</div>
+      <div class="person-role">Master's Thesis Student</div>
+      <div class="person-affiliation">TU Berlin</div>
+      <div class="person-background">
+        M.Sc. student in Computer Science.
+      </div>
+    </div>
   </div>
 </div>
 
