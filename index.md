@@ -232,6 +232,16 @@ body, html {
     <div class="news-content">
       
         <div class="news-item featured">
+          <span class="news-date">May'26</span>
+          <p><strong>Congratulations Hong Liu!</strong> <strong>Hong Liu</strong> received the <strong>Best Poster Award</strong> at <a href="https://www.linkedin.com/feed/update/urn:li:activity:7458068931849728000/" target="_blank">The 2nd Symposium on AI for Clinical and Translational Medicine</a> in Lausanne.</p>
+        </div>
+
+        <div class="news-item featured">
+          <span class="news-date">May'26</span>
+          <p>New editorial published in <a href="https://www.annalsofoncology.org/article/S0923-7534(26)00107-9/fulltext" target="_blank"><strong>Annals of Oncology</strong></a>: <strong>Foundation models in pathology and the challenge of clinical time</strong>.</p>
+        </div>
+
+        <div class="news-item featured">
           <span class="news-date">April'26</span>
           <p><strong>Welcome Augustin Krause!</strong> Excited to welcome <strong>Augustin Krause</strong> for his master's thesis with the lab.</p>
         </div>

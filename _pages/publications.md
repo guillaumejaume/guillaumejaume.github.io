@@ -176,11 +176,39 @@ permalink: /publications/
         </thead>
         <tbody>
           <tr>
+            <td data-label="Year" class="pub-year">2026</td>
+            <td data-label="Type" class="pub-type"><span class="type-badge review">Editorial</span></td>
+            <td data-label="Title" class="pub-title"><a class="pub-link" href="https://www.annalsofoncology.org/article/S0923-7534(26)00107-9/fulltext" target="_blank">Foundation models in pathology and the challenge of clinical time</a></td>
+            <td data-label="Authors" class="pub-authors">Guillaume Jaume</td>
+            <td data-label="Venue / Status" class="pub-venue">Annals of Oncology</td>
+          </tr>
+          <tr>
+            <td data-label="Year" class="pub-year">2026</td>
+            <td data-label="Type" class="pub-type"><span class="type-badge preprint">Preprint</span></td>
+            <td data-label="Title" class="pub-title"><a class="pub-link" href="https://arxiv.org/abs/2602.14177" target="_blank">Towards Spatial Transcriptomics-driven Pathology Foundation Models</a></td>
+            <td data-label="Authors" class="pub-authors">Konstantin Hemker; Andrew H. Song; Cristina Almagro-Pérez; Guillaume Jaume; Sophia J. Wagner; Anurag Vaidya, et al.</td>
+            <td data-label="Venue / Status" class="pub-venue">Preprint</td>
+          </tr>
+          <tr>
             <td data-label="Year" class="pub-year">2025</td>
-            <td data-label="Type" class="pub-type"><span class="type-badge journal">Journal</span></td>
-            <td data-label="Title" class="pub-title"><a class="pub-link" href="https://arxiv.org/abs/2411.19666" target="_blank">Molecular-driven Foundation Model for Oncologic Pathology</a></td>
-            <td data-label="Authors" class="pub-authors">Anurag Vaidya*; Andrew Zhang*; Guillaume Jaume*; Andrew H. Song; Tong Ding; Sophia J. Wagner, et al.</td>
-            <td data-label="Venue / Status" class="pub-venue">In Press</td>
+            <td data-label="Type" class="pub-type"><span class="type-badge conference">Conference (Oral)</span></td>
+            <td data-label="Title" class="pub-title"><a class="pub-link" href="#" target="_blank">BKVision: Automated Detection and Morphological Analysis of BK Virus in Renal Transplant Biopsies</a></td>
+            <td data-label="Authors" class="pub-authors">Sharifa Sahai; Ana D. Ramos-Guerra; Cristina Almagro-Pérez; Guillaume Jaume; Andrew Zhang; Helmut Rennke, et al.</td>
+            <td data-label="Venue / Status" class="pub-venue">MICCAI</td>
+          </tr>
+          <tr>
+            <td data-label="Year" class="pub-year">2025</td>
+            <td data-label="Type" class="pub-type"><span class="type-badge preprint">Preprint</span></td>
+            <td data-label="Title" class="pub-title"><a class="pub-link" href="https://arxiv.org/abs/2506.20964" target="_blank">Evidence-based diagnostic reasoning with multi-agent copilot for human pathology</a></td>
+            <td data-label="Authors" class="pub-authors">Luca L. Weishaupt; Chengkuan Chen; Drew F. K. Williamson; Richard J. Chen; Guillaume Jaume; Tong Ding, et al.</td>
+            <td data-label="Venue / Status" class="pub-venue">Preprint</td>
+          </tr>
+          <tr>
+            <td data-label="Year" class="pub-year">2025</td>
+            <td data-label="Type" class="pub-type"><span class="type-badge preprint">In Review</span></td>
+            <td data-label="Title" class="pub-title"><a class="pub-link" href="https://arxiv.org/abs/2506.03373" target="_blank">A Foundation Model for Spatial Proteomics</a></td>
+            <td data-label="Authors" class="pub-authors">Muhammad Shaban; Yuzhou Chang; Huaying Qiu; Yao Yu Yeo; Andrew H. Song; Guillaume Jaume, et al.</td>
+            <td data-label="Venue / Status" class="pub-venue">In Review</td>
           </tr>
           <tr>
             <td data-label="Year" class="pub-year">2025</td>
@@ -191,17 +219,10 @@ permalink: /publications/
           </tr>
           <tr>
             <td data-label="Year" class="pub-year">2025</td>
-            <td data-label="Type" class="pub-type"><span class="type-badge preprint">In Review</span></td>
-            <td data-label="Title" class="pub-title"><a class="pub-link" href="#" target="_blank">A Foundation Model for Spatial Proteomics</a></td>
-            <td data-label="Authors" class="pub-authors">Muhammad Shaban; Yuzhou Chang; Huaying Qiu; Yao Yu Yeo; Andrew H. Song; Guillaume Jaume, et al.</td>
-            <td data-label="Venue / Status" class="pub-venue">In Review</td>
-          </tr>
-          <tr>
-            <td data-label="Year" class="pub-year">2025</td>
-            <td data-label="Type" class="pub-type"><span class="type-badge conference">Conference (Oral)</span></td>
-            <td data-label="Title" class="pub-title"><a class="pub-link" href="#" target="_blank">BKVision: Automated Detection and Morphological Analysis of BK Virus in Renal Transplant Biopsies</a></td>
-            <td data-label="Authors" class="pub-authors">Sharifa Sahai; (lead); …</td>
-            <td data-label="Venue / Status" class="pub-venue">MICCAI</td>
+            <td data-label="Type" class="pub-type"><span class="type-badge journal">Journal</span></td>
+            <td data-label="Title" class="pub-title"><a class="pub-link" href="https://arxiv.org/abs/2411.19666" target="_blank">Molecular-driven Foundation Model for Oncologic Pathology</a></td>
+            <td data-label="Authors" class="pub-authors">Anurag Vaidya*; Andrew Zhang*; Guillaume Jaume*; Andrew H. Song; Tong Ding; Sophia J. Wagner, et al.</td>
+            <td data-label="Venue / Status" class="pub-venue">In Press</td>
           </tr>
 
           <tr>
@@ -250,14 +271,14 @@ permalink: /publications/
             <td data-label="Year" class="pub-year">2024</td>
             <td data-label="Type" class="pub-type"><span class="type-badge journal">Journal</span></td>
             <td data-label="Title" class="pub-title"><a class="pub-link" href="#" target="_blank">Analysis of 3D pathology samples using weakly supervised AI</a></td>
-            <td data-label="Authors" class="pub-authors">Andrew H. Song; (lead); …</td>
+            <td data-label="Authors" class="pub-authors">Andrew H. Song; Mane Williams; Drew F. K. Williamson; Sarah S.L. Chow; Guillaume Jaume; Gan Gao, et al.</td>
             <td data-label="Venue / Status" class="pub-venue">Cell</td>
           </tr>
           <tr>
             <td data-label="Year" class="pub-year">2024</td>
             <td data-label="Type" class="pub-type"><span class="type-badge journal">Journal</span></td>
             <td data-label="Title" class="pub-title"><a class="pub-link" href="#" target="_blank">Examining Demographic Bias in Misdiagnosis by AI-Driven Computational Pathology Models</a></td>
-            <td data-label="Authors" class="pub-authors">Anurag Vaidya; (lead); …</td>
+            <td data-label="Authors" class="pub-authors">Anurag Vaidya; Richard J. Chen; Drew F. K. Williamson; Andrew H. Song; Guillaume Jaume; Yuzhe Yang, et al.</td>
             <td data-label="Venue / Status" class="pub-venue">Nature Medicine</td>
           </tr>
           <tr>
@@ -271,21 +292,21 @@ permalink: /publications/
             <td data-label="Year" class="pub-year">2024</td>
             <td data-label="Type" class="pub-type"><span class="type-badge journal">Journal</span></td>
             <td data-label="Title" class="pub-title"><a class="pub-link" href="#" target="_blank">Towards a General-Purpose Foundation Model for Computational Pathology</a></td>
-            <td data-label="Authors" class="pub-authors">Richard J. Chen; … Guillaume Jaume; Andrew H. Song; Ming Y. Lu; Anurag Vaidya, et al.</td>
+            <td data-label="Authors" class="pub-authors">Richard J. Chen; Tong Ding; Ming Y. Lu; Drew F. K. Williamson; Guillaume Jaume; Andrew H. Song, et al.</td>
             <td data-label="Venue / Status" class="pub-venue">Nature Medicine</td>
           </tr>
           <tr>
             <td data-label="Year" class="pub-year">2024</td>
             <td data-label="Type" class="pub-type"><span class="type-badge preprint">In Review</span></td>
             <td data-label="Title" class="pub-title"><a class="pub-link" href="#" target="_blank">Deep Learning-based Modeling for Preclinical Drug Safety Assessment</a></td>
-            <td data-label="Authors" class="pub-authors">Guillaume Jaume; (lead); …</td>
+            <td data-label="Authors" class="pub-authors">Guillaume Jaume; Simone de Brot; Andrew H. Song; Drew F. K. Williamson; Lukas Oldenburg; Andrew Zhang, et al.</td>
             <td data-label="Venue / Status" class="pub-venue">In Review</td>
           </tr>
           <tr>
             <td data-label="Year" class="pub-year">2024</td>
             <td data-label="Type" class="pub-type"><span class="type-badge preprint">In Review</span></td>
             <td data-label="Title" class="pub-title"><a class="pub-link" href="#" target="_blank">AI-driven Discovery of Morphomolecular Signatures in Toxicology</a></td>
-            <td data-label="Authors" class="pub-authors">Guillaume Jaume; (lead); …</td>
+            <td data-label="Authors" class="pub-authors">Guillaume Jaume; Thomas Peeters; Andrew H. Song; Rowland Pettit; Drew F. K. Williamson; Lukas Oldenburg, et al.</td>
             <td data-label="Venue / Status" class="pub-venue">In Review</td>
           </tr>
 
@@ -300,7 +321,7 @@ permalink: /publications/
             <td data-label="Year" class="pub-year">2023</td>
             <td data-label="Type" class="pub-type"><span class="type-badge journal">Journal</span></td>
             <td data-label="Title" class="pub-title"><a class="pub-link" href="#" target="_blank">Weakly Supervised Learning for Joint Whole-Slide Segmentation and Classification in Prostate Cancer</a></td>
-            <td data-label="Authors" class="pub-authors">Guillaume Jaume; (lead); …</td>
+            <td data-label="Authors" class="pub-authors">Pushpak Pati; Guillaume Jaume; Zeineb Ayadi; Kevin Thandiackal; Behzad Bozorgtabar; Maria Gabrani, et al.</td>
             <td data-label="Venue / Status" class="pub-venue">Medical Image Analysis</td>
           </tr>
 
