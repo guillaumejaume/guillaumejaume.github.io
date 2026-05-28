@@ -153,8 +153,13 @@
   text-align: center;
 }
 
-.hero-email a {
-  color: white;
+.hero-section .hero-email a,
+.hero-section .hero-email a:link,
+.hero-section .hero-email a:visited,
+.hero-section .hero-email a:hover,
+.hero-section .hero-email a:focus,
+.hero-section .hero-email a:active {
+  color: #ffffff !important;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
@@ -163,9 +168,9 @@
   letter-spacing: 0.5px;
 }
 
-.hero-email a:hover {
+.hero-section .hero-email a:hover {
   opacity: 0.85;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 @media (max-width: 768px) {
@@ -228,7 +233,7 @@
         </a>
       </div>
       <div class="hero-email">
-        <a href="mailto:guillaume.jaume@unil.ch">guillaume.jaume@unil.ch</a>
+        <a class="hero-email-link" href="mailto:guillaume.jaume@unil.ch" style="color: #ffffff !important;">guillaume.jaume@unil.ch</a>
       </div>
     </div>
   </div>
