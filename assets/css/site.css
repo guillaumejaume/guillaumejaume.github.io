@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Design tokens — single source of truth for the site's visual language.
+   Every page references these variables instead of hardcoding values, so the
+   look stays consistent and changes happen in exactly one place.
+   ========================================================================== */
+
+:root {
+  /* Brand & accent
+     - brand navy: hero, primary buttons, section underlines
+     - accent blue: inline links, dates, interactive text */
+  --c-brand:        #1e3a8a;
+  --c-brand-dark:   #162e6e;   /* navy button hover */
+  --c-accent:       #1d4ed8;   /* refined royal blue, harmonizes with the navy */
+  --c-accent-dark:  #1e40af;   /* link hover */
+
+  /* Text */
+  --c-heading:      #111827;   /* card titles, names */
+  --c-ink:          #374151;   /* table headers & cells */
+  --c-text:         #333333;   /* body */
+  --c-text-muted:   #555555;   /* secondary copy */
+  --c-text-soft:    #4b5563;   /* table cells, affiliations */
+  --c-text-subtle:  #6b7280;   /* captions, tertiary */
+
+  /* Surfaces & lines */
+  --c-surface:        #ffffff;
+  --c-surface-alt:    #f6f8fc;  /* table headers, soft panels */
+  --c-surface-zebra:  #fbfcfe;  /* zebra rows */
+  --c-surface-hover:  #f3f7ff;  /* row hover */
+  --c-border:         #e5e7eb;
+  --c-border-soft:    #f0f0f0;
+  --c-border-row:     #eef1f5;
+
+  /* Radius */
+  --radius-sm:    6px;
+  --radius-md:    10px;   /* cards & tables (canonical) */
+  --radius-pill:  999px;
+
+  /* Elevation — kept deliberately subtle: clean borders do most of the work */
+  --shadow-card:        0 1px 3px rgba(0, 0, 0, 0.07);
+  --shadow-card-hover:  0 4px 12px rgba(0, 0, 0, 0.10);
+
+  /* Typography & layout */
+  --font-sans: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono: 'Courier New', Courier, monospace;
+  --container:  1200px;
+
+  /* Category badge palette (shared by publications & software) */
+  --badge-blue-bg:   #e3f2fd; --badge-blue-fg:   #1976d2;
+  --badge-purple-bg: #f3e5f5; --badge-purple-fg: #7b1fa2;
+  --badge-green-bg:  #e8f5e8; --badge-green-fg:  #388e3c;
+  --badge-teal-bg:   #d1ecf1; --badge-teal-fg:   #0c5460;
+  --badge-orange-bg: #fff3e0; --badge-orange-fg: #f57c00;
+}

@@ -7,9 +7,9 @@ title: "Guillaume Jaume, Ph.D."
 body, html {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--font-sans);
   line-height: 1.6;
-  color: #333;
+  color: var(--c-text);
 }
 
 .main-content {
@@ -22,11 +22,11 @@ body, html {
 }
 
 .about-section {
-  background: white;
+  background: var(--c-surface);
   padding: 18px 28px;
-  border-radius: 4px;
-  box-shadow: none;
-  border: 1px solid #e5e7eb;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--c-border);
   min-height: 250px;
   display: flex;
   flex-direction: column;
@@ -35,16 +35,16 @@ body, html {
 
 .about-section h2 {
   margin: 0 0 15px 0;
-  color: #333;
+  color: var(--c-text);
   font-size: 1.8rem;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--c-border);
   padding-bottom: 10px;
 }
 
 .about-section p {
   margin: 0 0 15px 0;
   line-height: 1.6;
-  color: #555;
+  color: var(--c-text-muted);
   font-size: 0.95rem;
 }
 
@@ -53,11 +53,11 @@ body, html {
 }
 
 .join-us-section {
-  background: white;
+  background: var(--c-surface);
   padding: 16px 26px;
-  border-radius: 4px;
-  box-shadow: none;
-  border: 1px solid #e5e7eb;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--c-border);
   margin-top: 8px;
   min-height: 200px;
   display: flex;
@@ -67,16 +67,16 @@ body, html {
 
 .join-us-section h2 {
   margin: 0 0 15px 0;
-  color: #333;
+  color: var(--c-text);
   font-size: 1.8rem;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--c-border);
   padding-bottom: 10px;
 }
 
 .join-us-section p {
   margin: 0 0 10px 0;
   line-height: 1.6;
-  color: #555;
+  color: var(--c-text-muted);
   font-size: 0.92rem;
 }
 
@@ -86,11 +86,11 @@ body, html {
 }
 
 .news-sidebar {
-  background: white;
+  background: var(--c-surface);
   padding: 30px;
-  border-radius: 4px;
-  box-shadow: none;
-  border: 1px solid #e5e7eb;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--c-border);
   height: 560px;
   position: sticky;
   top: 20px;
@@ -125,15 +125,15 @@ body, html {
 
 .news-sidebar h3 {
   margin: 0 0 20px 0;
-  color: #333;
+  color: var(--c-text);
   font-size: 1.5rem;
-  border-bottom: 1px solid #d1d5db;
+  border-bottom: 1px solid var(--c-border);
   padding-bottom: 10px;
 }
 
 .news-item {
   padding: 8px 0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--c-border-soft);
 }
 
 .news-item:last-child {
@@ -173,7 +173,7 @@ body, html {
 .news-date {
   display: block;
   font-size: 0.85rem;
-  color: #007bff;
+  color: var(--c-accent);
   font-weight: 600;
   margin-bottom: 4px;
 }
@@ -181,12 +181,12 @@ body, html {
 .news-item p {
   margin: 0;
   line-height: 1.5;
-  color: #555;
+  color: var(--c-text-muted);
   font-size: 0.85rem;
 }
 
 .news-item a {
-  color: #007bff;
+  color: var(--c-accent);
   text-decoration: none;
 }
 
@@ -223,7 +223,7 @@ body, html {
         <li>Collaborate <strong>internationally</strong> with <em>leading institutions and labs</em>.</li>
       </ul>
       <p><em>We'd love to hear from you.</em></p>
-      <p><a href="https://docs.google.com/forms/d/1TQEHI8mXbt4kanYdh-j3UYgLLWpcZR8Cr3voVxDKmTQ/edit" target="_blank" style="background: #1e3a8a; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: 600; display: inline-block; margin-top: 10px;">Apply Now →</a></p>
+      <p><a href="https://docs.google.com/forms/d/1TQEHI8mXbt4kanYdh-j3UYgLLWpcZR8Cr3voVxDKmTQ/edit" target="_blank" style="background: var(--c-brand); color: white; padding: 10px 20px; border-radius: var(--radius-sm); text-decoration: none; font-weight: 600; display: inline-block; margin-top: 10px;">Apply Now →</a></p>
     </section>
   </div>
 

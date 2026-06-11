@@ -11,10 +11,10 @@ permalink: /talks/
 }
 
 .talks-table-wrap {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  border: 1px solid #f0f0f0;
+  background: var(--c-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--c-border-soft);
   overflow: hidden;
 }
 
@@ -29,36 +29,36 @@ permalink: /talks/
 }
 
 .talks-table thead th {
-  background: #f6f8fc;
-  color: #374151;
+  background: var(--c-surface-alt);
+  color: var(--c-ink);
   font-size: 0.85rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   font-weight: 700;
   padding: 14px 16px;
   text-align: left;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--c-border);
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
 .talks-table tbody tr {
-  border-bottom: 1px solid #eef1f5;
+  border-bottom: 1px solid var(--c-border-row);
 }
 
 .talks-table tbody tr:nth-child(even) {
-  background: #fbfcfe;
+  background: var(--c-surface-zebra);
 }
 
 .talks-table tbody tr:hover {
-  background: #f3f7ff;
+  background: var(--c-surface-hover);
 }
 
 .talks-table td {
   vertical-align: top;
   padding: 14px 16px;
-  color: #374151;
+  color: var(--c-ink);
   font-size: 0.95rem;
   line-height: 1.45;
 }
@@ -66,24 +66,24 @@ permalink: /talks/
 .talk-date {
   white-space: nowrap;
   font-weight: 600;
-  color: #4b5563;
+  color: var(--c-text-soft);
 }
 
 .talk-title-cell {
   font-weight: 600;
-  color: #111827;
+  color: var(--c-heading);
   max-width: 460px;
   line-height: 1.4;
 }
 
 .talk-venue-cell {
-  color: #4b5563;
+  color: var(--c-text-soft);
   font-weight: 500;
   max-width: 320px;
 }
 
 .talk-location-cell {
-  color: #6b7280;
+  color: var(--c-text-subtle);
   max-width: 240px;
 }
 
@@ -104,15 +104,15 @@ permalink: /talks/
 
   .talks-table tbody tr {
     display: block;
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-md);
     margin: 0 0 10px 0;
     padding: 8px 0;
-    background: white;
+    background: var(--c-surface);
   }
 
   .talks-table tbody tr:nth-child(even) {
-    background: white;
+    background: var(--c-surface);
   }
 
   .talks-table td {
@@ -127,7 +127,7 @@ permalink: /talks/
     font-size: 0.74rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #6b7280;
+    color: var(--c-text-subtle);
     margin-bottom: 3px;
   }
 }

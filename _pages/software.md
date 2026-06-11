@@ -12,35 +12,35 @@ permalink: /software/
 }
 
 .page-title {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 700;
-  color: #333;
+  color: var(--c-text);
   margin-bottom: 30px;
   text-align: center;
-  border-bottom: 3px solid #667eea;
-  padding-bottom: 15px;
+  border-bottom: 2px solid var(--c-brand);
+  padding-bottom: 12px;
 }
 
 .section-header {
   text-align: center;
   margin-bottom: 50px;
   padding: 40px 20px;
-  background: #f8f9fa;
-  border-radius: 12px;
+  background: var(--c-surface-alt);
+  border-radius: var(--radius-md);
 }
 
 .section-header h2 {
-  font-size: 2.5rem;
-  color: #333;
+  font-size: 2.1rem;
+  color: var(--c-text);
   margin-bottom: 20px;
-  border-bottom: 3px solid #667eea;
-  padding-bottom: 15px;
+  border-bottom: 2px solid var(--c-brand);
+  padding-bottom: 10px;
   display: inline-block;
 }
 
 .section-description {
   font-size: 1.2rem;
-  color: #555;
+  color: var(--c-text-muted);
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
@@ -55,17 +55,17 @@ permalink: /software/
 }
 
 .project-card {
-  background: white;
-  border-radius: 12px;
+  background: var(--c-surface);
+  border-radius: var(--radius-md);
   padding: 25px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  border: 1px solid #f0f0f0;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--c-border-soft);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--c-border);
 }
 
 .project-type-container {
@@ -78,43 +78,43 @@ permalink: /software/
 .project-type {
   display: inline-block;
   padding: 6px 12px;
-  border-radius: 20px;
+  border-radius: var(--radius-pill);
   font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .project-type.framework {
-  background: #e3f2fd;
-  color: #1976d2;
+  background: var(--badge-blue-bg);
+  color: var(--badge-blue-fg);
 }
 
 .project-type.tool {
-  background: #f3e5f5;
-  color: #7b1fa2;
+  background: var(--badge-purple-bg);
+  color: var(--badge-purple-fg);
 }
 
 .project-type.dataset {
-  background: #e8f5e8;
-  color: #388e3c;
+  background: var(--badge-green-bg);
+  color: var(--badge-green-fg);
 }
 
 .project-type.library {
-  background: #fff3e0;
-  color: #f57c00;
+  background: var(--badge-orange-bg);
+  color: var(--badge-orange-fg);
 }
 
 .project-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #333;
+  color: var(--c-text);
   margin-bottom: 10px;
   line-height: 1.4;
 }
 
 .project-description {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--c-text-muted);
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -164,36 +164,36 @@ permalink: /software/
 .project-link {
   display: inline-block;
   padding: 8px 16px;
-  background: #667eea;
+  background: var(--c-brand);
   color: white;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   font-size: 0.9rem;
   font-weight: 500;
   transition: background 0.3s ease;
 }
 
 .project-link:hover {
-  background: #5a6fd8;
+  background: var(--c-brand-dark);
 }
 
 .coming-soon {
   text-align: center;
   padding: 60px 20px;
-  background: #f8f9fa;
-  border-radius: 12px;
+  background: var(--c-surface-alt);
+  border-radius: var(--radius-md);
   margin-top: 40px;
 }
 
 .coming-soon h3 {
   font-size: 1.8rem;
-  color: #333;
+  color: var(--c-text);
   margin-bottom: 15px;
 }
 
 .coming-soon p {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--c-text-subtle);
   line-height: 1.6;
   max-width: 600px;
   margin: 0 auto;

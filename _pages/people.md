@@ -17,17 +17,17 @@ permalink: /people/
 }
 
 .section-header h2 {
-  font-size: 2.3rem;
-  color: #333;
+  font-size: 2.1rem;
+  color: var(--c-text);
   margin-bottom: 15px;
-  border-bottom: 3px solid #667eea;
-  padding-bottom: 10px;
+  border-bottom: 2px solid var(--c-brand);
+  padding-bottom: 8px;
   display: inline-block;
 }
 
 .section-header p {
   font-size: 1.05rem;
-  color: #555;
+  color: var(--c-text-muted);
   max-width: 700px;
   margin: 0 auto;
 }
@@ -40,11 +40,11 @@ permalink: /people/
 }
 
 .person-card {
-  background: white;
-  border-radius: 12px;
+  background: var(--c-surface);
+  border-radius: var(--radius-md);
   padding: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  border: 1px solid #f0f0f0;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--c-border-soft);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,32 +57,32 @@ permalink: /people/
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
-  border: 4px solid #e5e7eb;
+  border: 4px solid var(--c-border);
 }
 
 .person-name {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #111827;
+  color: var(--c-heading);
   margin-bottom: 4px;
 }
 
 .person-role {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #2563eb;
+  color: var(--c-accent);
   margin-bottom: 4px;
 }
 
 .person-affiliation {
   font-size: 0.9rem;
-  color: #4b5563;
+  color: var(--c-text-soft);
   margin-bottom: 10px;
 }
 
 .person-background {
   font-size: 0.9rem;
-  color: #6b7280;
+  color: var(--c-text-subtle);
   line-height: 1.5;
 }
 
@@ -103,15 +103,14 @@ permalink: /people/
   background: #f3f4f6;
   border-radius: 50%;
   text-decoration: none;
-  color: #4b5563;
-  border: 1px solid #e5e7eb;
+  color: var(--c-text-soft);
+  border: 1px solid var(--c-border);
   transition: all 0.2s ease;
 }
 
 .person-social-link:hover {
-  background: #e5e7eb;
-  transform: translateY(-2px);
-  color: #111827;
+  background: var(--c-border);
+  color: var(--c-heading);
 }
 
 .person-social-link i {

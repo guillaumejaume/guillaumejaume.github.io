@@ -14,16 +14,18 @@ layout: compress
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Guillaume Jaume's Website">
-    <meta name="keywords" content="AI for Pathology">
+    <meta name="description" content="Jaume Lab — AI for Oncologic Pathology. Agentic, multimodal and foundational.">
+    <meta name="keywords" content="AI for Pathology, computational pathology, foundation models, oncology, Jaume Lab">
     <!-- Open Graph Meta Tags for Social Media -->
-    <meta property="og:title" content="Your Website Title">
-    <meta property="og:description" content="Your page description here">
-    <meta property="og:image" content="https://yourwebsite.com/path-to-image.jpg">
-    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
+    <meta property="og:description" content="AI for Oncologic Pathology. Agentic, multimodal and foundational.">
+    <meta property="og:image" content="{{ site.url }}/assets/people/jaumelab_logo_v2.png">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
 
     <!-- Favicon -->
-    <link rel="icon" href="/path-to-your-favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="{{ base_path }}/assets/people/jaumelab_logo_v2.png">
 
     <style>
       /* Reset default margins and paddings */
@@ -31,26 +33,6 @@ layout: compress
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-      }
-
-      /* Define color variables */
-      :root {
-        --primary-color: #333333;
-        --secondary-color: #555555;
-        --accent-color: #007BFF;
-        --background-color: #ffffff;
-        --background-dark-color: #121212;
-        --primary-dark-color: #e0e0e0;
-        --secondary-dark-color: #bbbbbb;
-        --accent-dark-color: #bb86fc;
-      }
-
-      /* Dark Theme */
-      [data-theme="dark"] {
-        --background-color: var(--background-dark-color);
-        --primary-color: var(--primary-dark-color);
-        --secondary-color: var(--secondary-dark-color);
-        --accent-color: var(--accent-dark-color);
       }
 
       html, body {
@@ -63,20 +45,20 @@ layout: compress
         flex-direction: column;
         height: 100%;
         font-size: 90%;
-        font-family: 'Roboto', Helvetica, sans-serif;
+        font-family: var(--font-sans);
         line-height: 1.6;
-        background-color: var(--background-color);
-        color: var(--primary-color);
+        background-color: var(--c-surface);
+        color: var(--c-text);
       }
 
       a {
-        color: var(--accent-color);
+        color: var(--c-accent);
         text-decoration: none;
         transition: color 0.3s ease;
       }
 
       a:hover {
-        color: var(--secondary-color);
+        color: var(--c-accent-dark);
         text-decoration: underline;
       }
 
@@ -121,7 +103,7 @@ layout: compress
         bottom: 20px;
         right: 20px;
         display: none;
-        background-color: var(--accent-color);
+        background-color: var(--c-accent);
         color: #fff;
         border: none;
         padding: 10px;
@@ -130,12 +112,12 @@ layout: compress
       }
 
       #back-to-top:hover {
-        background-color: var(--secondary-color);
+        background-color: var(--c-accent-dark);
       }
 
       /* Footer */
       .page__footer {
-        background-color: var(--primary-color);
+        background-color: var(--c-text);
         color: #fff;
         padding: 10px; /* Reduced padding */
         text-align: center;
@@ -184,14 +166,6 @@ layout: compress
       });
       document.getElementById('back-to-top').addEventListener('click', function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    </script>
-
-    <!-- Dark Mode Toggle Script -->
-    <script>
-      const toggleButton = document.getElementById('dark-mode-toggle');
-      toggleButton.addEventListener('click', () => {
-        document.documentElement.toggleAttribute('data-theme', 'dark');
       });
     </script>
   </body>

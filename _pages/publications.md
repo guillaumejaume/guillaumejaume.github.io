@@ -12,10 +12,10 @@ permalink: /publications/
 }
 
 .publications-table-wrap {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  border: 1px solid #f0f0f0;
+  background: var(--c-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--c-border-soft);
   overflow: hidden;
 }
 
@@ -30,36 +30,36 @@ permalink: /publications/
 }
 
 .publications-table thead th {
-  background: #f6f8fc;
-  color: #374151;
+  background: var(--c-surface-alt);
+  color: var(--c-ink);
   font-size: 0.85rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   font-weight: 700;
   padding: 14px 16px;
   text-align: left;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--c-border);
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
 .publications-table tbody tr {
-  border-bottom: 1px solid #eef1f5;
+  border-bottom: 1px solid var(--c-border-row);
 }
 
 .publications-table tbody tr:nth-child(even) {
-  background: #fbfcfe;
+  background: var(--c-surface-zebra);
 }
 
 .publications-table tbody tr:hover {
-  background: #f3f7ff;
+  background: var(--c-surface-hover);
 }
 
 .publications-table td {
   vertical-align: top;
   padding: 14px 16px;
-  color: #374151;
+  color: var(--c-ink);
   font-size: 0.95rem;
   line-height: 1.45;
 }
@@ -67,7 +67,7 @@ permalink: /publications/
 .pub-year {
   white-space: nowrap;
   font-weight: 600;
-  color: #4b5563;
+  color: var(--c-text-soft);
 }
 
 .pub-type {
@@ -76,23 +76,23 @@ permalink: /publications/
 
 .pub-title {
   font-weight: 600;
-  color: #111827;
+  color: var(--c-heading);
   min-width: 320px;
 }
 
 .pub-authors {
-  color: #6b7280;
+  color: var(--c-text-subtle);
   min-width: 360px;
 }
 
 .pub-venue {
-  color: #4b5563;
+  color: var(--c-text-soft);
   font-weight: 500;
   min-width: 200px;
 }
 
 .pub-link {
-  color: #1d4ed8;
+  color: var(--c-accent);
   text-decoration: none;
   font-weight: 600;
 }
@@ -104,17 +104,17 @@ permalink: /publications/
 .type-badge {
   display: inline-block;
   padding: 4px 10px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
 
-.type-badge.journal { background: #e3f2fd; color: #1976d2; }
-.type-badge.conference { background: #f3e5f5; color: #7b1fa2; }
-.type-badge.review { background: #d1ecf1; color: #0c5460; }
-.type-badge.preprint { background: #e8f5e8; color: #388e3c; }
+.type-badge.journal { background: var(--badge-blue-bg); color: var(--badge-blue-fg); }
+.type-badge.conference { background: var(--badge-purple-bg); color: var(--badge-purple-fg); }
+.type-badge.review { background: var(--badge-teal-bg); color: var(--badge-teal-fg); }
+.type-badge.preprint { background: var(--badge-green-bg); color: var(--badge-green-fg); }
 
 @media (max-width: 768px) {
   .page-content {
@@ -132,15 +132,15 @@ permalink: /publications/
 
   .publications-table tbody tr {
     display: block;
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-md);
     margin: 0 0 10px 0;
     padding: 8px 0;
-    background: white;
+    background: var(--c-surface);
   }
 
   .publications-table tbody tr:nth-child(even) {
-    background: white;
+    background: var(--c-surface);
   }
 
   .publications-table td {
@@ -155,7 +155,7 @@ permalink: /publications/
     font-size: 0.74rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #6b7280;
+    color: var(--c-text-subtle);
     margin-bottom: 3px;
   }
 }

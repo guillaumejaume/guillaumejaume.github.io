@@ -3,7 +3,7 @@
 
 <style>
 .hero-section {
-  background: #1e3a8a;
+  background: var(--c-brand);
   color: white;
   padding: 8px 20px;
   text-align: center;
@@ -47,7 +47,7 @@
 .hero-btn {
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 25px;
+  border-radius: var(--radius-pill);
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -56,12 +56,11 @@
 
 .hero-btn.primary {
   background: white;
-  color: #1e3a8a;
+  color: var(--c-brand);
 }
 
 .hero-btn.primary:hover {
   background: #f8f9fa;
-  transform: translateY(-2px);
 }
 
 .hero-btn.secondary {
@@ -72,8 +71,7 @@
 
 .hero-btn.secondary:hover {
   background: white;
-  color: #1e3a8a;
-  transform: translateY(-2px);
+  color: var(--c-brand);
 }
 
 .hero-image {
@@ -129,8 +127,6 @@
 
 .hero-social-link:hover {
   background: #f8f9fa;
-  transform: translateY(-2px);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 .hero-social-link i {
@@ -164,7 +160,7 @@
   font-size: 1rem;
   font-weight: 500;
   transition: opacity 0.3s ease;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--font-mono);
   letter-spacing: 0.5px;
 }
 
