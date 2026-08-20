@@ -146,6 +146,7 @@ permalink: /talks/
           </tr>
         </thead>
         <tbody>
+          <tr><td data-label="Date" class="talk-date">18 Sep 2027</td><td data-label="Title" class="talk-title-cell">What Agentic AI Means for Oncology Decision-Making</td><td data-label="Venue" class="talk-venue-cell">ESMO Congress 2027</td><td data-label="Location" class="talk-location-cell">🇪🇸 Barcelona, Spain</td></tr>
           <tr><td data-label="Date" class="talk-date">09 Dec 2026</td><td data-label="Title" class="talk-title-cell">AI Foundation Models in Pathology</td><td data-label="Venue" class="talk-venue-cell">13th Digital Pathology &amp; AI Congress: Europe</td><td data-label="Location" class="talk-location-cell">🇬🇧 London, UK</td></tr>
           <tr><td data-label="Date" class="talk-date">19 Nov 2026</td><td data-label="Title" class="talk-title-cell">New Directions in AI for Pathology &amp; Oncology</td><td data-label="Venue" class="talk-venue-cell">CompBio Seminar</td><td data-label="Location" class="talk-location-cell">🇨🇭 Lausanne, Switzerland</td></tr>
           <tr><td data-label="Date" class="talk-date">18 Nov 2026</td><td data-label="Title" class="talk-title-cell">AI Agents in Pathology</td><td data-label="Venue" class="talk-venue-cell">ESMO AI</td><td data-label="Location" class="talk-location-cell">🇩🇪 Berlin, Germany</td></tr>
