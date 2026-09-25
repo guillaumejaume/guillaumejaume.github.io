@@ -231,6 +231,12 @@ body, html {
     <h3>News</h3>
     <div class="news-content">
       
+        <div class="news-item featured important">
+          <span class="news-date">September'26</span>
+          <p><strong>VIPER</strong> to appear at <strong>NeurIPS</strong> Datasets &amp; Benchmarks, the first expert-curated benchmark for evaluating vision-language models in veterinary pathology.</p>
+          <p><a href="https://arxiv.org/abs/2608.26382" target="_blank">Preprint</a> | <a href="https://github.com/mahmoodlab/viper" target="_blank">Code</a> | <a href="https://huggingface.co/datasets/MahmoodLab/viper" target="_blank">Dataset</a></p>
+        </div>
+
         <div class="news-item featured">
           <span class="news-date">May'26</span>
           <p><strong>Congratulations Hong Liu!</strong> <strong>Hong Liu</strong> received the <strong>Best Poster Award</strong> at <a href="https://www.linkedin.com/feed/update/urn:li:activity:7458068931849728000/" target="_blank">The 2nd Symposium on AI for Clinical and Translational Medicine</a> in Lausanne.</p>

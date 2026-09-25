@@ -177,6 +177,13 @@ permalink: /publications/
         <tbody>
           <tr>
             <td data-label="Year" class="pub-year">2026</td>
+            <td data-label="Type" class="pub-type"><span class="type-badge conference">Conference</span></td>
+            <td data-label="Title" class="pub-title"><a class="pub-link" href="https://arxiv.org/abs/2608.26382" target="_blank">VIPER: An Expert-Curated Benchmark for Vision-Language Models in Veterinary Pathology</a></td>
+            <td data-label="Authors" class="pub-authors">Luca L. Weishaupt; Simone de Brot; Javier Asin; Llorenç Grau-Roma; Nic G. Reitsam; Andrew H. Song, et al.</td>
+            <td data-label="Venue / Status" class="pub-venue">NeurIPS</td>
+          </tr>
+          <tr>
+            <td data-label="Year" class="pub-year">2026</td>
             <td data-label="Type" class="pub-type"><span class="type-badge review">Editorial</span></td>
             <td data-label="Title" class="pub-title"><a class="pub-link" href="https://www.annalsofoncology.org/article/S0923-7534(26)00107-9/fulltext" target="_blank">Foundation models in pathology and the challenge of clinical time</a></td>
             <td data-label="Authors" class="pub-authors">Guillaume Jaume</td>
