@@ -153,11 +153,24 @@ permalink: /people/
         <a href="https://twitter.com/GuillaumeJaume" target="_blank" rel="noopener" class="person-social-link" aria-label="X"><svg class="x-logo" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
       </div>
     </div>
- 
+
+    <div class="person-card">
+      <img src="/assets/people/huaying.jpg" alt="Huaying Qiu" class="person-photo">
+      <div class="person-name">Huaying</div>
+      <div class="person-role">PhD Student</div>
+      <div class="person-background">
+        M.S. in Biostatistics from the University of North Carolina, code ninja, and manager of servers.
+      </div>
+      <div class="person-social-links">
+        <a href="https://scholar.google.com/citations?user=c06Hqp8AAAAJ&hl=en" target="_blank" rel="noopener" class="person-social-link" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://www.linkedin.com/in/huayingq/" target="_blank" rel="noopener" class="person-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
     <div class="person-card">
       <img src="/assets/people/alex.png" alt="Alexandre de Skowronski" class="person-photo">
       <div class="person-name">Alexandre de Skowronski</div>
-      <div class="person-role">Scientist</div>
+      <div class="person-role">PhD Student</div>
       <div class="person-background">
         MSc from EPFL in physics, research and industry experience in deep learning for imaging.
       </div>
@@ -195,19 +208,6 @@ permalink: /people/
       </div>
       <div class="person-social-links">
         <a href="https://scholar.google.es/citations?user=8n-poIUAAAAJ&hl=en" target="_blank" rel="noopener" class="person-social-link" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-      </div>
-    </div>
-
-    <div class="person-card">
-      <img src="/assets/people/huaying.jpg" alt="Huaying Qiu" class="person-photo">
-      <div class="person-name">Huaying</div>
-      <div class="person-role">PhD Student</div>
-      <div class="person-background">
-        M.S. in Biostatistics from the University of North Carolina, code ninja, and manager of servers.
-      </div>
-      <div class="person-social-links">
-        <a href="https://scholar.google.com/citations?user=c06Hqp8AAAAJ&hl=en" target="_blank" rel="noopener" class="person-social-link" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-        <a href="https://www.linkedin.com/in/huayingq/" target="_blank" rel="noopener" class="person-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
 
