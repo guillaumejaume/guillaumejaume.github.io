@@ -156,7 +156,7 @@ permalink: /people/
 
     <div class="person-card">
       <img src="/assets/people/huaying.jpg" alt="Huaying Qiu" class="person-photo">
-      <div class="person-name">Huaying</div>
+      <div class="person-name">Huaying Qiu</div>
       <div class="person-role">PhD Student</div>
       <div class="person-background">
         M.S. in Biostatistics from the University of North Carolina, code ninja, and manager of servers.
