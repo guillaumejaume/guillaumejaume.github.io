@@ -185,6 +185,20 @@ permalink: /people/
     </div>
 
     <div class="person-card">
+      <img src="/assets/people/roman.jpeg" alt="Roman Kinakh" class="person-photo">
+      <div class="person-name">Roman Kinakh</div>
+      <div class="person-role">Visiting Researcher</div>
+      <div class="person-affiliation">Universidad Carlos III de Madrid</div>
+      <div class="person-background">
+        PhD student working on AI for label-free imaging.
+        Currently a visiting student at the Jaume Lab, University of Lausanne (UNIL).
+      </div>
+      <div class="person-social-links">
+        <a href="https://scholar.google.es/citations?user=8n-poIUAAAAJ&hl=en" target="_blank" rel="noopener" class="person-social-link" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+      </div>
+    </div>
+
+    <div class="person-card">
       <img src="/assets/people/huaying.jpg" alt="Huaying Qiu" class="person-photo">
       <div class="person-name">Huaying</div>
       <div class="person-role">PhD Student</div>
