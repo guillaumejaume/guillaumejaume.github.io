@@ -179,7 +179,7 @@ permalink: /publications/
             <td data-label="Year" class="pub-year">2026</td>
             <td data-label="Type" class="pub-type"><span class="type-badge conference">Conference</span></td>
             <td data-label="Title" class="pub-title"><a class="pub-link" href="https://arxiv.org/abs/2608.26382" target="_blank">VIPER: An Expert-Curated Benchmark for Vision-Language Models in Veterinary Pathology</a></td>
-            <td data-label="Authors" class="pub-authors">Luca L. Weishaupt; Simone de Brot; Javier Asin; Llorenç Grau-Roma; Nic G. Reitsam; Andrew H. Song, et al.</td>
+            <td data-label="Authors" class="pub-authors">Luca L. Weishaupt; Simone de Brot; Javier Asin; Llorenç Grau-Roma; Nic G. Reitsam, et al.; Guillaume Jaume</td>
             <td data-label="Venue / Status" class="pub-venue">NeurIPS</td>
           </tr>
           <tr>
