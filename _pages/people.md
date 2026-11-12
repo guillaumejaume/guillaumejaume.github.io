@@ -143,42 +143,49 @@ permalink: /people/
 }
 
 .alumni-list {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .alumni-item {
-  background: var(--c-surface);
-  border: 1px solid var(--c-border-soft);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-card);
-  padding: 16px 18px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--c-border-row);
+}
+
+.alumni-item:last-child {
+  border-bottom: none;
 }
 
 .alumni-name {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--c-heading);
 }
 
-.alumni-role {
+.alumni-meta {
   font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--c-accent);
-  margin-top: 3px;
+  color: var(--c-text-soft);
 }
 
-.alumni-affiliation {
-  font-size: 0.85rem;
-  color: var(--c-text-soft);
-  margin-top: 3px;
+.alumni-meta::before {
+  content: "\00b7";
+  margin: 0 8px;
+  color: var(--c-text-subtle);
 }
 
 @media (max-width: 768px) {
-  .people-grid,
-  .alumni-list {
+  .people-grid {
     grid-template-columns: 1fr;
+  }
+
+  .alumni-name,
+  .alumni-meta {
+    display: block;
+  }
+
+  .alumni-meta::before {
+    content: none;
   }
 }
 </style>
@@ -272,13 +279,12 @@ permalink: /people/
 
   <div class="alumni-section">
     <h2 class="alumni-heading">Alumni</h2>
-    <div class="alumni-list">
-      <div class="alumni-item">
-        <div class="alumni-name">Augustin Krause</div>
-        <div class="alumni-role">Master's Thesis Student</div>
-        <div class="alumni-affiliation">TU Berlin</div>
-      </div>
-    </div>
+    <ul class="alumni-list">
+      <li class="alumni-item">
+        <span class="alumni-name">Augustin Krause</span>
+        <span class="alumni-meta">Master's Thesis Student, TU Berlin</span>
+      </li>
+    </ul>
   </div>
 </div>
 
