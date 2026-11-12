@@ -2,6 +2,7 @@
 layout: default
 title: "People"
 permalink: /people/
+description: "The people of the Jaume Lab at the University of Lausanne: principal investigator, PhD students, research assistants, visiting researchers and alumni working on AI for oncologic pathology."
 ---
 
 <style>
@@ -223,7 +224,7 @@ permalink: /people/
     </div>
 
     <div class="person-card">
-      <img src="/assets/people/alex.png" alt="Alexandre de Skowronski" class="person-photo">
+      <img src="/assets/people/alex.jpeg" alt="Alexandre de Skowronski" class="person-photo">
       <div class="person-name">Alexandre de Skowronski</div>
       <div class="person-role">PhD Student</div>
       <div class="person-background">

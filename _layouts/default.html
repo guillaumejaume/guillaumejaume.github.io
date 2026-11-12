@@ -14,18 +14,19 @@ layout: compress
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Jaume Lab — AI for Oncologic Pathology. Agentic, multimodal and foundational.">
-    <meta name="keywords" content="AI for Pathology, computational pathology, foundation models, oncology, Jaume Lab">
+    {% assign page_desc = page.description | default: site.description %}
+    <meta name="description" content="{{ page_desc | escape }}">
+    <meta name="keywords" content="{{ page.keywords | default: 'AI for Pathology, computational pathology, foundation models, oncology, Jaume Lab' }}">
     <!-- Open Graph Meta Tags for Social Media -->
     <meta property="og:title" content="{{ page.title | default: site.title }}">
-    <meta property="og:description" content="AI for Oncologic Pathology. Agentic, multimodal and foundational.">
+    <meta property="og:description" content="{{ page_desc | escape }}">
     <meta property="og:image" content="{{ site.url }}/assets/people/jaumelab_logo_v2.png">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ base_path }}/assets/people/jaumelab_logo_v2.png">
+    <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+    <meta name="twitter:description" content="{{ page_desc | escape }}">
+    <meta name="twitter:image" content="{{ site.url }}/assets/people/jaumelab_logo_v2.png">
 
     <style>
       /* Reset default margins and paddings */

@@ -2,6 +2,7 @@
 layout: default
 title: "Software & Datasets"
 permalink: /software/
+description: "Open-source software, models and datasets released by Guillaume Jaume and the Jaume Lab for computational pathology research."
 ---
 
 <style>

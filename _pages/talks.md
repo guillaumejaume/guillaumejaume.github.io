@@ -2,6 +2,7 @@
 layout: default
 title: "Communication"
 permalink: /talks/
+description: "Invited talks, lectures and conference presentations by Guillaume Jaume on AI for pathology, foundation models and agentic AI in oncology."
 ---
 <style>
 .page-content {
