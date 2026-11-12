@@ -128,8 +128,56 @@ permalink: /people/
   color: #000;
 }
 
+.alumni-section {
+  margin-top: 60px;
+}
+
+.alumni-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--c-heading);
+  border-bottom: 2px solid var(--c-brand);
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.alumni-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.alumni-item {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border-soft);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 16px 18px;
+}
+
+.alumni-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--c-heading);
+}
+
+.alumni-role {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--c-accent);
+  margin-top: 3px;
+}
+
+.alumni-affiliation {
+  font-size: 0.85rem;
+  color: var(--c-text-soft);
+  margin-top: 3px;
+}
+
 @media (max-width: 768px) {
-  .people-grid {
+  .people-grid,
+  .alumni-list {
     grid-template-columns: 1fr;
   }
 }
@@ -211,13 +259,15 @@ permalink: /people/
       </div>
     </div>
 
-    <div class="person-card">
-      <img src="/assets/people/augustin.jpeg" alt="Augustin" class="person-photo">
-      <div class="person-name">Augustin</div>
-      <div class="person-role">Master's Thesis Student</div>
-      <div class="person-affiliation">TU Berlin</div>
-      <div class="person-background">
-        M.Sc. student in Computer Science.
+  </div>
+
+  <div class="alumni-section">
+    <h2 class="alumni-heading">Alumni</h2>
+    <div class="alumni-list">
+      <div class="alumni-item">
+        <div class="alumni-name">Augustin Krause</div>
+        <div class="alumni-role">Master's Thesis Student</div>
+        <div class="alumni-affiliation">TU Berlin</div>
       </div>
     </div>
   </div>
