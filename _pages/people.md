@@ -230,6 +230,15 @@ permalink: /people/
     </div>
 
     <div class="person-card">
+      <img src="/assets/people/nikita.jpeg" alt="Nikita Miroshnichenko" class="person-photo">
+      <div class="person-name">Nikita Miroshnichenko</div>
+      <div class="person-role">Research Assistant</div>
+      <div class="person-social-links">
+        <a href="https://www.linkedin.com/in/nikita-miroshnichenko/" target="_blank" rel="noopener" class="person-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="person-card">
       <img src="/assets/people/hong.jpeg" alt="Hong Liu" class="person-photo">
       <div class="person-name">Hong Liu</div>
       <div class="person-role">Visiting Researcher</div>
