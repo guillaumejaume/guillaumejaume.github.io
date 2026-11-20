@@ -29,7 +29,17 @@
   --fs-xl:   2.2rem;    /* page titles */
 
   --measure:   1240px;        /* page width */
-  --gutter:    24px;
+  --gutter:    var(--sp-5);
+
+  /* Spacing scale: every margin, padding and gap uses one of these */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
 }
 
 /* --- Base ---------------------------------------------------------------- */
@@ -103,15 +113,15 @@ img { max-width: 100%; height: auto; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  gap: var(--sp-5);
+  padding-top: var(--sp-5);
+  padding-bottom: var(--sp-5);
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: var(--sp-4);
   color: var(--c-ink);
 }
 
@@ -122,13 +132,13 @@ img { max-width: 100%; height: auto; }
 .brand-group {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: var(--sp-5);
 }
 
 .unil-logo {
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  padding-left: var(--sp-5);
   border-left: 1px solid var(--c-rule);
   align-self: stretch;
 }
@@ -154,13 +164,13 @@ img { max-width: 100%; height: auto; }
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 22px;
+  gap: var(--sp-1) var(--sp-5);
   font-size: var(--fs-base);
 }
 
 .site-nav a {
   color: var(--c-muted);
-  padding: 4px 0;
+  padding: var(--sp-1) 0;
   border-bottom: 2px solid transparent;
 }
 
@@ -177,30 +187,30 @@ img { max-width: 100%; height: auto; }
 /* --- Page scaffolding ---------------------------------------------------- */
 
 .page {
-  padding-top: 48px;
-  padding-bottom: 72px;
+  padding-top: var(--sp-7);
+  padding-bottom: var(--sp-8);
 }
 
 .page-title {
   font-size: var(--fs-xl);
   letter-spacing: -0.01em;
-  margin-bottom: 10px;
+  margin-bottom: var(--sp-3);
 }
 
 .page-lede {
   color: var(--c-muted);
   max-width: 760px;
-  margin-bottom: 40px;
+  margin-bottom: var(--sp-7);
 }
 
-.section + .section { margin-top: 56px; }
+.section + .section { margin-top: var(--sp-8); }
 
 .section-title {
   position: relative;
   font-size: var(--fs-lg);
-  padding-bottom: 10px;
+  padding-bottom: var(--sp-3);
   border-bottom: 1px solid var(--c-rule);
-  margin-bottom: 20px;
+  margin-bottom: var(--sp-5);
 }
 
 .section-title::after {
@@ -218,7 +228,7 @@ img { max-width: 100%; height: auto; }
   font-size: var(--fs-md);
   font-weight: 600;
   color: var(--c-faint);
-  margin: 36px 0 12px;
+  margin: var(--sp-6) 0 var(--sp-3);
 }
 
 .year-heading:first-of-type { margin-top: 0; }
@@ -226,14 +236,14 @@ img { max-width: 100%; height: auto; }
 .year-group {
   display: grid;
   grid-template-columns: 96px minmax(0, 1fr);
-  gap: 24px;
-  padding: 18px 0;
+  gap: var(--sp-5);
+  padding: var(--sp-4) 0;
   border-top: 1px solid var(--c-rule);
 }
 
 .year-group .year-heading {
   margin: 0;
-  padding-top: 8px;
+  padding-top: var(--sp-2);
   font-size: var(--fs-lg);
   color: var(--c-faint);
   font-variant-numeric: lining-nums;
@@ -252,7 +262,7 @@ img { max-width: 100%; height: auto; }
 .links a + a::before {
   content: "\00b7";
   color: var(--c-faint);
-  margin: 0 6px;
+  margin: 0 var(--sp-2);
   display: inline-block;
 }
 
@@ -261,7 +271,7 @@ img { max-width: 100%; height: auto; }
 .home {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 380px;
-  gap: 72px;
+  gap: var(--sp-8);
 }
 
 .intro {
@@ -278,14 +288,14 @@ img { max-width: 100%; height: auto; }
 .themes {
   list-style: none;
   padding: 0;
-  margin: 8px 0 0;
+  margin: var(--sp-2) 0 0;
 }
 
 .themes { counter-reset: theme; }
 
 .themes li {
   position: relative;
-  padding: 14px 0 14px 44px;
+  padding: var(--sp-4) 0 var(--sp-4) var(--sp-7);
   border-top: 1px solid var(--c-rule);
   counter-increment: theme;
 }
@@ -324,9 +334,9 @@ img { max-width: 100%; height: auto; }
 }
 
 .news-list li {
-  padding: 10px 0 10px 14px;
+  padding: var(--sp-3) 0 var(--sp-3) var(--sp-4);
   border-left: 2px solid var(--c-rule);
-  margin-bottom: 4px;
+  margin-bottom: var(--sp-1);
   font-size: var(--fs-sm);
   line-height: 1.5;
 }
@@ -341,12 +351,12 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 2px;
 }
 
-.news-list .links { margin-left: 4px; }
+.news-list .links { margin-left: var(--sp-1); }
 
 .news-scroll {
   max-height: 560px;
   overflow-y: auto;
-  padding-right: 10px;
+  padding-right: var(--sp-3);
   overscroll-behavior: contain;
   scrollbar-width: thin;
   scrollbar-color: var(--c-rule) transparent;
@@ -362,7 +372,7 @@ img { max-width: 100%; height: auto; }
 .news-scroll::-webkit-scrollbar-thumb:hover { background: var(--c-faint); }
 .news-scroll::-webkit-scrollbar-track { background: transparent; }
 
-.news-scroll .news-list { padding-bottom: 48px; }
+.news-scroll .news-list { padding-bottom: var(--sp-7); }
 
 /* --- Publications -------------------------------------------------------- */
 
@@ -373,7 +383,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .pubs li {
-  padding: 10px 0 12px;
+  padding: var(--sp-3) 0 var(--sp-3);
 }
 
 .pub-title {
@@ -419,8 +429,8 @@ a.pub-title:hover { color: var(--c-brand); }
 .talks li {
   display: grid;
   grid-template-columns: 110px minmax(0, 1fr);
-  gap: 16px;
-  padding: 10px 0;
+  gap: var(--sp-4);
+  padding: var(--sp-3) 0;
   border-top: 1px solid var(--c-rule);
 }
 
@@ -448,7 +458,7 @@ a.pub-title:hover { color: var(--c-brand); }
 .people {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 48px 40px;
+  gap: var(--sp-7) var(--sp-7);
 }
 
 .person img {
@@ -458,7 +468,7 @@ a.pub-title:hover { color: var(--c-brand); }
   object-fit: cover;
   border-radius: 2px;
   filter: grayscale(0.15);
-  margin-bottom: 14px;
+  margin-bottom: var(--sp-4);
 }
 
 .person-name {
@@ -478,10 +488,10 @@ a.pub-title:hover { color: var(--c-brand); }
   color: var(--c-muted);
   font-size: var(--fs-sm);
   line-height: 1.5;
-  margin-top: 6px;
+  margin-top: var(--sp-2);
 }
 
-.person .links { margin-top: 8px; }
+.person .links { margin-top: var(--sp-2); }
 
 .alumni {
   list-style: none;
@@ -489,7 +499,7 @@ a.pub-title:hover { color: var(--c-brand); }
   margin: 0;
 }
 
-.alumni li { padding: 4px 0; }
+.alumni li { padding: var(--sp-1) 0; }
 
 .alumni span { color: var(--c-muted); }
 
@@ -504,8 +514,8 @@ a.pub-title:hover { color: var(--c-brand); }
 .tools li {
   display: grid;
   grid-template-columns: 200px minmax(0, 1fr);
-  gap: 24px;
-  padding: 18px 0;
+  gap: var(--sp-5);
+  padding: var(--sp-4) 0;
   border-top: 1px solid var(--c-rule);
 }
 
@@ -526,11 +536,12 @@ a.pub-title:hover { color: var(--c-brand); }
   margin-top: 2px;
 }
 
-.tool-text { margin: 0 0 4px; }
+.tool-text { margin: 0 0 var(--sp-1); }
 
 /* --- Footer -------------------------------------------------------------- */
 
 .site-footer {
+  background: var(--c-tint);
   border-top: 1px solid var(--c-rule);
   color: var(--c-muted);
   font-size: var(--fs-sm);
@@ -540,9 +551,9 @@ a.pub-title:hover { color: var(--c-brand); }
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 16px 40px;
-  padding-top: 28px;
-  padding-bottom: 36px;
+  gap: var(--sp-4) var(--sp-7);
+  padding-top: var(--sp-6);
+  padding-bottom: var(--sp-6);
 }
 
 .site-footer p { margin: 0; }
@@ -552,22 +563,22 @@ a.pub-title:hover { color: var(--c-brand); }
 /* --- Responsive ---------------------------------------------------------- */
 
 @media (max-width: 900px) {
-  .home { grid-template-columns: 1fr; gap: 48px; }
+  .home { grid-template-columns: 1fr; gap: var(--sp-7); }
   .news-scroll { max-height: 420px; }
   .people { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 640px) {
   body { font-size: 16px; }
-  :root { --gutter: 16px; }
-  .site-header .wrap { flex-direction: column; align-items: flex-start; gap: 14px; }
+  :root { --gutter: var(--sp-4); }
+  .site-header .wrap { flex-direction: column; align-items: flex-start; gap: var(--sp-4); }
   .brand-sub { display: none; }
-  .brand-group { gap: 16px; }
-  .unil-logo { padding-left: 16px; }
+  .brand-group { gap: var(--sp-4); }
+  .unil-logo { padding-left: var(--sp-4); }
   .unil-logo img { width: 64px; }
-  .page { padding-top: 32px; }
-  .people { grid-template-columns: 1fr 1fr; gap: 32px 20px; }
+  .page { padding-top: var(--sp-6); }
+  .people { grid-template-columns: 1fr 1fr; gap: var(--sp-6) var(--sp-5); }
   .talks li, .tools li { grid-template-columns: 1fr; gap: 2px; }
-  .year-group { grid-template-columns: 1fr; gap: 4px; }
-  .themes li { padding-left: 36px; }
+  .year-group { grid-template-columns: 1fr; gap: var(--sp-1); }
+  .themes li { padding-left: var(--sp-6); }
 }
