@@ -11,7 +11,8 @@ description: "Peer-reviewed publications and preprints from Guillaume Jaume and 
 
   {% assign by_year = site.data.publications | group_by: "year" %}
   {% for group in by_year %}
-  <h2 class="year-heading">{{ group.name }}</h2>
+  <div class="year-group">
+  <h2 class="year-heading"><span>{{ group.name }}</span></h2>
   <ul class="pubs">
     {% for p in group.items %}
     <li>
@@ -21,5 +22,6 @@ description: "Peer-reviewed publications and preprints from Guillaume Jaume and 
     </li>
     {% endfor %}
   </ul>
+  </div>
   {% endfor %}
 </div>
