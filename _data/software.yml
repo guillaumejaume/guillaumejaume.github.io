@@ -1,0 +1,40 @@
+# Software and datasets, in display order.
+# kind: short label shown in small caps. links: list of {label, url}.
+
+- name: Trident
+  kind: Library
+  text: Reference library for whole-slide image processing, with 25+ foundation models built in.
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/trident"}
+
+- name: Patho-Bench
+  kind: Benchmark
+  text: Public benchmark for pathology AI with 100+ curated tasks.
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/patho-bench"}
+    - {label: data, url: "https://huggingface.co/datasets/MahmoodLab/Patho-Bench"}
+
+- name: HEST-1k
+  kind: Dataset
+  text: 1,000+ spatial transcriptomics profiles paired with H&amp;E whole-slide images and metadata.
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/hest"}
+    - {label: data, url: "https://huggingface.co/datasets/MahmoodLab/hest"}
+
+- name: HistoCartography
+  kind: Library
+  text: Image-to-graph tools and graph algorithms for interpretable, entity-based analysis in digital pathology.
+  links:
+    - {label: code, url: "https://github.com/histocartography/histocartography"}
+
+- name: BRACS
+  kind: Dataset
+  text: BReAst Carcinoma Subtyping, a large cohort of H&amp;E images for fine-grained breast cancer subtyping.
+  links:
+    - {label: website, url: "https://www.bracs.icar.cnr.it/"}
+
+- name: FUNSD
+  kind: Dataset
+  text: Form Understanding in Noisy Scanned Documents.
+  links:
+    - {label: website, url: "https://guillaumejaume.github.io/FUNSD/"}

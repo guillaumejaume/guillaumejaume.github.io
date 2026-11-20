@@ -1,0 +1,60 @@
+# Lab members, in display order.
+# links: any of github, scholar, linkedin, x, web (all optional).
+
+members:
+  - name: Guillaume Jaume
+    role: Principal Investigator
+    affiliation: Assistant Professor, University of Lausanne (UNIL)
+    photo: /assets/people/guillaume.jpeg
+    bio: MSc in EECS from EPFL, PhD at IBM Research, postdoc at Harvard Medical School and Mass General Brigham.
+    links:
+      github: https://github.com/guillaumejaume
+      scholar: https://scholar.google.com/citations?user=am5XqsQAAAAJ&hl=en
+      linkedin: https://www.linkedin.com/in/guillaume-jaume-455169104/
+      x: https://twitter.com/GuillaumeJaume
+
+  - name: Huaying Qiu
+    role: PhD Student
+    photo: /assets/people/huaying.jpg
+    bio: MS in Biostatistics from the University of North Carolina, code ninja, and manager of servers.
+    links:
+      scholar: https://scholar.google.com/citations?user=c06Hqp8AAAAJ&hl=en
+      linkedin: https://www.linkedin.com/in/huayingq/
+
+  - name: Alexandre de Skowronski
+    role: PhD Student
+    photo: /assets/people/alex.jpeg
+    bio: MSc in physics from EPFL, research and industry experience in deep learning for imaging.
+    links:
+      github: https://github.com/alexdesko
+      scholar: https://scholar.google.com/citations?user=Vv0WyKoAAAAJ&hl=en&oi=ao
+      linkedin: https://www.linkedin.com/in/alexdesko/
+
+  - name: Nikita Miroshnichenko
+    role: Research Assistant
+    affiliation: University of Lausanne (UNIL)
+    photo: /assets/people/nikita.jpeg
+    links:
+      linkedin: https://www.linkedin.com/in/nikita-miroshnichenko/
+
+  - name: Hong Liu
+    role: Visiting Researcher
+    affiliation: Eindhoven University of Technology
+    photo: /assets/people/hong.jpeg
+    bio: PhD student in the IMAG/e group at Eindhoven University of Technology (TU/e), visiting the lab.
+    links:
+      github: https://github.com/HongLiuuuuu
+      scholar: https://scholar.google.com/citations?user=pjuLE_IAAAAJ&hl=en
+      linkedin: https://www.linkedin.com/in/hong-liu-708171293/
+
+  - name: Roman Kinakh
+    role: Visiting Researcher
+    affiliation: Universidad Carlos III de Madrid
+    photo: /assets/people/roman.jpeg
+    bio: PhD student working on AI for label-free imaging, visiting the lab.
+    links:
+      scholar: https://scholar.google.es/citations?user=8n-poIUAAAAJ&hl=en
+
+alumni:
+  - name: Augustin Krause
+    role: Master's thesis student, TU Berlin

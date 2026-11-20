@@ -1,0 +1,1 @@
+<li{% if include.item.highlight %} class="highlight"{% endif %}><span class="news-date">{{ include.item.date }}</span>{{ include.item.text }}{% if include.item.links %} <span class="links">{% for l in include.item.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</span>{% endif %}</li>

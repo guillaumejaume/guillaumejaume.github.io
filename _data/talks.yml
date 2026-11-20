@@ -1,0 +1,201 @@
+# Talks, newest first.
+
+- date: 21 Oct 2027
+  title: Open-Ended AI Models for Pathology
+  venue: SGPath & SSNPath Joint Annual Meeting
+  location: Zurich, Switzerland
+
+- date: 18 Sep 2027
+  title: What Agentic AI Means for Oncology Decision-Making
+  venue: ESMO Congress 2027
+  location: Barcelona, Spain
+
+- date: 11 Dec 2026
+  title: Towards Clinical-Grade AI for Diagnostic Pathology
+  venue: Friday Seminar, Institute for AI in Medicine, University Hospital Essen
+  location: Essen, Germany
+
+- date: 09 Dec 2026
+  title: AI Foundation Models in Pathology
+  venue: '13th Digital Pathology & AI Congress: Europe'
+  location: London, UK
+
+- date: 07 Dec 2026
+  title: AI-Driven Biomarker Exploration in Pathology
+  venue: 'PI-zza Seminar: AI in Biomedical Research, CHUV'
+  location: Lausanne, Switzerland
+
+- date: 19 Nov 2026
+  title: New Directions in AI for Pathology & Oncology
+  venue: CompBio Seminar
+  location: Lausanne, Switzerland
+
+- date: 18 Nov 2026
+  title: AI Agents in Pathology
+  venue: ESMO AI
+  location: Berlin, Germany
+
+- date: 14 Oct 2026
+  title: Agentic AI for Biomarker Discovery
+  venue: Mahmood Lab Seminar, Harvard Medical School
+  location: Boston, USA
+
+- date: 30 Sep 2026
+  title: Towards AI Models for Preclinical Drug Safety Assessment
+  venue: ESTP 2026
+  location: Krakow, Poland
+
+- date: 02 Sep 2026
+  title: An Introduction to AI in Pathology
+  venue: WisPerMed Summer School
+  location: Leuven, Belgium
+
+- date: 19 Jun 2026
+  title: Agentic AI in Pathology
+  venue: European Conference on Digital Pathology
+  location: Graz, Austria
+
+- date: 08 Jun 2026
+  title: Multimodal Foundation Modeling in Pathology
+  venue: AI x Bio Conference
+  location: Cambridge, UK
+
+- date: 21 May 2026
+  title: AI Foundation Modeling for Oncologic Pathology
+  venue: LBiBER Seminar Series
+  location: Basel, Switzerland
+
+- date: 07 May 2026
+  title: Towards Robust AI Models in Pathology
+  venue: ESAC Meeting
+  location: Milan, Italy
+
+- date: 06 May 2026
+  title: Open-ended AI Modeling in Histology
+  venue: Symposium on AI for Clinical and Translational Medicine
+  location: Lausanne, Switzerland
+
+- date: 17 Mar 2026
+  title: AI Foundational Modeling in Pathology
+  venue: CompBio Meeting, EPFL
+  location: Lausanne, Switzerland
+
+- date: 26 Feb 2026
+  title: An Introduction to AI in Pathology
+  venue: Computational Pathology School, MedUni Vienna
+  location: Vienna, Austria
+
+- date: 05 Nov 2025
+  title: Towards Generalist AI Models in Pathology
+  venue: SKKU Seminar
+  location: 💻 Virtual
+
+- date: May 2025
+  title: Toward Generalist AI Models in Pathology
+  venue: AbbVie
+  location: 💻 Virtual
+
+- date: Apr 2025
+  title: Toward Generalist AI Models in Pathology
+  venue: Microsoft Research
+  location: Boston, USA
+
+- date: Mar 2025
+  title: Advancing Translational Research with AI in Oncologic Pathology
+  venue: CRUK, University of Cambridge
+  location: Cambridge, UK
+
+- date: Mar 2025
+  title: AI for Computational Toxicologic Pathology
+  venue: Novartis
+  location: Boston, USA
+
+- date: Mar 2025
+  title: Bringing Spatial Transcriptomics into The World of Deep Learning
+  venue: University of Sydney
+  location: 💻 Virtual
+
+- date: Dec 2024
+  title: Scaling Spatial Transcriptomics and Histology with HEST
+  venue: Owkin
+  location: Paris, France
+
+- date: Nov 2024
+  title: AI for Preclinical Drug Safety Assessment
+  venue: Roche
+  location: 💻 Virtual
+
+- date: Sep 2024
+  title: Multimodal Representation Learning in AI for Pathology
+  venue: Lunit
+  location: 💻 Virtual
+
+- date: May 2024
+  title: '3D Computational Pathology: Towards Enhanced Patient Prognostication'
+  venue: UniBe
+  location: Bern, Switzerland
+
+- date: May 2024
+  title: Towards General-Purpose AI Models for Histology
+  venue: CHUV
+  location: Lausanne, Switzerland
+
+- date: Jul 2023
+  title: Deep Learning for Pathology Image Analysis
+  venue: PariSanté Campus
+  location: Paris, France
+
+- date: Jul 2023
+  title: Latest trends in Computational Pathology
+  venue: University of Bern
+  location: Bern, Switzerland
+
+- date: Nov 2022
+  title: 'A Tour of Computational Pathology: Methods and Applications'
+  venue: UC Berkeley
+  location: 💻 Virtual
+
+- date: Sep 2022
+  title: Interpretable Deep Learning in Computational Pathology
+  venue: Dana-Farber Cancer Institute
+  location: Boston, USA
+
+- date: Feb 2022
+  title: Graph Representation Learning in Computational Pathology
+  venue: Symposium on DigPath in the DACH Region
+  location: Bern, Switzerland
+
+- date: Oct 2021
+  title: 'HistoCartography: Graph representations and models in Computational Pathology'
+  venue: Tissue Image Analytics Centre
+  location: Warwick, UK
+
+- date: Oct 2021
+  title: Graph Representations and Models in Digital Pathology
+  venue: Charité University Hospital
+  location: 💻 Virtual
+
+- date: Jul 2021
+  title: Weakly-Supervised Learning for Whole-Slide-Image Segmentation
+  venue: PathAI
+  location: 💻 Virtual
+
+- date: Jul 2021
+  title: A Graph Network Tour of Computational Pathology
+  venue: Harvard Medical School
+  location: 💻 Virtual
+
+- date: May 2021
+  title: 'Computational Pathology: Building Interpretable AI at Scale'
+  venue: Lausanne University Hospital (CHUV)
+  location: Lausanne, Switzerland
+
+- date: Jan 2021
+  title: Graph Representation Learning & Explainability in Computational Pathology
+  venue: Swiss Digital Pathology Consortium (SDiPath)
+  location: 💻 Virtual
+
+- date: Nov 2020
+  title: 'Deep Learning on Graphs: An Overview'
+  venue: Computer Research Institute of Montreal (CRIM)
+  location: 💻 Virtual

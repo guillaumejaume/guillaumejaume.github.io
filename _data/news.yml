@@ -1,0 +1,132 @@
+# News, newest first.
+# text: one or two plain sentences (inline HTML allowed, keep emphasis rare).
+# links: optional list of {label, url}, shown after the text.
+# The homepage shows the first `news_visible` items (set in index.md); the rest go under "Earlier news".
+
+- date: Sep 2026
+  highlight: true
+  text: <em>VIPER</em>, the first expert-curated benchmark for vision-language models in veterinary pathology, will appear at NeurIPS Datasets &amp; Benchmarks.
+  links:
+    - {label: preprint, url: "https://arxiv.org/abs/2608.26382"}
+    - {label: code, url: "https://github.com/mahmoodlab/viper"}
+    - {label: data, url: "https://huggingface.co/datasets/MahmoodLab/viper"}
+
+- date: May 2026
+  text: Hong Liu received the Best Poster Award at the 2nd Symposium on AI for Clinical and Translational Medicine in Lausanne.
+  links:
+    - {label: post, url: "https://www.linkedin.com/feed/update/urn:li:activity:7458068931849728000/"}
+
+- date: May 2026
+  text: 'New editorial in <em>Annals of Oncology</em>: "Foundation models in pathology and the challenge of clinical time".'
+  links:
+    - {label: article, url: "https://www.annalsofoncology.org/article/S0923-7534(26)00107-9/fulltext"}
+
+- date: Apr 2026
+  text: Augustin Krause joins the lab for his master's thesis.
+
+- date: Mar 2026
+  text: Huaying Qiu joins as the first PhD student of the lab.
+
+- date: Feb 2026
+  text: Alexandre de Skowronski and Hong Liu join as the first members of the lab.
+
+- date: Feb 2026
+  highlight: true
+  text: The lab opens at the Department of Oncology, University of Lausanne.
+
+- date: Sep 2025
+  highlight: true
+  text: Awarded an ERC Starting Grant (€1.7M, five years) for research on agentic AI and structure segmentation in pathology.
+
+- date: Aug 2025
+  text: <em>KRONOS</em>, a foundation model for spatial proteomics.
+  links:
+    - {label: preprint, url: "https://arxiv.org/abs/2506.03373"}
+    - {label: code, url: "https://github.com/mahmoodlab/KRONOS/"}
+    - {label: model, url: "https://huggingface.co/MahmoodLab/KRONOS"}
+
+- date: Apr 2025
+  text: <em>Trident</em>, a library for processing whole-slide images with foundation models, is released.
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/trident"}
+
+- date: Mar 2025
+  text: <em>Patho-Bench</em>, a set of 100+ tasks for benchmarking AI models in pathology.
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/patho-bench"}
+    - {label: data, url: "https://huggingface.co/datasets/MahmoodLab/Patho-Bench"}
+
+- date: Mar 2025
+  text: New preprint on 3D modeling of spatial transcriptomics data.
+  links:
+    - {label: preprint, url: "https://arxiv.org/abs/2502.17761"}
+
+- date: Mar 2025
+  text: New preprint on whole-slide image classification with agentic AI.
+  links:
+    - {label: preprint, url: "https://arxiv.org/abs/2506.20964"}
+
+- date: Oct 2024
+  text: <em>HEST</em> accepted at NeurIPS as a spotlight (top 2% of submissions).
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/HEST"}
+
+- date: Jul 2024
+  text: <em>TRACE</em>, a preprint on toxicity assessment and drug safety.
+  links:
+    - {label: preprint, url: "https://www.biorxiv.org/content/10.1101/2024.07.20.604430v1.abstract"}
+
+- date: Jul 2024
+  text: <em>GEESE</em>, a preprint on multimodal toxicity identification.
+  links:
+    - {label: preprint, url: "https://www.biorxiv.org/content/10.1101/2024.07.19.604355v1.abstract"}
+
+- date: Jul 2024
+  text: <em>MADELEINE</em>, multimodal pretraining for slide representation learning, accepted at ECCV.
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/MADELEINE/tree/main"}
+
+- date: May 2024
+  text: <em>TriPath</em>, the first deep learning framework for 3D pathology, published in <em>Cell</em>.
+  links:
+    - {label: article, url: "https://www.cell.com/cell/abstract/S0092-8674(24)00351-9"}
+
+- date: May 2024
+  text: <em>TANGLE</em> accepted at CVPR as an oral (top 0.7% of submissions).
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/TANGLE"}
+
+- date: May 2024
+  text: <em>MMP</em>, a multimodal model for survival prediction, accepted at ICML.
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/MMP/tree/main"}
+
+- date: Apr 2024
+  text: New study on fairness in computational pathology in <em>Nature Medicine</em>.
+  links:
+    - {label: article, url: "https://www.nature.com/articles/s41591-024-02885-z"}
+
+- date: Mar 2024
+  text: <em>UNI</em>, a general-purpose foundation model for histology, published in <em>Nature Medicine</em>.
+  links:
+    - {label: article, url: "https://www.nature.com/articles/s41591-024-02857-3"}
+
+- date: Mar 2024
+  text: <em>CONCH</em>, a vision-language model for histology, published in <em>Nature Medicine</em>.
+  links:
+    - {label: article, url: "https://www.nature.com/articles/s41591-024-02856-4"}
+
+- date: Feb 2024
+  text: <em>SurvPath</em>, a multimodal model for survival prediction, accepted at CVPR.
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/SurvPath"}
+
+- date: Feb 2024
+  text: <em>PANTHER</em>, a model for survival prediction, accepted at CVPR.
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/PANTHER"}
+
+- date: Jun 2023
+  text: Review on AI for digital and computational pathology in <em>Nature Reviews Bioengineering</em>.
+  links:
+    - {label: article, url: "https://www.nature.com/articles/s44222-023-00096-8"}

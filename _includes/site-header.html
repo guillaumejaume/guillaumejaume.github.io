@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/assets/people/logo-mark.png" alt="" width="52" height="44">
+      <span>
+        <span class="brand-name">Jaume Lab</span>
+        <span class="brand-sub">AI for Oncologic Pathology · University of Lausanne</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      {% assign nav = "/people/|People,/publications/|Publications,/software/|Software &amp; Datasets,/talks/|Talks" | split: "," %}
+      {% for item in nav %}
+        {% assign parts = item | split: "|" %}
+        <a href="{{ parts[0] }}"{% if page.url contains parts[0] %} aria-current="page"{% endif %}>{{ parts[1] }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
