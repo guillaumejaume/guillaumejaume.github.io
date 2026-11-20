@@ -7,8 +7,8 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Guillaume Jaume"
-title_separator          : "-"
+title                    : "Jaume Lab"
+title_separator          : "|"
 name                     : &name "Guillaume Jaume"
 description              : &description "Jaume Lab — AI for Oncologic Pathology. Agentic, multimodal and foundational."
 url                      : "https://guillaumejaume.github.io/" # https://guillaumejaume.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"

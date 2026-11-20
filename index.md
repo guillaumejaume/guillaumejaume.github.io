@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Guillaume Jaume, Ph.D."
+title: "Jaume Lab"
+full_title: "Jaume Lab | AI for Oncologic Pathology, UNIL"
 ---
 
 <style>
@@ -91,40 +92,11 @@ body, html {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
   border: 1px solid var(--c-border);
-  height: 560px;
-  position: sticky;
-  top: 20px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.news-content {
-  flex: 1;
-  overflow-y: auto;
-  padding-right: 10px;
-}
-
-.news-content::-webkit-scrollbar {
-  width: 6px;
-}
-
-.news-content::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 3px;
-}
-
-.news-content::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
-  border-radius: 3px;
-}
-
-.news-content::-webkit-scrollbar-thumb:hover {
-  background: #a8a8a8;
+  align-self: start;
 }
 
 .news-sidebar h3 {
-  margin: 0 0 20px 0;
+  margin: 0 0 12px 0;
   color: var(--c-text);
   font-size: 1.5rem;
   border-bottom: 1px solid var(--c-border);
@@ -132,23 +104,37 @@ body, html {
 }
 
 .news-item {
-  padding: 8px 0;
-  border-bottom: 1px solid var(--c-border-soft);
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 6px;
 }
 
-.news-item:last-child {
-  border-bottom: none;
+.news-item.important {
+  background: var(--c-surface-hover);
+  border-left: 3px solid var(--c-brand);
 }
 
-.news-item.featured {
-  background: white;
-  padding: 12px;
-  border-radius: 3px;
-  margin-bottom: 12px;
+.news-more {
+  margin-top: 8px;
+  border-top: 1px solid var(--c-border);
+  padding-top: 10px;
 }
 
-.news-item.featured.important {
-  background: rgba(248, 113, 113, 0.08);
+.news-more summary {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--c-accent);
+  padding: 4px 12px;
+  list-style-position: inside;
+}
+
+.news-more summary:hover {
+  color: var(--c-accent-dark);
+}
+
+.news-more[open] summary {
+  margin-bottom: 8px;
 }
 
 .badge {
@@ -199,9 +185,6 @@ body, html {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  .news-sidebar {
-    position: static;
-  }
 }
 </style>
 
@@ -209,7 +192,7 @@ body, html {
   <div class="main-content-left">
     <section class="about-section">
       <h2>About</h2>
-      <p>The <strong>Jaume Lab</strong> started in February 2026 at the <a href="https://www.unil.ch/dof/en/home.html" target="_blank">Department of Oncology</a> of the <strong>University of Lausanne (UNIL)</strong>, supported by an <strong>ERC Starting Grant</strong>.</p>
+      <p>The <strong>Jaume Lab</strong> started in February 2026 at the <a href="https://www.unil.ch/dof/en/home.html" target="_blank">Department of Oncology</a> of the <strong>University of Lausanne (UNIL)</strong>.</p>
       <p>We work at the intersection of <em>artificial intelligence, pathology, and oncology</em>. Our research focuses on <strong>agentic AI, biomarker discovery, and multimodal learning </strong> for pathology.</p>
       <p>We keep <strong>strong ties</strong> to <strong>Harvard Medical School, Mass General Brigham, EPFL, and ETH Zurich</strong>.</p>
     </section>
@@ -223,7 +206,7 @@ body, html {
         <li>Collaborate <strong>internationally</strong> with <em>leading institutions and labs</em>.</li>
       </ul>
       <p><em>We'd love to hear from you.</em></p>
-      <p><a href="https://docs.google.com/forms/d/1TQEHI8mXbt4kanYdh-j3UYgLLWpcZR8Cr3voVxDKmTQ/edit" target="_blank" style="background: var(--c-brand); color: white; padding: 10px 20px; border-radius: var(--radius-sm); text-decoration: none; font-weight: 600; display: inline-block; margin-top: 10px;">Apply Now →</a></p>
+      <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfK4Qee0M5HJj7MFDoH3pcjU27s-Uf4DO3MgYVFZhUyBmu_LA/viewform" target="_blank" style="background: var(--c-brand); color: white; padding: 10px 20px; border-radius: var(--radius-sm); text-decoration: none; font-weight: 600; display: inline-block; margin-top: 10px;">Apply Now →</a></p>
     </section>
   </div>
 
@@ -231,141 +214,144 @@ body, html {
     <h3>News</h3>
     <div class="news-content">
       
-        <div class="news-item featured important">
-          <span class="news-date">September'26</span>
+        <div class="news-item important">
+          <span class="news-date">Sep 2026</span>
           <p><strong>VIPER</strong> to appear at <strong>NeurIPS</strong> Datasets &amp; Benchmarks, the first expert-curated benchmark for evaluating vision-language models in veterinary pathology.</p>
           <p><a href="https://arxiv.org/abs/2608.26382" target="_blank">Preprint</a> | <a href="https://github.com/mahmoodlab/viper" target="_blank">Code</a> | <a href="https://huggingface.co/datasets/MahmoodLab/viper" target="_blank">Dataset</a></p>
         </div>
 
-        <div class="news-item featured">
-          <span class="news-date">May'26</span>
+        <div class="news-item">
+          <span class="news-date">May 2026</span>
           <p><strong>Congratulations Hong Liu!</strong> <strong>Hong Liu</strong> received the <strong>Best Poster Award</strong> at <a href="https://www.linkedin.com/feed/update/urn:li:activity:7458068931849728000/" target="_blank">The 2nd Symposium on AI for Clinical and Translational Medicine</a> in Lausanne.</p>
         </div>
 
-        <div class="news-item featured">
-          <span class="news-date">May'26</span>
+        <div class="news-item">
+          <span class="news-date">May 2026</span>
           <p>New editorial published in <a href="https://www.annalsofoncology.org/article/S0923-7534(26)00107-9/fulltext" target="_blank"><strong>Annals of Oncology</strong></a>: <strong>Foundation models in pathology and the challenge of clinical time</strong>.</p>
         </div>
 
-        <div class="news-item featured">
-          <span class="news-date">April'26</span>
+        <div class="news-item">
+          <span class="news-date">Apr 2026</span>
           <p><strong>Welcome Augustin Krause!</strong> Excited to welcome <strong>Augustin Krause</strong> for his master's thesis with the lab.</p>
         </div>
 
-        <div class="news-item featured">
-          <span class="news-date">March'26</span>
+        <div class="news-item">
+          <span class="news-date">Mar 2026</span>
           <p><strong>Welcome Huaying Qiu!</strong> Excited to welcome <strong>Huaying Qiu</strong> as the first PhD student of the lab.</p>
         </div>
 
-        <div class="news-item featured">
-          <span class="news-date">Feb'26</span>
+        <div class="news-item">
+          <span class="news-date">Feb 2026</span>
           <p><strong>Welcome Alexandre and Hong!</strong> Excited to welcome <strong>Alexandre de Skowronski</strong> and <strong>Hong Liu</strong> as the first members of the lab.</p>
         </div>
       
-        <div class="news-item featured important">
-          <span class="news-date">Feb'26</span>
+        <div class="news-item important">
+          <span class="news-date">Feb 2026</span>
           <p><strong>The lab officially launches!</strong> Our lab is now officially starting!</p>
         </div>
             
-        <div class="news-item featured important">
-          <span class="news-date">September'25</span>
+        <div class="news-item important">
+          <span class="news-date">Sep 2025</span>
           <p><strong>ERC Starting Grant Awarded!</strong> We are honored to receive a €1.7M ERC Starting Grant to pursue five years of research on agentic AI and structure segmentation in pathology.</p>
         </div>
       
-      <div class="news-item featured important">
-        <span class="news-date">August'25</span>
+      <details class="news-more">
+        <summary>Earlier news</summary>
+      <div class="news-item important">
+        <span class="news-date">Aug 2025</span>
         <p>Announcing <strong>KRONOS</strong>, a foundation model for spatial proteomics</p>
         <p><a href="https://arxiv.org/abs/2506.03373" target="_blank">Preprint</a> | <a href="https://github.com/mahmoodlab/KRONOS/" target="_blank">Code</a> | <a href="https://huggingface.co/MahmoodLab/KRONOS" target="_blank">Model</a></p>
       </div>
       
-      <div class="news-item featured important">
-        <span class="news-date">April'25</span>
+      <div class="news-item important">
+        <span class="news-date">Apr 2025</span>
         <p><strong>TRIDENT</strong> is out! Checkout our latest library for processing whole-slide images with foundation models!</p>
         <p><a href="https://github.com/mahmoodlab/trident" target="_blank">Code</a></p>
       </div>
       
-      <div class="news-item featured">
-        <span class="news-date">March'25</span>
+      <div class="news-item">
+        <span class="news-date">Mar 2025</span>
         <p>Announcing <strong>Patho-Bench</strong>, our new set of 100+ tasks for benchmarking AI models for pathology</p>
         <p><a href="https://github.com/mahmoodlab/patho-bench" target="_blank">Code</a> | <a href="https://huggingface.co/datasets/MahmoodLab/Patho-Bench" target="_blank">Dataset</a></p>
       </div>
       
-      <div class="news-item featured">
-        <span class="news-date">March'25</span>
+      <div class="news-item">
+        <span class="news-date">Mar 2025</span>
         <p>New preprint on 3D modeling of spatial transcriptomics data</p>
         <p><a href="https://arxiv.org/abs/2502.17761" target="_blank">Preprint</a></p>
       </div>
       
-      <div class="news-item featured">
-        <span class="news-date">March'25</span>
+      <div class="news-item">
+        <span class="news-date">Mar 2025</span>
         <p>New preprint for whole-slide image classification with agentic AI</p>
         <p><a href="https://arxiv.org/abs/2506.20964" target="_blank">Preprint</a></p>
       </div>
       
-      <div class="news-item featured important">
-        <span class="news-date">Oct'24</span>
+      <div class="news-item important">
+        <span class="news-date">Oct 2024</span>
         <p><strong>HEST</strong> to appear at <a href="https://github.com/mahmoodlab/HEST" target="_blank"><strong>NeurIPS</strong></a> will be a <span class="badge spotlight">Spotlight</span> (top 2.0% of submissions).</p>
       </div>
       
       <div class="news-item">
-        <span class="news-date">July'24</span>
+        <span class="news-date">Jul 2024</span>
         <p>Announcing <strong>TRACE</strong>, our new <a href="https://www.biorxiv.org/content/10.1101/2024.07.20.604430v1.abstract" target="_blank"><strong>preprint</strong></a> on toxicity assessment and drug safety!</p>
       </div>
       
       <div class="news-item">
-        <span class="news-date">July'24</span>
+        <span class="news-date">Jul 2024</span>
         <p>Announcing <strong>GEESE</strong>, our new <a href="https://www.biorxiv.org/content/10.1101/2024.07.19.604355v1.abstract" target="_blank"><strong>preprint</strong></a> for multimodal toxicity identification!</p>
       </div>
       
       <div class="news-item">
-        <span class="news-date">July'24</span>
+        <span class="news-date">Jul 2024</span>
         <p>Announcing <strong>MADELEINE</strong> to appear at <a href="https://github.com/mahmoodlab/MADELEINE/tree/main" target="_blank"><strong>ECCV</strong></a>, a multimodal pretraining strategy for slide representation learning.</p>
       </div>
       
       <div class="news-item">
-        <span class="news-date">May'24</span>
+        <span class="news-date">May 2024</span>
         <p>Announcing <strong>TriPath</strong> published in <a href="https://www.cell.com/cell/abstract/S0092-8674(24)00351-9" target="_blank"><strong>Cell</strong></a>, the first deep learning framework for 3D pathology.</p>
       </div>
       
-      <div class="news-item featured important">
-        <span class="news-date">May'24</span>
+      <div class="news-item important">
+        <span class="news-date">May 2024</span>
         <p><strong>TANGLE</strong> to appear at <a href="https://github.com/mahmoodlab/TANGLE" target="_blank"><strong>CVPR</strong></a> will be an <span class="badge oral">Oral</span> (top 0.7% of submissions).</p>
       </div>
       
       <div class="news-item">
-        <span class="news-date">May'24</span>
+        <span class="news-date">May 2024</span>
         <p>Announcing <strong>MMP</strong> to appear at <a href="https://github.com/mahmoodlab/MMP/tree/main" target="_blank"><strong>ICML</strong></a>, a multimodal model for survival outcome prediction.</p>
     </div>
       
       <div class="news-item">
-        <span class="news-date">April'24</span>
+        <span class="news-date">Apr 2024</span>
         <p>New <a href="https://www.nature.com/articles/s41591-024-02885-z" target="_blank"><strong>Nature Medicine</strong></a> study on fairness in computational pathology.</p>
       </div>
       
       <div class="news-item">
-        <span class="news-date">March'24</span>
+        <span class="news-date">Mar 2024</span>
         <p>Announcing <strong>UNI</strong> published in <a href="https://www.nature.com/articles/s41591-024-02857-3" target="_blank"><strong>Nature Medicine</strong></a>, a generic-purpose foundation model for histology.</p>
       </div>
       
       <div class="news-item">
-        <span class="news-date">March'24</span>
+        <span class="news-date">Mar 2024</span>
         <p>Announcing <strong>CONCH</strong> published in <a href="https://www.nature.com/articles/s41591-024-02856-4" target="_blank"><strong>Nature Medicine</strong></a>, a visual-language model for histology.</p>
       </div>
       
       <div class="news-item">
-        <span class="news-date">Feb'24</span>
+        <span class="news-date">Feb 2024</span>
         <p>Announcing <strong>SURVPATH</strong> to appear at <a href="https://github.com/mahmoodlab/SurvPath" target="_blank"><strong>CVPR</strong></a>, multimodal model for survival outcome prediction.</p>
       </div>
       
       <div class="news-item">
-        <span class="news-date">Feb'24</span>
+        <span class="news-date">Feb 2024</span>
         <p>Announcing <strong>PANTHER</strong> to appear at <a href="https://github.com/mahmoodlab/PANTHER" target="_blank"><strong>CVPR</strong></a>, a model for survival prediction.</p>
       </div>
       
       <div class="news-item">
-        <span class="news-date">June'23</span>
+        <span class="news-date">Jun 2023</span>
         <p>New <a href="https://www.nature.com/articles/s44222-023-00096-8" target="_blank"><strong>Nature Reviews Bioengineering</strong></a> article on AI for digital and computational Pathology.</p>
       </div>
+      </details>
     </div>
   </aside>
 </div> 
