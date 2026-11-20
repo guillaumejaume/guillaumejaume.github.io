@@ -1,7 +1,7 @@
 # News, newest first.
 # text: one or two plain sentences (inline HTML allowed, keep emphasis rare).
 # links: optional list of {label, url}, shown after the text.
-# The homepage shows the first `news_visible` items (set in index.md); the rest go under "Earlier news".
+# The homepage shows all items in a scrollable panel.
 
 - date: Sep 2026
   highlight: true

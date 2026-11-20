@@ -2,7 +2,6 @@
 layout: default
 title: "Jaume Lab"
 full_title: "Jaume Lab | AI for Oncologic Pathology, UNIL"
-news_visible: 8
 ---
 
 <div class="wrap page home">
@@ -40,17 +39,10 @@ news_visible: 8
 
   <aside>
     <h2 class="section-title">News</h2>
-    {% assign n = page.news_visible %}
-    <ul class="news-list">
-      {% for item in site.data.news limit: n %}{% include news-item.html item=item %}{% endfor %}
-    </ul>
-    {% if site.data.news.size > n %}
-    <details class="news-more">
-      <summary>Earlier news</summary>
+    <div class="news-scroll" tabindex="0" aria-label="News, scrollable">
       <ul class="news-list">
-        {% for item in site.data.news offset: n %}{% include news-item.html item=item %}{% endfor %}
+        {% for item in site.data.news %}{% include news-item.html item=item %}{% endfor %}
       </ul>
-    </details>
-    {% endif %}
+    </div>
   </aside>
 </div>
