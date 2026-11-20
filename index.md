@@ -27,7 +27,6 @@ full_title: "Jaume Lab | AI for Oncologic Pathology, UNIL"
           <span>Models trained jointly on histology, spatial omics, text and clinical records, released as tools others can build on.</span>
         </li>
       </ul>
-      <p class="contact-line" style="margin-top: 16px;">We collaborate closely with Harvard Medical School, Mass General Brigham, EPFL and ETH Zurich.</p>
     </section>
 
     <section class="section">
