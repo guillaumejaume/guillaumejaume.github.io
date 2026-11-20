@@ -4,6 +4,13 @@
 # links: optional extra links, e.g. code, data, model.
 
 - year: 2026
+  title: AI for detection of adverse events in the real world
+  authors: Guillaume Jaume; Jakob Nikolas Kather
+  venue: Nature Cancer
+  note: News & Views
+  url: https://www.nature.com/articles/s43018-026-01258-4
+
+- year: 2026
   title: 'VIPER: An Expert-Curated Benchmark for Vision-Language Models in Veterinary Pathology'
   authors: Luca L. Weishaupt; Simone de Brot; Javier Asin; Llorenç Grau-Roma; Nic G. Reitsam, et al.; Guillaume Jaume
   venue: NeurIPS
