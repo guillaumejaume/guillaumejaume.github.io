@@ -10,6 +10,11 @@
     - {label: article, url: "https://www.nature.com/articles/s43018-026-01252-w"}
     - {label: code, url: "https://github.com/mahmoodlab/threadsmodel"}
 
+- date: Oct 2026
+  text: 'News &amp; Views in <em>Nature Cancer</em> with Jakob N. Kather: "AI for detection of adverse events in the real world", on an agentic system that flags immune-related adverse events in clinical notes.'
+  links:
+    - {label: article, url: "https://www.nature.com/articles/s43018-026-01258-4"}
+
 - date: Sep 2026
   highlight: true
   text: <em>VIPER</em>, the first expert-curated benchmark for vision-language models in veterinary pathology, will appear at NeurIPS Datasets &amp; Benchmarks.
