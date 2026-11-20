@@ -20,6 +20,14 @@
   --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
   --font-sans:  'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 
+  /* Type scale: six sizes, used everywhere */
+  --fs-xs:   0.8rem;    /* dates, small labels */
+  --fs-sm:   0.9rem;    /* secondary text: authors, venues, news, links */
+  --fs-base: 1rem;      /* body text, navigation */
+  --fs-md:   1.15rem;   /* intro, item titles: papers, people, tools */
+  --fs-lg:   1.35rem;   /* section headings, years, lab name */
+  --fs-xl:   2.2rem;    /* page titles */
+
   --measure:   1080px;        /* page width */
   --gutter:    24px;
 }
@@ -57,9 +65,9 @@ h1, h2, h3 {
   margin: 0;
 }
 
-h1 { font-size: 2rem; }
-h2 { font-size: 1.45rem; }
-h3 { font-size: 1.1rem; }
+h1 { font-size: var(--fs-xl); }
+h2 { font-size: var(--fs-lg); }
+h3 { font-size: var(--fs-md); }
 
 p { margin: 0 0 1em; }
 
@@ -130,7 +138,7 @@ img { max-width: 100%; height: auto; }
 .brand-name {
   display: block;
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: var(--fs-lg);
   font-weight: 600;
   color: var(--c-brand);
   line-height: 1.1;
@@ -138,7 +146,7 @@ img { max-width: 100%; height: auto; }
 
 .brand-sub {
   display: block;
-  font-size: 0.88rem;
+  font-size: var(--fs-sm);
   color: var(--c-muted);
   margin-top: 2px;
 }
@@ -147,7 +155,7 @@ img { max-width: 100%; height: auto; }
   display: flex;
   flex-wrap: wrap;
   gap: 4px 22px;
-  font-size: 0.98rem;
+  font-size: var(--fs-base);
 }
 
 .site-nav a {
@@ -174,7 +182,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .page-title {
-  font-size: 2.2rem;
+  font-size: var(--fs-xl);
   letter-spacing: -0.01em;
   margin-bottom: 10px;
 }
@@ -189,7 +197,7 @@ img { max-width: 100%; height: auto; }
 
 .section-title {
   position: relative;
-  font-size: 1.3rem;
+  font-size: var(--fs-lg);
   padding-bottom: 10px;
   border-bottom: 1px solid var(--c-rule);
   margin-bottom: 20px;
@@ -207,7 +215,7 @@ img { max-width: 100%; height: auto; }
 
 .year-heading {
   font-family: var(--font-serif);
-  font-size: 1.15rem;
+  font-size: var(--fs-md);
   font-weight: 600;
   color: var(--c-faint);
   margin: 36px 0 12px;
@@ -226,7 +234,7 @@ img { max-width: 100%; height: auto; }
 .year-group .year-heading {
   margin: 0;
   padding-top: 8px;
-  font-size: 1.5rem;
+  font-size: var(--fs-lg);
   color: var(--c-faint);
   font-variant-numeric: lining-nums;
 }
@@ -238,7 +246,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .links {
-  font-size: 0.9rem;
+  font-size: var(--fs-sm);
 }
 
 .links a + a::before {
@@ -258,7 +266,7 @@ img { max-width: 100%; height: auto; }
 
 .intro {
   font-family: var(--font-serif);
-  font-size: 1.22rem;
+  font-size: var(--fs-md);
   line-height: 1.6;
   color: var(--c-ink);
 }
@@ -288,7 +296,7 @@ img { max-width: 100%; height: auto; }
   left: 0;
   top: 15px;
   font-family: var(--font-serif);
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
   color: var(--c-rose);
   font-variant-numeric: lining-nums tabular-nums;
 }
@@ -306,7 +314,7 @@ img { max-width: 100%; height: auto; }
 
 .contact-line {
   color: var(--c-muted);
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
 }
 
 .news-list {
@@ -319,7 +327,7 @@ img { max-width: 100%; height: auto; }
   padding: 10px 0 10px 14px;
   border-left: 2px solid var(--c-rule);
   margin-bottom: 4px;
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
   line-height: 1.5;
 }
 
@@ -327,7 +335,7 @@ img { max-width: 100%; height: auto; }
 
 .news-date {
   display: block;
-  font-size: 0.8rem;
+  font-size: var(--fs-xs);
   color: var(--c-faint);
   letter-spacing: 0.02em;
   margin-bottom: 2px;
@@ -370,7 +378,7 @@ img { max-width: 100%; height: auto; }
 
 .pub-title {
   font-family: var(--font-serif);
-  font-size: 1.05rem;
+  font-size: var(--fs-md);
   font-weight: 600;
   line-height: 1.4;
   color: var(--c-ink);
@@ -380,14 +388,14 @@ a.pub-title:hover { color: var(--c-brand); }
 
 .pub-authors {
   color: var(--c-muted);
-  font-size: 0.93rem;
+  font-size: var(--fs-sm);
   margin-top: 2px;
 }
 
 .pub-authors strong { color: var(--c-ink); font-weight: 600; }
 
 .pub-venue {
-  font-size: 0.93rem;
+  font-size: var(--fs-sm);
   color: var(--c-ink);
 }
 
@@ -420,7 +428,7 @@ a.pub-title:hover { color: var(--c-brand); }
 
 .talk-date {
   color: var(--c-faint);
-  font-size: 0.9rem;
+  font-size: var(--fs-sm);
   padding-top: 2px;
   font-variant-numeric: tabular-nums;
 }
@@ -432,7 +440,7 @@ a.pub-title:hover { color: var(--c-brand); }
 
 .talk-meta {
   color: var(--c-muted);
-  font-size: 0.93rem;
+  font-size: var(--fs-sm);
 }
 
 /* --- People -------------------------------------------------------------- */
@@ -455,20 +463,20 @@ a.pub-title:hover { color: var(--c-brand); }
 
 .person-name {
   font-family: var(--font-serif);
-  font-size: 1.2rem;
+  font-size: var(--fs-md);
   font-weight: 600;
 }
 
 .person-role {
   color: var(--c-brand);
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
   margin-top: 2px;
 }
 
 .person-affil,
 .person-bio {
   color: var(--c-muted);
-  font-size: 0.92rem;
+  font-size: var(--fs-sm);
   line-height: 1.5;
   margin-top: 6px;
 }
@@ -505,13 +513,13 @@ a.pub-title:hover { color: var(--c-brand); }
 
 .tool-name {
   font-family: var(--font-serif);
-  font-size: 1.15rem;
+  font-size: var(--fs-md);
   font-weight: 600;
 }
 
 .tool-kind {
   display: block;
-  font-size: 0.78rem;
+  font-size: var(--fs-xs);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--c-faint);
@@ -525,7 +533,7 @@ a.pub-title:hover { color: var(--c-brand); }
 .site-footer {
   border-top: 1px solid var(--c-rule);
   color: var(--c-muted);
-  font-size: 0.9rem;
+  font-size: var(--fs-sm);
 }
 
 .site-footer .wrap {
@@ -539,7 +547,7 @@ a.pub-title:hover { color: var(--c-brand); }
 
 .site-footer p { margin: 0; }
 
-.site-footer .links { font-size: 0.9rem; }
+.site-footer .links { font-size: var(--fs-sm); }
 
 /* --- Responsive ---------------------------------------------------------- */
 
