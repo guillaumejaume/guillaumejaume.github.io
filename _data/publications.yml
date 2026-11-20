@@ -25,11 +25,12 @@
   url: https://arxiv.org/abs/2602.14177
 
 - year: 2026
-  title: Molecular-driven Foundation Model for Oncologic Pathology
+  title: A multimodal foundation model for molecular and morphologic data in oncology
   authors: Anurag Vaidya*; Andrew Zhang*; Guillaume Jaume*; Andrew H. Song; Tong Ding; Sophia J. Wagner, et al.
   venue: Nature Cancer
-  url: https://arxiv.org/abs/2501.16652
+  url: https://www.nature.com/articles/s43018-026-01252-w
   links:
+    - {label: preprint, url: "https://arxiv.org/abs/2501.16652"}
     - {label: code, url: "https://github.com/mahmoodlab/threadsmodel"}
 
 - year: 2025

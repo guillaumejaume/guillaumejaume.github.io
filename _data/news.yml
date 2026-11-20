@@ -7,7 +7,7 @@
   highlight: true
   text: <em>THREADS</em>, a slide-level foundation model trained on histology paired with genomic and transcriptomic profiles, is published in <em>Nature Cancer</em>.
   links:
-    - {label: preprint, url: "https://arxiv.org/abs/2501.16652"}
+    - {label: article, url: "https://www.nature.com/articles/s43018-026-01252-w"}
     - {label: code, url: "https://github.com/mahmoodlab/threadsmodel"}
 
 - date: Sep 2026
