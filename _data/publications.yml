@@ -24,6 +24,14 @@
   venue: Preprint
   url: https://arxiv.org/abs/2602.14177
 
+- year: 2026
+  title: Molecular-driven Foundation Model for Oncologic Pathology
+  authors: Anurag Vaidya*; Andrew Zhang*; Guillaume Jaume*; Andrew H. Song; Tong Ding; Sophia J. Wagner, et al.
+  venue: Nature Cancer
+  url: https://arxiv.org/abs/2501.16652
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/threadsmodel"}
+
 - year: 2025
   title: 'BKVision: Automated Detection and Morphological Analysis of BK Virus in Renal Transplant Biopsies'
   authors: Sharifa Sahai; Ana D. Ramos-Guerra; Cristina Almagro-Pérez; Guillaume Jaume; Andrew Zhang; Helmut Rennke, et al.
@@ -53,14 +61,6 @@
   links:
     - {label: code, url: "https://github.com/mahmoodlab/TITAN"}
     - {label: model, url: "https://huggingface.co/MahmoodLab/TITAN"}
-
-- year: 2025
-  title: Molecular-driven Foundation Model for Oncologic Pathology
-  authors: Anurag Vaidya*; Andrew Zhang*; Guillaume Jaume*; Andrew H. Song; Tong Ding; Sophia J. Wagner, et al.
-  venue: In Press
-  url: https://arxiv.org/abs/2501.16652
-  links:
-    - {label: code, url: "https://github.com/mahmoodlab/threadsmodel"}
 
 - year: 2024
   title: 'HEST-1k: A Dataset for Spatial Transcriptomics and Histology Image Analysis'

@@ -3,6 +3,13 @@
 # links: optional list of {label, url}, shown after the text.
 # The homepage shows all items in a scrollable panel.
 
+- date: Nov 2026
+  highlight: true
+  text: <em>THREADS</em>, a slide-level foundation model trained on histology paired with genomic and transcriptomic profiles, is published in <em>Nature Cancer</em>.
+  links:
+    - {label: preprint, url: "https://arxiv.org/abs/2501.16652"}
+    - {label: code, url: "https://github.com/mahmoodlab/threadsmodel"}
+
 - date: Sep 2026
   highlight: true
   text: <em>VIPER</em>, the first expert-curated benchmark for vision-language models in veterinary pathology, will appear at NeurIPS Datasets &amp; Benchmarks.
