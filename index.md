@@ -209,7 +209,7 @@ body, html {
   <div class="main-content-left">
     <section class="about-section">
       <h2>About</h2>
-      <p>The <strong>Jaume Lab</strong> is launching in February 2026 at the <a href="https://www.unil.ch/dof/en/home.html" target="_blank">Department of Oncology</a> at the <strong>University of Lausanne (UNIL)</strong>.</p>
+      <p>The <strong>Jaume Lab</strong> started in February 2026 at the <a href="https://www.unil.ch/dof/en/home.html" target="_blank">Department of Oncology</a> of the <strong>University of Lausanne (UNIL)</strong>, supported by an <strong>ERC Starting Grant</strong>.</p>
       <p>We work at the intersection of <em>artificial intelligence, pathology, and oncology</em>. Our research focuses on <strong>agentic AI, biomarker discovery, and multimodal learning </strong> for pathology.</p>
       <p>We keep <strong>strong ties</strong> to <strong>Harvard Medical School, Mass General Brigham, EPFL, and ETH Zurich</strong>.</p>
     </section>
