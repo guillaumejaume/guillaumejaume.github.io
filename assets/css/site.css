@@ -28,7 +28,7 @@
   --fs-lg:   1.35rem;   /* section headings, years, lab name */
   --fs-xl:   2.2rem;    /* page titles */
 
-  --measure:   1080px;        /* page width */
+  --measure:   1240px;        /* page width */
   --gutter:    24px;
 }
 
@@ -189,7 +189,7 @@ img { max-width: 100%; height: auto; }
 
 .page-lede {
   color: var(--c-muted);
-  max-width: 680px;
+  max-width: 760px;
   margin-bottom: 40px;
 }
 
@@ -260,8 +260,8 @@ img { max-width: 100%; height: auto; }
 
 .home {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 340px;
-  gap: 64px;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  gap: 72px;
 }
 
 .intro {
@@ -273,7 +273,7 @@ img { max-width: 100%; height: auto; }
 
 .intro p:first-child::first-line { font-weight: 600; }
 
-.intro p { max-width: 640px; }
+.intro p { max-width: 760px; }
 
 .themes {
   list-style: none;
@@ -453,7 +453,7 @@ a.pub-title:hover { color: var(--c-brand); }
 
 .person img {
   width: 100%;
-  max-width: 260px;
+  max-width: 300px;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 2px;
