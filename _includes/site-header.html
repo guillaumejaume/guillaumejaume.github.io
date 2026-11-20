@@ -1,12 +1,17 @@
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/">
-      <img src="/assets/people/logo-mark.png" alt="" width="56" height="46">
-      <span>
-        <span class="brand-name">Jaume Lab</span>
-        <span class="brand-sub">AI for Oncologic Pathology · University of Lausanne</span>
-      </span>
-    </a>
+    <div class="brand-group">
+      <a class="brand" href="/">
+        <img src="/assets/people/logo-mark.png" alt="" width="56" height="46">
+        <span>
+          <span class="brand-name">Jaume Lab</span>
+          <span class="brand-sub">AI for Oncologic Pathology · Department of Oncology</span>
+        </span>
+      </a>
+      <a class="unil-logo" href="https://www.unil.ch/dof/en/home.html" aria-label="University of Lausanne, Department of Oncology">
+        <img src="/assets/people/unil-logo.svg" alt="UNIL | Université de Lausanne" width="77" height="36">
+      </a>
+    </div>
     <nav class="site-nav" aria-label="Main">
       {% assign nav = "/people/|People,/publications/|Publications,/software/|Software &amp; Datasets,/talks/|Talks" | split: "," %}
       {% for item in nav %}

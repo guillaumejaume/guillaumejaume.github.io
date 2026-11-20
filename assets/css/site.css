@@ -92,6 +92,22 @@ img { max-width: 100%; height: auto; }
 
 .brand img { width: 56px; height: auto; }
 
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.unil-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-left: 1px solid var(--c-rule);
+  align-self: stretch;
+}
+
+.unil-logo img { width: 77px; height: auto; display: block; }
+
 .brand-name {
   display: block;
   font-family: var(--font-serif);
@@ -450,6 +466,10 @@ a.pub-title:hover { color: var(--c-brand); }
   body { font-size: 16px; }
   :root { --gutter: 16px; }
   .site-header .wrap { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .brand-sub { display: none; }
+  .brand-group { gap: 16px; }
+  .unil-logo { padding-left: 16px; }
+  .unil-logo img { width: 64px; }
   .page { padding-top: 32px; }
   .people { grid-template-columns: 1fr 1fr; gap: 32px 20px; }
   .talks li, .tools li { grid-template-columns: 1fr; gap: 2px; }
