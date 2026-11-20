@@ -1,12 +1,16 @@
 # Publications, newest first.
 # authors: '; '-separated. 'Guillaume Jaume' is bolded automatically.
 # note: optional (e.g. Oral, Spotlight). url: main link (paper, arXiv or DOI).
+# links: optional extra links, e.g. code, data, model.
 
 - year: 2026
   title: 'VIPER: An Expert-Curated Benchmark for Vision-Language Models in Veterinary Pathology'
   authors: Luca L. Weishaupt; Simone de Brot; Javier Asin; Llorenç Grau-Roma; Nic G. Reitsam, et al.; Guillaume Jaume
   venue: NeurIPS
   url: https://arxiv.org/abs/2608.26382
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/viper"}
+    - {label: data, url: "https://huggingface.co/datasets/MahmoodLab/viper"}
 
 - year: 2026
   title: Foundation models in pathology and the challenge of clinical time
@@ -37,18 +41,26 @@
   authors: Muhammad Shaban; Yuzhou Chang; Huaying Qiu; Yao Yu Yeo; Andrew H. Song; Guillaume Jaume, et al.
   venue: Under review
   url: https://arxiv.org/abs/2506.03373
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/KRONOS"}
+    - {label: model, url: "https://huggingface.co/MahmoodLab/KRONOS"}
 
 - year: 2025
   title: Multimodal Whole Slide Foundation Model for Pathology
   authors: Tong Ding; Sophia J. Wagner; Andrew H. Song; Richard J. Chen; Ming Y. Lu; Andrew Zhang, et al.
   venue: Nature Medicine
   url: https://arxiv.org/abs/2411.19666
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/TITAN"}
+    - {label: model, url: "https://huggingface.co/MahmoodLab/TITAN"}
 
 - year: 2025
   title: Molecular-driven Foundation Model for Oncologic Pathology
   authors: Anurag Vaidya*; Andrew Zhang*; Guillaume Jaume*; Andrew H. Song; Tong Ding; Sophia J. Wagner, et al.
   venue: In Press
   url: https://arxiv.org/abs/2501.16652
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/threadsmodel"}
 
 - year: 2024
   title: 'HEST-1k: A Dataset for Spatial Transcriptomics and Histology Image Analysis'
@@ -56,6 +68,9 @@
   venue: NeurIPS
   note: Spotlight
   url: https://arxiv.org/abs/2406.16192
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/HEST"}
+    - {label: data, url: "https://huggingface.co/datasets/MahmoodLab/hest"}
 
 - year: 2024
   title: Transcriptomics-guided Slide Representation Learning in Computational Pathology
@@ -63,18 +78,24 @@
   venue: CVPR
   note: Oral
   url: https://arxiv.org/abs/2405.11618
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/TANGLE"}
 
 - year: 2024
   title: Modeling Dense Multimodal Interactions Between Biological Pathways and Histology for Survival Prediction
   authors: Guillaume Jaume; Anurag Vaidya; Richard J. Chen; Drew F. K. Williamson; Paul Pu Liang; Faisal Mahmood, et al.
   venue: CVPR
   url: https://arxiv.org/abs/2304.06819
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/SurvPath"}
 
 - year: 2024
   title: Multimodal Prototyping for cancer survival prediction
   authors: Andrew H. Song; Richard J. Chen; Guillaume Jaume; Anurag Jayant Vaidya; Alexander Baras; Faisal Mahmood, et al.
   venue: ICML
   url: https://arxiv.org/abs/2407.00224
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/MMP"}
 
 - year: 2024
   title: Morphological Prototyping for Unsupervised Slide Representation Learning in Computational Pathology
@@ -82,18 +103,24 @@
   venue: CVPR
   note: Oral
   url: https://arxiv.org/abs/2405.11643
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/PANTHER"}
 
 - year: 2024
   title: Multistain Pretraining for Slide Representation Learning in Pathology
   authors: Guillaume Jaume; Anurag Vaidya; Andrew Zhang; Andrew H. Song; Richard J. Chen; Sharifa Sahai, et al.
   venue: ECCV
   url: https://arxiv.org/abs/2408.02859
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/MADELEINE"}
 
 - year: 2024
   title: Analysis of 3D pathology samples using weakly supervised AI
   authors: Andrew H. Song; Mane Williams; Drew F. K. Williamson; Sarah S.L. Chow; Guillaume Jaume; Gan Gao, et al.
   venue: Cell
   url: https://doi.org/10.1016/j.cell.2024.03.035
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/TriPath"}
 
 - year: 2024
   title: Examining Demographic Bias in Misdiagnosis by AI-Driven Computational Pathology Models
@@ -106,12 +133,18 @@
   authors: Ming Y. Lu; Drew F. K. Williamson; Andrew H. Song; Richard J. Chen; Guillaume Jaume; Anurag Vaidya, et al.
   venue: Nature Medicine
   url: https://doi.org/10.1038/s41591-024-02856-4
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/CONCH"}
+    - {label: model, url: "https://huggingface.co/MahmoodLab/CONCH"}
 
 - year: 2024
   title: Towards a General-Purpose Foundation Model for Computational Pathology
   authors: Richard J. Chen; Tong Ding; Ming Y. Lu; Drew F. K. Williamson; Guillaume Jaume; Andrew H. Song, et al.
   venue: Nature Medicine
   url: https://doi.org/10.1038/s41591-024-02857-3
+  links:
+    - {label: code, url: "https://github.com/mahmoodlab/UNI"}
+    - {label: model, url: "https://huggingface.co/MahmoodLab/UNI"}
 
 - year: 2024
   title: Deep Learning-based Modeling for Preclinical Drug Safety Assessment
@@ -142,15 +175,21 @@
   authors: Kevin Thandiackal; Boqi Chen; Pushpak Pati; Guillaume Jaume; Drew F. K. Williamson; Maria Gabrani, et al.
   venue: ECCV
   url: https://arxiv.org/abs/2204.12454
+  links:
+    - {label: code, url: "https://github.com/histocartography/zoommil"}
 
 - year: 2021
   title: Hierarchical Graph Representations in Digital Pathology
   authors: Guillaume Jaume; Pushpak Pati; Antonio Foncubierta-Rodríguez; Florinda Feroce; Anna Maria Anniciello; Tilman Rau, et al.
   venue: Medical Image Analysis
   url: https://arxiv.org/abs/2102.11057
+  links:
+    - {label: code, url: "https://github.com/histocartography/hact-net"}
 
 - year: 2021
   title: Quantifying Explainers of Graph Neural Networks in Computational Pathology
   authors: Guillaume Jaume; Pushpak Pati; Behzad Bozorgtabar; Antonio Foncubierta-Rodríguez; Florinda Feroce; Anna Maria Anniciello, et al.
   venue: CVPR
   url: https://arxiv.org/abs/2011.12646
+  links:
+    - {label: code, url: "https://github.com/histocartography/patho-quant-explainer"}

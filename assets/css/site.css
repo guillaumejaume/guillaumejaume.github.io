@@ -383,6 +383,8 @@ a.pub-title:hover { color: var(--c-brand); }
 
 .pub-venue em { font-style: italic; }
 
+.pub-links { margin-top: 2px; }
+
 .pub-note {
   color: var(--c-rose);
   font-weight: 600;

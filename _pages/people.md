@@ -28,7 +28,7 @@ description: "The people of the Jaume Lab at the University of Lausanne: princip
   <section class="section">
     <h2 class="section-title">Alumni</h2>
     <ul class="alumni">
-      {% for a in site.data.people.alumni %}<li>{{ a.name }} <span>· {{ a.role }}</span></li>{% endfor %}
+      {% for a in site.data.people.alumni %}<li>{{ a.name }} <span>· {{ a.role }}{% if a.now %} · now at {{ a.now }}{% endif %}</span></li>{% endfor %}
     </ul>
   </section>
   {% endif %}

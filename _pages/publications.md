@@ -19,6 +19,7 @@ description: "Peer-reviewed publications and preprints from Guillaume Jaume and 
       {% if p.url %}<a class="pub-title" href="{{ p.url }}">{{ p.title }}</a>{% else %}<span class="pub-title">{{ p.title }}</span>{% endif %}
       <div class="pub-authors">{{ p.authors | replace: "; ", ", " | replace: "Guillaume Jaume", "<strong>Guillaume Jaume</strong>" }}</div>
       <div class="pub-venue"><em>{{ p.venue }}</em>{% if p.note %} · <span class="pub-note">{{ p.note }}</span>{% endif %}</div>
+      {% if p.url or p.links %}<div class="links pub-links">{% if p.url %}<a href="{{ p.url }}">paper</a>{% endif %}{% for l in p.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</div>{% endif %}
     </li>
     {% endfor %}
   </ul>

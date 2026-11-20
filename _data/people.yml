@@ -55,6 +55,8 @@ members:
     links:
       scholar: https://scholar.google.es/citations?user=8n-poIUAAAAJ&hl=en
 
+# Alumni. 'now' (optional): current position, shown as "now at ...".
 alumni:
   - name: Augustin Krause
     role: Master's thesis student, TU Berlin
+    # now: 
